@@ -1,0 +1,129 @@
+Pasos para levantarel entorno de desarrollo - Datos Abiertos.
+
+-Descargar actualizaciones de packetes del SO
+sudo apt-get update
+
+-Descargar Gitlab.
+curl https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.deb.sh | sudo bash
+
+-Instalar Gitlab
+sudo apt-get install gitlab-ce
+
+-Iniciar Gitlab, reconfigura e inicia.
+sudo gitlab-ctl reconfigure
+
+-User y password por defecto.
+Username: root
+Password: 5iveL!fe
+
+-Genera clave publica
+ssh-keygen -t rsa -C "mrcperalta.mp@gmail.com"
+
+-ver la clave publica.
+cat ~/.ssh/id_rsa.pub
+
+-copiar la clave publica
+xclip -sel clip < ~/.ssh/id_rsa.pub
+
+//Acceder a nuestro usuario de Gitlab y Pegar la clave publica en SSH keys.
+
+-instalar git
+sudo apt-get install git
+
+-Clonar el proyecto
+http://10.2.29.135/sfp/portal-sfp.git
+
+-Acceder
+cd portal-sfp
+
+-Editamos el archivo
+src/main/resources/META-INF/persistence.xml
+y cambiamos en la linea
+<property name="hibernate.hbm2ddl.auto" value="validate" />
+
+"validate" por "none"
+
+-modificamos nuestro correo y usuario del GIT
+git config --global user.email "xxxxxxxx@gmail.com"
+git config --global user.name "jrodriguez"
+
+-Descargar Docker
+wget https://github.com/docker/compose/releases/download/1.5.0/docker-compose-Linux-x86_64
+
+
+-Mover la descarga del Docker
+sudo cp docker-compose-Linux-x86_64 /usr/local/bin/docker-compose
+
+-modificar los privilegios
+sudo chmod +x /usr/local/bin/docker-compose
+
+-verificar docker
+docker-compose -v
+
+-ver en que branch estamos
+git branch
+
+//deberia aparecer lo siguiente
+* develop
+  master
+
+//si no aparece asi ejecutamos lo siguiente para cambiarnos de branch
+git checkout develop
+
+-Levantamos el docker
+sudo service docker start
+
+-y construimos
+sudo docker-compose build
+//aqui descargara todo los que el docker necesita: JDK, JBOSS, ETC.
+//dependiendo del internet este punto se puede demorar mas de 30 minutos.
+
+-Si no lo tenemos instalamos maven
+sudo apt-get install maven
+
+-verificar el JDK
+javac
+
+-si necesitamos lo instalamos
+sudo apt-get install openjdk-7-jdk
+
+-accedemos al proyecto
+cd /home/usuario/portal-sfp/ /*donde descargamos el proyeto*/
+
+-creamos el proyecto maven
+mvn package
+
+-instalamos npm
+sudo apt-get install npm
+
+-compilamos el proyecto
+mvn clean package
+
+-accedemos a client
+cd client
+
+-instalamos npm?
+sudo npm install
+
+-instalamos nodejs-legacy
+sudo apt-get install nodejs-legacy
+
+
+
+-instalamos bower
+npm install -g bower
+
+bower install
+verificar la conexion a internet *full*
+
+-instalamos grunt
+sudo npm install -g grunt-cli
+
+-apt-get install ruby-dev
+
+-sudo gem install compass
+
+
+-levantamos el servicio
+grunt serve
+

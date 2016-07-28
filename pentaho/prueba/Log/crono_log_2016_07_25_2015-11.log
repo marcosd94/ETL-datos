@@ -1,0 +1,560 @@
+18:57:34,139 INFO  [KarafInstance] 
+*******************************************************************************
+*** Karaf Instance Number: 1 at /home/marcosd94/ETL-portal/data-integration ***
+***   /./system/karaf//data1                                                ***
+*** Karaf Port:8801                                                         ***
+*** OSGI Service Port:9050                                                  ***
+*******************************************************************************
+Jul 25, 2016 6:57:37 PM org.apache.karaf.main.Main$KarafLockCallback lockAquired
+INFO: Lock acquired. Setting startlevel to 100
+log4j: System property is :null
+log4j: Standard DocumentBuilderFactory search succeded.
+log4j: DocumentBuilderFactory is: org.apache.xerces.jaxp.DocumentBuilderFactoryImpl
+log4j: debug attribute= "null".
+log4j: Ignoring debug attribute.
+log4j: reset attribute= "false".
+log4j: Threshold ="null".
+log4j: Retreiving an instance of org.apache.log4j.Logger.
+log4j: Setting [org.pentaho.di] additivity to [true].
+log4j: Level value for org.pentaho.di is  [off].
+log4j: org.pentaho.di level set to OFF
+log4j: Class name: [org.apache.log4j.ConsoleAppender]
+log4j: Setting property [target] to [System.out].
+log4j: Parsing layout of class: "org.apache.log4j.PatternLayout"
+log4j: Setting property [conversionPattern] to [%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n].
+log4j: Adding appender named [console] to category [org.pentaho.di].
+log4j: Level value for root is  [off].
+log4j: root level set to OFF
+log4j: Adding appender named [console] to category [root].
+2016/07/25 18:57:38 - Kitchen - Start of run.
+2016-07-25 18:57:42.051:INFO:oejs.Server:jetty-8.1.15.v20140411
+log4j: reset attribute= "false".
+log4j: Threshold ="null".
+2016-07-25 18:57:42.146:INFO:oejs.AbstractConnector:Started NIOSocketConnectorWrapper@0.0.0.0:9050
+log4j:WARN No appenders could be found for logger (org.springframework.osgi.extender.internal.activator.ContextLoaderListener).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+Jul 25, 2016 6:57:42 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/core
+Jul 25, 2016 6:57:42 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/configuration/beans
+Jul 25, 2016 6:57:42 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/configuration/parameterized-types
+Jul 25, 2016 6:57:42 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/configuration/security
+Jul 25, 2016 6:57:42 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://schemas.xmlsoap.org/wsdl/
+Jul 25, 2016 6:57:42 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://www.w3.org/2005/08/addressing
+Jul 25, 2016 6:57:42 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://schemas.xmlsoap.org/ws/2004/08/addressing
+Jul 25, 2016 6:57:42 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-management (135) [org.apache.cxf.management.InstrumentationManager]
+Jul 25, 2016 6:57:42 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-wsdl (138) [org.apache.cxf.wsdl.WSDLManager]
+Jul 25, 2016 6:57:42 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-bindings-xml (140) [org.apache.cxf.binding.xml.XMLBindingFactory, org.apache.cxf.binding.xml.wsdl11.XMLWSDLExtensionLoader]
+Jul 25, 2016 6:57:42 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-bindings-soap (141) [org.apache.cxf.binding.soap.SoapBindingFactory, org.apache.cxf.binding.soap.SoapTransportFactory]
+Jul 25, 2016 6:57:42 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/bindings/soap
+Jul 25, 2016 6:57:42 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-transports-http (142) [org.apache.cxf.transport.http.HTTPTransportFactory, org.apache.cxf.transport.http.HTTPWSDLExtensionLoader, org.apache.cxf.transport.http.policy.HTTPClientAssertionBuilder, org.apache.cxf.transport.http.policy.HTTPServerAssertionBuilder, org.apache.cxf.transport.http.policy.NoOpPolicyInterceptorProvider]
+Jul 25, 2016 6:57:42 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-policy (165) [org.apache.cxf.ws.policy.PolicyEngine, org.apache.cxf.policy.PolicyDataEngine, org.apache.cxf.ws.policy.AssertionBuilderRegistry, org.apache.cxf.ws.policy.PolicyInterceptorProviderRegistry, org.apache.cxf.ws.policy.PolicyBuilder, org.apache.cxf.ws.policy.PolicyAnnotationListener, org.apache.cxf.ws.policy.attachment.ServiceModelPolicyProvider, org.apache.cxf.ws.policy.attachment.external.DomainExpressionBuilderRegistry, org.apache.cxf.ws.policy.attachment.external.EndpointReferenceDomainExpressionBuilder, org.apache.cxf.ws.policy.attachment.external.URIDomainExpressionBuilder, org.apache.cxf.ws.policy.attachment.wsdl11.Wsdl11AttachmentPolicyProvider, org.apache.cxf.ws.policy.mtom.MTOMAssertionBuilder, org.apache.cxf.ws.policy.mtom.MTOMPolicyInterceptorProvider]
+Jul 25, 2016 6:57:42 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/transports/http/configuration
+Jul 25, 2016 6:57:42 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/simple
+Jul 25, 2016 6:57:42 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-frontend-jaxws (144) [org.apache.cxf.jaxws.context.WebServiceContextResourceResolver]
+Jul 25, 2016 6:57:42 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/jaxws
+Jul 25, 2016 6:57:42 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/jaxrs
+Jul 25, 2016 6:57:42 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/jaxrs-client
+Jul 25, 2016 6:57:42 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-bindings-corba (154) [org.apache.cxf.binding.corba.CorbaBindingFactory, org.apache.cxf.binding.corba.wsdl.WSDLExtensionRegister]
+Jul 25, 2016 6:57:42 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/binding/coloc
+Jul 25, 2016 6:57:42 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-transports-local (156) [org.apache.cxf.transport.local.LocalTransportFactory]
+Jul 25, 2016 6:57:42 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-bindings-object (157) [org.apache.cxf.binding.object.ObjectBindingFactory]
+Jul 25, 2016 6:57:42 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/binding/object
+Jul 25, 2016 6:57:42 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-transports-http-jetty (158) [org.apache.cxf.transport.http_jetty.JettyDestinationFactory, org.apache.cxf.transport.http_jetty.JettyHTTPServerEngineFactory, org.apache.cxf.transport.http.ContinuationProviderFactory]
+Jul 25, 2016 6:57:42 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/transports/http-jetty/configuration
+Jul 25, 2016 6:57:42 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-transports-jms (160) [org.apache.cxf.transport.jms.JMSTransportFactory, org.apache.cxf.transport.jms.wsdl11.JMSWSDLExtensionLoader]
+Jul 25, 2016 6:57:42 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-transports-udp (162) [org.apache.cxf.transport.udp.UDPTransportFactory]
+Jul 25, 2016 6:57:42 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/policy
+Jul 25, 2016 6:57:42 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://www.w3.org/ns/ws-policy
+Jul 25, 2016 6:57:42 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://www.w3.org/2006/07/ws-policy
+Jul 25, 2016 6:57:42 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://schemas.xmlsoap.org/ws/2004/09/policy
+Jul 25, 2016 6:57:42 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd
+Jul 25, 2016 6:57:42 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd
+Jul 25, 2016 6:57:42 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://www.w3.org/2000/09/xmldsig#
+Jul 25, 2016 6:57:42 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702
+Jul 25, 2016 6:57:42 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-addr (182) [org.apache.cxf.ws.addressing.policy.AddressingAssertionBuilder, org.apache.cxf.ws.addressing.policy.UsingAddressingAssertionBuilder, org.apache.cxf.ws.addressing.policy.AddressingPolicyInterceptorProvider, org.apache.cxf.ws.addressing.impl.AddressingWSDLExtensionLoader, org.apache.cxf.ws.addressing.WSAddressingFeature$WSAddressingFeatureApplier, org.apache.cxf.ws.addressing.MAPAggregator$MAPAggregatorLoader]
+Jul 25, 2016 6:57:42 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/ws/addressing
+Jul 25, 2016 6:57:43 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-security (184) [org.apache.cxf.ws.security.policy.WSSecurityPolicyLoader, org.apache.cxf.ws.security.cache.CacheCleanupListener]
+Jul 25, 2016 6:57:43 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-mex (187) [org.apache.cxf.ws.mex.MEXServerListener]
+Jul 25, 2016 6:57:43 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-rm (186) [org.apache.cxf.ws.rm.RMManager, org.apache.cxf.ws.rm.policy.RMPolicyInterceptorProvider, org.apache.cxf.ws.rm.policy.RM10AssertionBuilder, org.apache.cxf.ws.rm.policy.RM12AssertionBuilder, org.apache.cxf.ws.rm.policy.WSRMP12PolicyLoader, org.apache.cxf.ws.rm.policy.MC11PolicyLoader, org.apache.cxf.ws.rm.policy.RSPPolicyLoader]
+Jul 25, 2016 6:57:43 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/ws/rm/manager
+Jul 25, 2016 6:57:43 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://schemas.xmlsoap.org/ws/2005/02/rm/policy
+Jul 25, 2016 6:57:43 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-javascript (188) [org.apache.cxf.javascript.JavascriptServerListener]
+Jul 25, 2016 6:57:43 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/clustering
+Jul 25, 2016 6:57:43 PM org.pentaho.caching.impl.PentahoCacheManagerFactory$RegistrationHandler$1 onSuccess
+INFO: New Caching Service registered
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/home/marcosd94/ETL-portal/data-integration/launcher/../lib/slf4j-log4j12-1.7.7.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/home/marcosd94/ETL-portal/data-integration/plugins/pentaho-big-data-plugin/lib/slf4j-log4j12-1.7.3.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+18:57:44,121 ERROR [WebjarsURLConnection] Error Transforming zip
+java.io.IOException: Pipe closed
+	at java.io.PipedInputStream.checkStateForReceive(PipedInputStream.java:261)
+	at java.io.PipedInputStream.receive(PipedInputStream.java:227)
+	at java.io.PipedOutputStream.write(PipedOutputStream.java:149)
+	at java.util.zip.DeflaterOutputStream.deflate(DeflaterOutputStream.java:253)
+	at java.util.zip.ZipOutputStream.closeEntry(ZipOutputStream.java:238)
+	at org.pentaho.osgi.platform.webjars.WebjarsURLConnection.transform(WebjarsURLConnection.java:190)
+	at org.pentaho.osgi.platform.webjars.WebjarsURLConnection.access$000(WebjarsURLConnection.java:54)
+	at org.pentaho.osgi.platform.webjars.WebjarsURLConnection$2.call(WebjarsURLConnection.java:90)
+	at org.pentaho.osgi.platform.webjars.WebjarsURLConnection$2.call(WebjarsURLConnection.java:87)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Jul 25, 2016 6:57:44 PM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be /lineage
+Jul 25, 2016 6:57:44 PM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be /marketplace
+18:57:45,117 ERROR [WebjarsURLConnection] Error Transforming zip
+java.io.IOException: Pipe closed
+	at java.io.PipedInputStream.checkStateForReceive(PipedInputStream.java:261)
+	at java.io.PipedInputStream.receive(PipedInputStream.java:227)
+	at java.io.PipedOutputStream.write(PipedOutputStream.java:149)
+	at java.util.zip.DeflaterOutputStream.deflate(DeflaterOutputStream.java:253)
+	at java.util.zip.ZipOutputStream.closeEntry(ZipOutputStream.java:238)
+	at org.pentaho.osgi.platform.webjars.WebjarsURLConnection.transform(WebjarsURLConnection.java:190)
+	at org.pentaho.osgi.platform.webjars.WebjarsURLConnection.access$000(WebjarsURLConnection.java:54)
+	at org.pentaho.osgi.platform.webjars.WebjarsURLConnection$2.call(WebjarsURLConnection.java:90)
+	at org.pentaho.osgi.platform.webjars.WebjarsURLConnection$2.call(WebjarsURLConnection.java:87)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2016/07/25 18:57:45 - CARGAR_DETALLES_FUNCIONARIOS - Start of job execution
+2016/07/25 18:57:45 - CARGAR_DETALLES_FUNCIONARIOS - Starting entry [Transformation 2]
+2016/07/25 18:57:45 - Transformation 2 - Loading transformation from XML file [/home/marcosd94/ETL-portal/pentaho/Transformaciones/T_CARGA_DETALLES.ktr]
+2016/07/25 19:33:58 - CARGAR_DETALLES_FUNCIONARIOS - Finished job entry [Transformation 2] (result=[true])
+2016/07/25 19:33:58 - CARGAR_DETALLES_FUNCIONARIOS - Job execution finished
+2016/07/25 19:33:59 - Kitchen - Finished!
+2016/07/25 19:34:00 - Kitchen - Start=2016/07/25 18:57:38.296, Stop=2016/07/25 19:33:59.641
+2016/07/25 19:34:00 - Kitchen - Processing ended after 36 minutes and 21 seconds (2181 seconds total).
+19:34:18,290 INFO  [KarafInstance] 
+*******************************************************************************
+*** Karaf Instance Number: 1 at /home/marcosd94/ETL-portal/data-integration ***
+***   /./system/karaf//data1                                                ***
+*** Karaf Port:8801                                                         ***
+*** OSGI Service Port:9050                                                  ***
+*******************************************************************************
+Jul 25, 2016 7:34:25 PM org.apache.karaf.main.Main$KarafLockCallback lockAquired
+INFO: Lock acquired. Setting startlevel to 100
+log4j: System property is :null
+log4j: Standard DocumentBuilderFactory search succeded.
+log4j: DocumentBuilderFactory is: org.apache.xerces.jaxp.DocumentBuilderFactoryImpl
+log4j: debug attribute= "null".
+log4j: Ignoring debug attribute.
+log4j: reset attribute= "false".
+log4j: Threshold ="null".
+log4j: Retreiving an instance of org.apache.log4j.Logger.
+log4j: Setting [org.pentaho.di] additivity to [true].
+log4j: Level value for org.pentaho.di is  [off].
+log4j: org.pentaho.di level set to OFF
+log4j: Class name: [org.apache.log4j.ConsoleAppender]
+log4j: Setting property [target] to [System.out].
+log4j: Parsing layout of class: "org.apache.log4j.PatternLayout"
+log4j: Setting property [conversionPattern] to [%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n].
+log4j: Adding appender named [console] to category [org.pentaho.di].
+log4j: Level value for root is  [off].
+log4j: root level set to OFF
+log4j: Adding appender named [console] to category [root].
+2016/07/25 19:34:25 - Kitchen - Start of run.
+2016-07-25 19:34:30.441:INFO:oejs.Server:jetty-8.1.15.v20140411
+2016-07-25 19:34:30.637:INFO:oejs.AbstractConnector:Started NIOSocketConnectorWrapper@0.0.0.0:9050
+log4j: reset attribute= "false".
+log4j: Threshold ="null".
+log4j:WARN No appenders could be found for logger (org.springframework.osgi.extender.internal.activator.ContextLoaderListener).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+Jul 25, 2016 7:34:31 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/core
+Jul 25, 2016 7:34:31 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/configuration/beans
+Jul 25, 2016 7:34:31 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/configuration/parameterized-types
+Jul 25, 2016 7:34:31 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/configuration/security
+Jul 25, 2016 7:34:31 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://schemas.xmlsoap.org/wsdl/
+Jul 25, 2016 7:34:31 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://www.w3.org/2005/08/addressing
+Jul 25, 2016 7:34:31 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://schemas.xmlsoap.org/ws/2004/08/addressing
+Jul 25, 2016 7:34:31 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-management (135) [org.apache.cxf.management.InstrumentationManager]
+Jul 25, 2016 7:34:31 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-wsdl (138) [org.apache.cxf.wsdl.WSDLManager]
+Jul 25, 2016 7:34:31 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-bindings-xml (140) [org.apache.cxf.binding.xml.XMLBindingFactory, org.apache.cxf.binding.xml.wsdl11.XMLWSDLExtensionLoader]
+Jul 25, 2016 7:34:31 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-bindings-soap (141) [org.apache.cxf.binding.soap.SoapBindingFactory, org.apache.cxf.binding.soap.SoapTransportFactory]
+Jul 25, 2016 7:34:31 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/bindings/soap
+Jul 25, 2016 7:34:31 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-policy (165) [org.apache.cxf.ws.policy.PolicyEngine, org.apache.cxf.policy.PolicyDataEngine, org.apache.cxf.ws.policy.AssertionBuilderRegistry, org.apache.cxf.ws.policy.PolicyInterceptorProviderRegistry, org.apache.cxf.ws.policy.PolicyBuilder, org.apache.cxf.ws.policy.PolicyAnnotationListener, org.apache.cxf.ws.policy.attachment.ServiceModelPolicyProvider, org.apache.cxf.ws.policy.attachment.external.DomainExpressionBuilderRegistry, org.apache.cxf.ws.policy.attachment.external.EndpointReferenceDomainExpressionBuilder, org.apache.cxf.ws.policy.attachment.external.URIDomainExpressionBuilder, org.apache.cxf.ws.policy.attachment.wsdl11.Wsdl11AttachmentPolicyProvider, org.apache.cxf.ws.policy.mtom.MTOMAssertionBuilder, org.apache.cxf.ws.policy.mtom.MTOMPolicyInterceptorProvider]
+Jul 25, 2016 7:34:31 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-transports-http (142) [org.apache.cxf.transport.http.HTTPTransportFactory, org.apache.cxf.transport.http.HTTPWSDLExtensionLoader, org.apache.cxf.transport.http.policy.HTTPClientAssertionBuilder, org.apache.cxf.transport.http.policy.HTTPServerAssertionBuilder, org.apache.cxf.transport.http.policy.NoOpPolicyInterceptorProvider]
+Jul 25, 2016 7:34:31 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/transports/http/configuration
+Jul 25, 2016 7:34:31 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/simple
+Jul 25, 2016 7:34:31 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-frontend-jaxws (144) [org.apache.cxf.jaxws.context.WebServiceContextResourceResolver]
+Jul 25, 2016 7:34:31 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/jaxws
+Jul 25, 2016 7:34:31 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/jaxrs
+Jul 25, 2016 7:34:31 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/jaxrs-client
+Jul 25, 2016 7:34:31 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-bindings-corba (154) [org.apache.cxf.binding.corba.CorbaBindingFactory, org.apache.cxf.binding.corba.wsdl.WSDLExtensionRegister]
+Jul 25, 2016 7:34:31 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/binding/coloc
+Jul 25, 2016 7:34:31 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-transports-local (156) [org.apache.cxf.transport.local.LocalTransportFactory]
+Jul 25, 2016 7:34:31 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-bindings-object (157) [org.apache.cxf.binding.object.ObjectBindingFactory]
+Jul 25, 2016 7:34:31 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/binding/object
+Jul 25, 2016 7:34:31 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-transports-http-jetty (158) [org.apache.cxf.transport.http_jetty.JettyDestinationFactory, org.apache.cxf.transport.http_jetty.JettyHTTPServerEngineFactory, org.apache.cxf.transport.http.ContinuationProviderFactory]
+Jul 25, 2016 7:34:31 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/transports/http-jetty/configuration
+Jul 25, 2016 7:34:31 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-transports-jms (160) [org.apache.cxf.transport.jms.JMSTransportFactory, org.apache.cxf.transport.jms.wsdl11.JMSWSDLExtensionLoader]
+Jul 25, 2016 7:34:31 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-transports-udp (162) [org.apache.cxf.transport.udp.UDPTransportFactory]
+Jul 25, 2016 7:34:31 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/policy
+Jul 25, 2016 7:34:31 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://www.w3.org/ns/ws-policy
+Jul 25, 2016 7:34:31 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://www.w3.org/2006/07/ws-policy
+Jul 25, 2016 7:34:31 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://schemas.xmlsoap.org/ws/2004/09/policy
+Jul 25, 2016 7:34:31 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd
+Jul 25, 2016 7:34:31 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd
+Jul 25, 2016 7:34:31 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://www.w3.org/2000/09/xmldsig#
+Jul 25, 2016 7:34:31 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702
+Jul 25, 2016 7:34:31 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-addr (182) [org.apache.cxf.ws.addressing.policy.AddressingAssertionBuilder, org.apache.cxf.ws.addressing.policy.UsingAddressingAssertionBuilder, org.apache.cxf.ws.addressing.policy.AddressingPolicyInterceptorProvider, org.apache.cxf.ws.addressing.impl.AddressingWSDLExtensionLoader, org.apache.cxf.ws.addressing.WSAddressingFeature$WSAddressingFeatureApplier, org.apache.cxf.ws.addressing.MAPAggregator$MAPAggregatorLoader]
+Jul 25, 2016 7:34:31 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/ws/addressing
+Jul 25, 2016 7:34:31 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-mex (187) [org.apache.cxf.ws.mex.MEXServerListener]
+Jul 25, 2016 7:34:31 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-security (184) [org.apache.cxf.ws.security.policy.WSSecurityPolicyLoader, org.apache.cxf.ws.security.cache.CacheCleanupListener]
+Jul 25, 2016 7:34:31 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-rm (186) [org.apache.cxf.ws.rm.RMManager, org.apache.cxf.ws.rm.policy.RMPolicyInterceptorProvider, org.apache.cxf.ws.rm.policy.RM10AssertionBuilder, org.apache.cxf.ws.rm.policy.RM12AssertionBuilder, org.apache.cxf.ws.rm.policy.WSRMP12PolicyLoader, org.apache.cxf.ws.rm.policy.MC11PolicyLoader, org.apache.cxf.ws.rm.policy.RSPPolicyLoader]
+Jul 25, 2016 7:34:31 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/ws/rm/manager
+Jul 25, 2016 7:34:31 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://schemas.xmlsoap.org/ws/2005/02/rm/policy
+Jul 25, 2016 7:34:31 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-javascript (188) [org.apache.cxf.javascript.JavascriptServerListener]
+Jul 25, 2016 7:34:31 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/clustering
+Jul 25, 2016 7:34:31 PM org.pentaho.caching.impl.PentahoCacheManagerFactory$RegistrationHandler$1 onSuccess
+INFO: New Caching Service registered
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/home/marcosd94/ETL-portal/data-integration/launcher/../lib/slf4j-log4j12-1.7.7.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/home/marcosd94/ETL-portal/data-integration/plugins/pentaho-big-data-plugin/lib/slf4j-log4j12-1.7.3.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+19:34:33,072 ERROR [WebjarsURLConnection] Error Transforming zip
+java.io.IOException: Pipe closed
+	at java.io.PipedInputStream.checkStateForReceive(PipedInputStream.java:261)
+	at java.io.PipedInputStream.receive(PipedInputStream.java:227)
+	at java.io.PipedOutputStream.write(PipedOutputStream.java:149)
+	at java.util.zip.DeflaterOutputStream.deflate(DeflaterOutputStream.java:253)
+	at java.util.zip.ZipOutputStream.closeEntry(ZipOutputStream.java:238)
+	at org.pentaho.osgi.platform.webjars.WebjarsURLConnection.transform(WebjarsURLConnection.java:190)
+	at org.pentaho.osgi.platform.webjars.WebjarsURLConnection.access$000(WebjarsURLConnection.java:54)
+	at org.pentaho.osgi.platform.webjars.WebjarsURLConnection$2.call(WebjarsURLConnection.java:90)
+	at org.pentaho.osgi.platform.webjars.WebjarsURLConnection$2.call(WebjarsURLConnection.java:87)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+19:34:33,543 ERROR [WebjarsURLConnection] Error Transforming zip
+java.io.IOException: Pipe closed
+	at java.io.PipedInputStream.checkStateForReceive(PipedInputStream.java:261)
+	at java.io.PipedInputStream.receive(PipedInputStream.java:202)
+	at java.io.PipedOutputStream.write(PipedOutputStream.java:122)
+	at java.util.zip.ZipOutputStream.writeInt(ZipOutputStream.java:590)
+	at java.util.zip.ZipOutputStream.writeLOC(ZipOutputStream.java:374)
+	at java.util.zip.ZipOutputStream.putNextEntry(ZipOutputStream.java:221)
+	at java.util.jar.JarOutputStream.putNextEntry(JarOutputStream.java:109)
+	at org.pentaho.osgi.platform.webjars.WebjarsURLConnection.transform(WebjarsURLConnection.java:182)
+	at org.pentaho.osgi.platform.webjars.WebjarsURLConnection.access$000(WebjarsURLConnection.java:54)
+	at org.pentaho.osgi.platform.webjars.WebjarsURLConnection$2.call(WebjarsURLConnection.java:90)
+	at org.pentaho.osgi.platform.webjars.WebjarsURLConnection$2.call(WebjarsURLConnection.java:87)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Jul 25, 2016 7:34:34 PM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be /lineage
+Jul 25, 2016 7:34:34 PM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be /marketplace
+2016/07/25 19:34:35 - GENERAR_CSV_FUNCIONARIOS - Start of job execution
+2016/07/25 19:34:35 - GENERAR_CSV_FUNCIONARIOS - Starting entry [Transformation 2]
+2016/07/25 19:34:35 - Transformation 2 - Loading transformation from XML file [/home/marcosd94/ETL-portal/pentaho/Transformaciones/T_CONTADOR_REGISTROS.ktr]
+2016/07/25 19:34:35 - T_CONTADOR_REGISTROS - Dispatching started for transformation [T_CONTADOR_REGISTROS]
+2016/07/25 19:34:35 - T_CONTADOR_REGISTROS - Nr of arguments detected:1 
+2016/07/25 19:34:35 - T_CONTADOR_REGISTROS - This is not a replay transformation
+2016/07/25 19:34:35 - T_CONTADOR_REGISTROS - I found 3 different steps to launch.
+2016/07/25 19:34:35 - T_CONTADOR_REGISTROS - Allocating rowsets...
+2016/07/25 19:34:35 - T_CONTADOR_REGISTROS -  Allocating rowsets for step 0 --> Table input 2
+2016/07/25 19:34:35 - T_CONTADOR_REGISTROS -   prevcopies = 1, nextcopies=1
+2016/07/25 19:34:35 - T_CONTADOR_REGISTROS - Transformation allocated new rowset [Table input 2.0 - Set Variables.0]
+2016/07/25 19:34:35 - T_CONTADOR_REGISTROS -  Allocated 1 rowsets for step 0 --> Table input 2  
+2016/07/25 19:34:35 - T_CONTADOR_REGISTROS -  Allocating rowsets for step 1 --> Set Variables
+2016/07/25 19:34:35 - T_CONTADOR_REGISTROS -  Allocated 1 rowsets for step 1 --> Set Variables  
+2016/07/25 19:34:35 - T_CONTADOR_REGISTROS -  Allocating rowsets for step 2 --> Get Variables
+2016/07/25 19:34:35 - T_CONTADOR_REGISTROS -   prevcopies = 1, nextcopies=1
+2016/07/25 19:34:35 - T_CONTADOR_REGISTROS - Transformation allocated new rowset [Get Variables.0 - Table input 2.0]
+2016/07/25 19:34:35 - T_CONTADOR_REGISTROS -  Allocated 2 rowsets for step 2 --> Get Variables  
+2016/07/25 19:34:35 - T_CONTADOR_REGISTROS - Allocating Steps & StepData...
+2016/07/25 19:34:35 - T_CONTADOR_REGISTROS -  Transformation is about to allocate step [Table input 2] of type [TableInput]
+2016/07/25 19:34:35 - T_CONTADOR_REGISTROS -   Step has nrcopies=1
+2016/07/25 19:34:35 - Table input 2.0 - distribution activated
+2016/07/25 19:34:35 - Table input 2.0 - Starting allocation of buffers & new threads...
+2016/07/25 19:34:35 - Table input 2.0 - Step info: nrinput=1 nroutput=1
+2016/07/25 19:34:35 - Table input 2.0 - Got previous step from [Table input 2] #0 --> Get Variables
+2016/07/25 19:34:35 - Table input 2.0 - input rel is 1:1
+2016/07/25 19:34:35 - Table input 2.0 - Found input rowset [Get Variables.0 - Table input 2.0]
+2016/07/25 19:34:35 - Table input 2.0 - output rel. is  1:1
+2016/07/25 19:34:35 - Table input 2.0 - Found output rowset [Table input 2.0 - Set Variables.0]
+2016/07/25 19:34:35 - Table input 2.0 - Finished dispatching
+2016/07/25 19:34:35 - T_CONTADOR_REGISTROS -  Transformation has allocated a new step: [Table input 2].0
+2016/07/25 19:34:35 - T_CONTADOR_REGISTROS -  Transformation is about to allocate step [Set Variables] of type [SetVariable]
+2016/07/25 19:34:35 - T_CONTADOR_REGISTROS -   Step has nrcopies=1
+2016/07/25 19:34:35 - Set Variables.0 - distribution activated
+2016/07/25 19:34:35 - Set Variables.0 - Starting allocation of buffers & new threads...
+2016/07/25 19:34:35 - Set Variables.0 - Step info: nrinput=1 nroutput=0
+2016/07/25 19:34:35 - Set Variables.0 - Got previous step from [Set Variables] #0 --> Table input 2
+2016/07/25 19:34:35 - Set Variables.0 - input rel is 1:1
+2016/07/25 19:34:35 - Set Variables.0 - Found input rowset [Table input 2.0 - Set Variables.0]
+2016/07/25 19:34:35 - Set Variables.0 - Finished dispatching
+2016/07/25 19:34:35 - T_CONTADOR_REGISTROS -  Transformation has allocated a new step: [Set Variables].0
+2016/07/25 19:34:35 - T_CONTADOR_REGISTROS -  Transformation is about to allocate step [Get Variables] of type [GetVariable]
+2016/07/25 19:34:35 - T_CONTADOR_REGISTROS -   Step has nrcopies=1
+2016/07/25 19:34:35 - Get Variables.0 - distribution activated
+2016/07/25 19:34:35 - Get Variables.0 - Starting allocation of buffers & new threads...
+2016/07/25 19:34:35 - Get Variables.0 - Step info: nrinput=0 nroutput=1
+2016/07/25 19:34:35 - Get Variables.0 - output rel. is  1:1
+2016/07/25 19:34:35 - Get Variables.0 - Found output rowset [Get Variables.0 - Table input 2.0]
+2016/07/25 19:34:35 - Get Variables.0 - Finished dispatching
+2016/07/25 19:34:35 - T_CONTADOR_REGISTROS -  Transformation has allocated a new step: [Get Variables].0
+2016/07/25 19:34:35 - T_CONTADOR_REGISTROS - This transformation can be replayed with replay date: 2016/07/25 19:34:35
+2016/07/25 19:34:35 - T_CONTADOR_REGISTROS - Initialising 3 steps...
+2016/07/25 19:34:35 - Table input 2.0 - Released server socket on port 0
+2016/07/25 19:34:35 - Set Variables.0 - Released server socket on port 0
+2016/07/25 19:34:35 - Get Variables.0 - Released server socket on port 0
+2016/07/25 19:34:35 - ceamso - New database connection defined
+2016/07/25 19:34:35 - ceamso - Auto commit off
+2016/07/25 19:34:35 - Table input 2.0 - Connected to database...
+2016/07/25 19:34:35 - T_CONTADOR_REGISTROS - Step [Table input 2.0] initialized flawlessly.
+2016/07/25 19:34:35 - T_CONTADOR_REGISTROS - Step [Set Variables.0] initialized flawlessly.
+2016/07/25 19:34:35 - T_CONTADOR_REGISTROS - Step [Get Variables.0] initialized flawlessly.
+2016/07/25 19:34:35 - Table input 2.0 - Starting to run...
+2016/07/25 19:34:35 - Set Variables.0 - Starting to run...
+2016/07/25 19:34:35 - Get Variables.0 - Starting to run...
+2016/07/25 19:34:35 - T_CONTADOR_REGISTROS - Transformation has allocated 3 threads and 2 rowsets.
+2016/07/25 19:34:35 - Table input 2.0 - SQL query : select count(*) as cantidad from opendata.detalles_funcionarios where anho=2015 and mes=11
+2016/07/25 19:34:35 - Get Variables.0 - field [anho] has value [2015]
+2016/07/25 19:34:35 - Get Variables.0 - field [mes] has value [11]
+2016/07/25 19:34:35 - Get Variables.0 - field [ipBD] has value [localhost]
+2016/07/25 19:34:35 - Get Variables.0 - field [puertoBD] has value [5434]
+2016/07/25 19:34:35 - Get Variables.0 - field [nombreBD] has value [pentaho]
+2016/07/25 19:34:35 - Get Variables.0 - field [usuarioBD] has value [postgres]
+2016/07/25 19:34:35 - Get Variables.0 - field [passBD] has value [Op3nd4t4]
+2016/07/25 19:34:35 - Get Variables.0 - Signaling 'output done' to 1 output rowsets.
+2016/07/25 19:34:35 - Get Variables.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/07/25 19:34:36 - Table input 2.0 - Signaling 'output done' to 1 output rowsets.
+2016/07/25 19:34:36 - Table input 2.0 - Finished reading query, closing connection.
+2016/07/25 19:34:36 - Set Variables.0 - Setting environment variables...
+2016/07/25 19:34:36 - Set Variables.0 - Set variable cantidad to value [835140]
+2016/07/25 19:34:36 - ceamso - Commit on database connection [ceamso]
+2016/07/25 19:34:36 - Set Variables.0 - Finished after 1 rows.
+2016/07/25 19:34:36 - Set Variables.0 - Signaling 'output done' to 0 output rowsets.
+2016/07/25 19:34:36 - Set Variables.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/07/25 19:34:36 - ceamso - Connection to database closed!
+2016/07/25 19:34:36 - Table input 2.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2016/07/25 19:34:36 - GENERAR_CSV_FUNCIONARIOS - Starting entry [Simple evaluation]
+2016/07/25 19:34:36 - GENERAR_CSV_FUNCIONARIOS - Starting entry [Transformation]
+2016/07/25 19:34:36 - Transformation - Loading transformation from XML file [/home/marcosd94/ETL-portal/pentaho/Transformaciones/T_CSV_FUN.ktr]
+2016/07/25 19:34:37 - T_CSV_FUN - Dispatching started for transformation [T_CSV_FUN]
+2016/07/25 19:34:37 - T_CSV_FUN - Nr of arguments detected:1 
+2016/07/25 19:34:37 - T_CSV_FUN - This is not a replay transformation
+2016/07/25 19:34:37 - T_CSV_FUN - I found 3 different steps to launch.
+2016/07/25 19:34:37 - T_CSV_FUN - Allocating rowsets...
+2016/07/25 19:34:37 - T_CSV_FUN -  Allocating rowsets for step 0 --> Get Variables
+2016/07/25 19:34:37 - T_CSV_FUN -   prevcopies = 1, nextcopies=1
+2016/07/25 19:34:37 - T_CSV_FUN - Transformation allocated new rowset [Get Variables.0 - Table input.0]
+2016/07/25 19:34:37 - T_CSV_FUN -  Allocated 1 rowsets for step 0 --> Get Variables  
+2016/07/25 19:34:37 - T_CSV_FUN -  Allocating rowsets for step 1 --> Table input
+2016/07/25 19:34:37 - T_CSV_FUN -   prevcopies = 1, nextcopies=1
+2016/07/25 19:34:37 - T_CSV_FUN - Transformation allocated new rowset [Table input.0 - Text file output.0]
+2016/07/25 19:34:37 - T_CSV_FUN -  Allocated 2 rowsets for step 1 --> Table input  
+2016/07/25 19:34:37 - T_CSV_FUN -  Allocating rowsets for step 2 --> Text file output
+2016/07/25 19:34:37 - T_CSV_FUN -  Allocated 2 rowsets for step 2 --> Text file output  
+2016/07/25 19:34:37 - T_CSV_FUN - Allocating Steps & StepData...
+2016/07/25 19:34:37 - T_CSV_FUN -  Transformation is about to allocate step [Get Variables] of type [GetVariable]
+2016/07/25 19:34:37 - T_CSV_FUN -   Step has nrcopies=1
+2016/07/25 19:34:37 - Get Variables.0 - distribution activated
+2016/07/25 19:34:37 - Get Variables.0 - Starting allocation of buffers & new threads...
+2016/07/25 19:34:37 - Get Variables.0 - Step info: nrinput=0 nroutput=1
+2016/07/25 19:34:37 - Get Variables.0 - output rel. is  1:1
+2016/07/25 19:34:37 - Get Variables.0 - Found output rowset [Get Variables.0 - Table input.0]
+2016/07/25 19:34:37 - Get Variables.0 - Finished dispatching
+2016/07/25 19:34:37 - T_CSV_FUN -  Transformation has allocated a new step: [Get Variables].0
+2016/07/25 19:34:37 - T_CSV_FUN -  Transformation is about to allocate step [Table input] of type [TableInput]
+2016/07/25 19:34:37 - T_CSV_FUN -   Step has nrcopies=1
+2016/07/25 19:34:37 - Table input.0 - distribution activated
+2016/07/25 19:34:37 - Table input.0 - Starting allocation of buffers & new threads...
+2016/07/25 19:34:37 - Table input.0 - Step info: nrinput=1 nroutput=1
+2016/07/25 19:34:37 - Table input.0 - Got previous step from [Table input] #0 --> Get Variables
+2016/07/25 19:34:37 - Table input.0 - input rel is 1:1
+2016/07/25 19:34:37 - Table input.0 - Found input rowset [Get Variables.0 - Table input.0]
+2016/07/25 19:34:37 - Table input.0 - output rel. is  1:1
+2016/07/25 19:34:37 - Table input.0 - Found output rowset [Table input.0 - Text file output.0]
+2016/07/25 19:34:37 - Table input.0 - Finished dispatching
+2016/07/25 19:34:37 - T_CSV_FUN -  Transformation has allocated a new step: [Table input].0
+2016/07/25 19:34:37 - T_CSV_FUN -  Transformation is about to allocate step [Text file output] of type [TextFileOutput]
+2016/07/25 19:34:37 - T_CSV_FUN -   Step has nrcopies=1
+2016/07/25 19:34:37 - Text file output.0 - distribution activated
+2016/07/25 19:34:37 - Text file output.0 - Starting allocation of buffers & new threads...
+2016/07/25 19:34:37 - Text file output.0 - Step info: nrinput=1 nroutput=0
+2016/07/25 19:34:37 - Text file output.0 - Got previous step from [Text file output] #0 --> Table input
+2016/07/25 19:34:37 - Text file output.0 - input rel is 1:1
+2016/07/25 19:34:37 - Text file output.0 - Found input rowset [Table input.0 - Text file output.0]
+2016/07/25 19:34:37 - Text file output.0 - Finished dispatching
+2016/07/25 19:34:37 - T_CSV_FUN -  Transformation has allocated a new step: [Text file output].0
+2016/07/25 19:34:37 - T_CSV_FUN - This transformation can be replayed with replay date: 2016/07/25 19:34:37
+2016/07/25 19:34:37 - T_CSV_FUN - Initialising 3 steps...
+2016/07/25 19:34:37 - Get Variables.0 - Released server socket on port 0
+2016/07/25 19:34:37 - Table input.0 - Released server socket on port 0
+2016/07/25 19:34:37 - Text file output.0 - Released server socket on port 0
+2016/07/25 19:34:37 - ceamso - New database connection defined
+2016/07/25 19:34:37 - ceamso - Auto commit off
+2016/07/25 19:34:37 - Table input.0 - Connected to database...
+2016/07/25 19:34:37 - T_CSV_FUN - Step [Get Variables.0] initialized flawlessly.
+2016/07/25 19:34:37 - T_CSV_FUN - Step [Table input.0] initialized flawlessly.
+2016/07/25 19:34:37 - T_CSV_FUN - Step [Text file output.0] initialized flawlessly.
+2016/07/25 19:34:37 - Get Variables.0 - Starting to run...
+2016/07/25 19:34:37 - Table input.0 - Starting to run...
+2016/07/25 19:34:37 - Table input.0 - SQL query : select * from opendata.detalles_funcionarios where anho=2015 and mes=11
+2016/07/25 19:34:37 - Text file output.0 - Starting to run...
+2016/07/25 19:34:37 - T_CSV_FUN - Transformation has allocated 3 threads and 2 rowsets.
+2016/07/25 19:34:37 - Get Variables.0 - field [anho] has value [2015]
+2016/07/25 19:34:37 - Get Variables.0 - field [mes] has value [11]
+2016/07/25 19:34:37 - Get Variables.0 - field [ipBD] has value [localhost]
+2016/07/25 19:34:37 - Get Variables.0 - field [puertoBD] has value [5434]
+2016/07/25 19:34:37 - Get Variables.0 - field [nombreBD] has value [pentaho]
+2016/07/25 19:34:37 - Get Variables.0 - field [usuarioBD] has value [postgres]
+2016/07/25 19:34:37 - Get Variables.0 - field [csvFile] has value [/home/marcosd94/portal-sfp/client/dist/data/funcionarios_2015_11]
+2016/07/25 19:34:37 - Get Variables.0 - field [passBD] has value [Op3nd4t4]
+2016/07/25 19:34:37 - Get Variables.0 - Signaling 'output done' to 1 output rowsets.
+2016/07/25 19:34:37 - Get Variables.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/07/25 19:34:37 - Text file output.0 - Parent folder exists [file:///home/marcosd94/portal-sfp/client/dist/data]!
+2016/07/25 19:34:37 - Text file output.0 - Opening output stream using provider: None
+2016/07/25 19:34:37 - Text file output.0 - Opening output stream in encoding: UTF-8
+2016/07/25 19:34:37 - Text file output.0 - Opened new file with name [file:///home/marcosd94/portal-sfp/client/dist/data/funcionarios_2015_11.csv]
+2016/07/25 19:34:38 - Table input.0 - linenr 50000
+2016/07/25 19:34:38 - Text file output.0 - linenr 50000
+2016/07/25 19:34:38 - Table input.0 - linenr 100000
+2016/07/25 19:34:39 - Text file output.0 - linenr 100000
+2016/07/25 19:34:39 - Table input.0 - linenr 150000
+2016/07/25 19:34:39 - Text file output.0 - linenr 150000
+2016/07/25 19:34:39 - Table input.0 - linenr 200000
+2016/07/25 19:34:39 - Text file output.0 - linenr 200000
+2016/07/25 19:34:40 - Table input.0 - linenr 250000
+2016/07/25 19:34:40 - Text file output.0 - linenr 250000
+2016/07/25 19:34:40 - Table input.0 - linenr 300000
+2016/07/25 19:34:40 - Text file output.0 - linenr 300000
+2016/07/25 19:34:41 - Table input.0 - linenr 350000
+2016/07/25 19:34:41 - Text file output.0 - linenr 350000
+2016/07/25 19:34:41 - Table input.0 - linenr 400000
+2016/07/25 19:34:41 - Text file output.0 - linenr 400000
+2016/07/25 19:34:41 - Table input.0 - linenr 450000
+2016/07/25 19:34:41 - Text file output.0 - linenr 450000
+2016/07/25 19:34:42 - Table input.0 - linenr 500000
+2016/07/25 19:34:42 - Text file output.0 - linenr 500000
+2016/07/25 19:34:42 - Table input.0 - linenr 550000
+2016/07/25 19:34:42 - Text file output.0 - linenr 550000
+2016/07/25 19:34:43 - Table input.0 - linenr 600000
+2016/07/25 19:34:43 - Text file output.0 - linenr 600000
+2016/07/25 19:34:43 - Table input.0 - linenr 650000
+2016/07/25 19:34:43 - Text file output.0 - linenr 650000
+2016/07/25 19:34:44 - Table input.0 - linenr 700000
+2016/07/25 19:34:44 - Text file output.0 - linenr 700000
+2016/07/25 19:34:44 - Table input.0 - linenr 750000
+2016/07/25 19:34:44 - Text file output.0 - linenr 750000
+2016/07/25 19:34:45 - Table input.0 - linenr 800000
+2016/07/25 19:34:45 - Text file output.0 - linenr 800000
+2016/07/25 19:34:45 - Table input.0 - Signaling 'output done' to 1 output rowsets.
+2016/07/25 19:34:45 - Table input.0 - Finished reading query, closing connection.
+2016/07/25 19:34:45 - ceamso - Commit on database connection [ceamso]
+2016/07/25 19:34:45 - ceamso - Connection to database closed!
+2016/07/25 19:34:45 - Table input.0 - Finished processing (I=835140, O=0, R=0, W=835140, U=0, E=0)
+2016/07/25 19:34:45 - Text file output.0 - Signaling 'output done' to 0 output rowsets.
+2016/07/25 19:34:45 - Text file output.0 - Closing normal file ...
+2016/07/25 19:34:46 - Text file output.0 - Finished processing (I=0, O=835141, R=835140, W=835140, U=0, E=0)
+2016/07/25 19:34:46 - GENERAR_CSV_FUNCIONARIOS - Finished job entry [Transformation] (result=[true])
+2016/07/25 19:34:46 - GENERAR_CSV_FUNCIONARIOS - Finished job entry [Simple evaluation] (result=[true])
+2016/07/25 19:34:46 - GENERAR_CSV_FUNCIONARIOS - Finished job entry [Transformation 2] (result=[true])
+2016/07/25 19:34:46 - GENERAR_CSV_FUNCIONARIOS - Job execution finished
+2016/07/25 19:34:46 - Kitchen - Finished!
+2016/07/25 19:34:46 - Kitchen - Start=2016/07/25 19:34:25.946, Stop=2016/07/25 19:34:46.808
+2016/07/25 19:34:46 - Kitchen - Processing ended after 20 seconds.

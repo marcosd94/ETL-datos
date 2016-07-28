@@ -1,0 +1,1228 @@
+13:47:36,566 ERROR [KarafInstance] Could not get lock on /home/marcosd94/ETL-portal/data-integration/./system/karaf//data2/LOCKFILE
+java.io.FileNotFoundException: /home/marcosd94/ETL-portal/data-integration/./system/karaf/data2/LOCKFILE (Permission denied)
+	at java.io.RandomAccessFile.open(Native Method)
+	at java.io.RandomAccessFile.<init>(RandomAccessFile.java:241)
+	at org.pentaho.platform.osgi.KarafInstance.testLock(KarafInstance.java:192)
+	at org.pentaho.platform.osgi.KarafInstance.access$200(KarafInstance.java:53)
+	at org.pentaho.platform.osgi.KarafInstance$1.accept(KarafInstance.java:160)
+	at java.io.File.list(File.java:1155)
+	at org.pentaho.platform.osgi.KarafInstance.assignInstanceNumber(KarafInstance.java:147)
+	at org.pentaho.platform.osgi.KarafInstance.<init>(KarafInstance.java:73)
+	at org.pentaho.platform.osgi.KarafBoot.startup(KarafBoot.java:149)
+	at org.pentaho.di.osgi.registryExtension.OSGIPluginRegistryExtension.init(OSGIPluginRegistryExtension.java:105)
+	at org.pentaho.di.core.plugins.PluginRegistry.init(PluginRegistry.java:558)
+	at org.pentaho.di.core.KettleClientEnvironment.init(KettleClientEnvironment.java:101)
+	at org.pentaho.di.kitchen.Kitchen$1.call(Kitchen.java:89)
+	at org.pentaho.di.kitchen.Kitchen$1.call(Kitchen.java:83)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+13:47:36,661 INFO  [KarafInstance] 
+*******************************************************************************
+*** Karaf Instance Number: 1 at /home/marcosd94/ETL-portal/data-integration ***
+***   /./system/karaf//data1                                                ***
+*** Karaf Port:8801                                                         ***
+*** OSGI Service Port:9050                                                  ***
+*******************************************************************************
+Jul 21, 2016 1:47:37 PM org.apache.karaf.main.Main$KarafLockCallback lockAquired
+INFO: Lock acquired. Setting startlevel to 100
+log4j: System property is :null
+log4j: Standard DocumentBuilderFactory search succeded.
+log4j: DocumentBuilderFactory is: org.apache.xerces.jaxp.DocumentBuilderFactoryImpl
+log4j: debug attribute= "null".
+log4j: Ignoring debug attribute.
+log4j: reset attribute= "false".
+log4j: Threshold ="null".
+log4j: Retreiving an instance of org.apache.log4j.Logger.
+log4j: Setting [org.pentaho.di] additivity to [true].
+log4j: Level value for org.pentaho.di is  [off].
+log4j: org.pentaho.di level set to OFF
+log4j: Class name: [org.apache.log4j.ConsoleAppender]
+log4j: Setting property [target] to [System.out].
+log4j: Parsing layout of class: "org.apache.log4j.PatternLayout"
+log4j: Setting property [conversionPattern] to [%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n].
+log4j: Adding appender named [console] to category [org.pentaho.di].
+log4j: Level value for root is  [off].
+log4j: root level set to OFF
+log4j: Adding appender named [console] to category [root].
+2016/07/21 13:47:37 - Kitchen - Start of run.
+2016-07-21 13:47:41.892:INFO:oejs.Server:jetty-8.1.15.v20140411
+2016-07-21 13:47:41.931:INFO:oejs.AbstractConnector:Started NIOSocketConnectorWrapper@0.0.0.0:9050
+log4j: reset attribute= "false".
+log4j: Threshold ="null".
+log4j:WARN No appenders could be found for logger (org.springframework.osgi.extender.internal.activator.ContextLoaderListener).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+Jul 21, 2016 1:47:42 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/core
+Jul 21, 2016 1:47:42 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/configuration/beans
+Jul 21, 2016 1:47:42 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/configuration/parameterized-types
+Jul 21, 2016 1:47:42 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/configuration/security
+Jul 21, 2016 1:47:42 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://schemas.xmlsoap.org/wsdl/
+Jul 21, 2016 1:47:42 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://www.w3.org/2005/08/addressing
+Jul 21, 2016 1:47:42 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://schemas.xmlsoap.org/ws/2004/08/addressing
+Jul 21, 2016 1:47:42 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-management (135) [org.apache.cxf.management.InstrumentationManager]
+Jul 21, 2016 1:47:43 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-wsdl (138) [org.apache.cxf.wsdl.WSDLManager]
+Jul 21, 2016 1:47:43 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-bindings-xml (140) [org.apache.cxf.binding.xml.XMLBindingFactory, org.apache.cxf.binding.xml.wsdl11.XMLWSDLExtensionLoader]
+Jul 21, 2016 1:47:43 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-bindings-soap (141) [org.apache.cxf.binding.soap.SoapBindingFactory, org.apache.cxf.binding.soap.SoapTransportFactory]
+Jul 21, 2016 1:47:43 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/bindings/soap
+Jul 21, 2016 1:47:43 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-policy (165) [org.apache.cxf.ws.policy.PolicyEngine, org.apache.cxf.policy.PolicyDataEngine, org.apache.cxf.ws.policy.AssertionBuilderRegistry, org.apache.cxf.ws.policy.PolicyInterceptorProviderRegistry, org.apache.cxf.ws.policy.PolicyBuilder, org.apache.cxf.ws.policy.PolicyAnnotationListener, org.apache.cxf.ws.policy.attachment.ServiceModelPolicyProvider, org.apache.cxf.ws.policy.attachment.external.DomainExpressionBuilderRegistry, org.apache.cxf.ws.policy.attachment.external.EndpointReferenceDomainExpressionBuilder, org.apache.cxf.ws.policy.attachment.external.URIDomainExpressionBuilder, org.apache.cxf.ws.policy.attachment.wsdl11.Wsdl11AttachmentPolicyProvider, org.apache.cxf.ws.policy.mtom.MTOMAssertionBuilder, org.apache.cxf.ws.policy.mtom.MTOMPolicyInterceptorProvider]
+Jul 21, 2016 1:47:43 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-transports-http (142) [org.apache.cxf.transport.http.HTTPTransportFactory, org.apache.cxf.transport.http.HTTPWSDLExtensionLoader, org.apache.cxf.transport.http.policy.HTTPClientAssertionBuilder, org.apache.cxf.transport.http.policy.HTTPServerAssertionBuilder, org.apache.cxf.transport.http.policy.NoOpPolicyInterceptorProvider]
+Jul 21, 2016 1:47:43 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/transports/http/configuration
+Jul 21, 2016 1:47:43 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/simple
+Jul 21, 2016 1:47:43 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-frontend-jaxws (144) [org.apache.cxf.jaxws.context.WebServiceContextResourceResolver]
+Jul 21, 2016 1:47:43 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/jaxws
+Jul 21, 2016 1:47:43 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/jaxrs
+Jul 21, 2016 1:47:43 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/jaxrs-client
+Jul 21, 2016 1:47:43 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-bindings-corba (154) [org.apache.cxf.binding.corba.CorbaBindingFactory, org.apache.cxf.binding.corba.wsdl.WSDLExtensionRegister]
+Jul 21, 2016 1:47:43 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/binding/coloc
+Jul 21, 2016 1:47:43 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-transports-local (156) [org.apache.cxf.transport.local.LocalTransportFactory]
+Jul 21, 2016 1:47:43 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-bindings-object (157) [org.apache.cxf.binding.object.ObjectBindingFactory]
+Jul 21, 2016 1:47:43 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/binding/object
+Jul 21, 2016 1:47:43 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-transports-http-jetty (158) [org.apache.cxf.transport.http_jetty.JettyDestinationFactory, org.apache.cxf.transport.http_jetty.JettyHTTPServerEngineFactory, org.apache.cxf.transport.http.ContinuationProviderFactory]
+Jul 21, 2016 1:47:43 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/transports/http-jetty/configuration
+Jul 21, 2016 1:47:43 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-transports-jms (160) [org.apache.cxf.transport.jms.JMSTransportFactory, org.apache.cxf.transport.jms.wsdl11.JMSWSDLExtensionLoader]
+Jul 21, 2016 1:47:43 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-transports-udp (162) [org.apache.cxf.transport.udp.UDPTransportFactory]
+Jul 21, 2016 1:47:43 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/policy
+Jul 21, 2016 1:47:43 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://www.w3.org/ns/ws-policy
+Jul 21, 2016 1:47:43 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://www.w3.org/2006/07/ws-policy
+Jul 21, 2016 1:47:43 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://schemas.xmlsoap.org/ws/2004/09/policy
+Jul 21, 2016 1:47:43 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd
+Jul 21, 2016 1:47:43 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd
+Jul 21, 2016 1:47:43 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://www.w3.org/2000/09/xmldsig#
+Jul 21, 2016 1:47:43 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702
+Jul 21, 2016 1:47:43 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-addr (182) [org.apache.cxf.ws.addressing.policy.AddressingAssertionBuilder, org.apache.cxf.ws.addressing.policy.UsingAddressingAssertionBuilder, org.apache.cxf.ws.addressing.policy.AddressingPolicyInterceptorProvider, org.apache.cxf.ws.addressing.impl.AddressingWSDLExtensionLoader, org.apache.cxf.ws.addressing.WSAddressingFeature$WSAddressingFeatureApplier, org.apache.cxf.ws.addressing.MAPAggregator$MAPAggregatorLoader]
+Jul 21, 2016 1:47:43 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/ws/addressing
+Jul 21, 2016 1:47:43 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-mex (187) [org.apache.cxf.ws.mex.MEXServerListener]
+Jul 21, 2016 1:47:43 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-security (184) [org.apache.cxf.ws.security.policy.WSSecurityPolicyLoader, org.apache.cxf.ws.security.cache.CacheCleanupListener]
+Jul 21, 2016 1:47:43 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-rm (186) [org.apache.cxf.ws.rm.RMManager, org.apache.cxf.ws.rm.policy.RMPolicyInterceptorProvider, org.apache.cxf.ws.rm.policy.RM10AssertionBuilder, org.apache.cxf.ws.rm.policy.RM12AssertionBuilder, org.apache.cxf.ws.rm.policy.WSRMP12PolicyLoader, org.apache.cxf.ws.rm.policy.MC11PolicyLoader, org.apache.cxf.ws.rm.policy.RSPPolicyLoader]
+Jul 21, 2016 1:47:43 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/ws/rm/manager
+Jul 21, 2016 1:47:43 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://schemas.xmlsoap.org/ws/2005/02/rm/policy
+Jul 21, 2016 1:47:43 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-javascript (188) [org.apache.cxf.javascript.JavascriptServerListener]
+Jul 21, 2016 1:47:43 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/clustering
+Jul 21, 2016 1:47:43 PM org.pentaho.caching.impl.PentahoCacheManagerFactory$RegistrationHandler$1 onSuccess
+INFO: New Caching Service registered
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/home/marcosd94/ETL-portal/data-integration/launcher/../lib/slf4j-log4j12-1.7.7.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/home/marcosd94/ETL-portal/data-integration/plugins/pentaho-big-data-plugin/lib/slf4j-log4j12-1.7.3.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+Jul 21, 2016 1:47:45 PM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be /lineage
+13:47:45,774 ERROR [WebjarsURLConnection] Error Transforming zip
+java.io.IOException: Pipe closed
+	at java.io.PipedInputStream.checkStateForReceive(PipedInputStream.java:261)
+	at java.io.PipedInputStream.receive(PipedInputStream.java:227)
+	at java.io.PipedOutputStream.write(PipedOutputStream.java:149)
+	at java.util.zip.DeflaterOutputStream.deflate(DeflaterOutputStream.java:253)
+	at java.util.zip.ZipOutputStream.closeEntry(ZipOutputStream.java:238)
+	at org.pentaho.osgi.platform.webjars.WebjarsURLConnection.transform(WebjarsURLConnection.java:190)
+	at org.pentaho.osgi.platform.webjars.WebjarsURLConnection.access$000(WebjarsURLConnection.java:54)
+	at org.pentaho.osgi.platform.webjars.WebjarsURLConnection$2.call(WebjarsURLConnection.java:90)
+	at org.pentaho.osgi.platform.webjars.WebjarsURLConnection$2.call(WebjarsURLConnection.java:87)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+13:47:45,783 ERROR [WebjarsURLConnection] Error Transforming zip
+java.io.IOException: Pipe closed
+	at java.io.PipedInputStream.checkStateForReceive(PipedInputStream.java:261)
+	at java.io.PipedInputStream.receive(PipedInputStream.java:227)
+	at java.io.PipedOutputStream.write(PipedOutputStream.java:149)
+	at java.util.zip.DeflaterOutputStream.deflate(DeflaterOutputStream.java:253)
+	at java.util.zip.ZipOutputStream.closeEntry(ZipOutputStream.java:238)
+	at org.pentaho.osgi.platform.webjars.WebjarsURLConnection.transform(WebjarsURLConnection.java:190)
+	at org.pentaho.osgi.platform.webjars.WebjarsURLConnection.access$000(WebjarsURLConnection.java:54)
+	at org.pentaho.osgi.platform.webjars.WebjarsURLConnection$2.call(WebjarsURLConnection.java:90)
+	at org.pentaho.osgi.platform.webjars.WebjarsURLConnection$2.call(WebjarsURLConnection.java:87)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Jul 21, 2016 1:47:46 PM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be /marketplace
+2016/07/21 13:47:46 - CARGAR_TABLA_CONCURSOS - Start of job execution
+2016/07/21 13:47:46 - CARGAR_TABLA_CONCURSOS - Starting entry [Transformation 2]
+2016/07/21 13:47:46 - Transformation 2 - Loading transformation from XML file [file:///home/marcosd94/ETL-portal/cambioETL/T_CARGA_CONCURSOS.ktr]
+2016/07/21 13:47:47 - T_CARGA_CONCURSOS - Dispatching started for transformation [T_CARGA_CONCURSOS]
+2016/07/21 13:47:47 - T_CARGA_CONCURSOS - Nr of arguments detected:1 
+2016/07/21 13:47:47 - T_CARGA_CONCURSOS - This is not a replay transformation
+2016/07/21 13:47:47 - T_CARGA_CONCURSOS - I found 11 different steps to launch.
+2016/07/21 13:47:47 - T_CARGA_CONCURSOS - Allocating rowsets...
+2016/07/21 13:47:47 - T_CARGA_CONCURSOS -  Allocating rowsets for step 0 --> concursos
+2016/07/21 13:47:47 - T_CARGA_CONCURSOS -   prevcopies = 1, nextcopies=1
+2016/07/21 13:47:47 - T_CARGA_CONCURSOS - Transformation allocated new rowset [concursos.0 - Table output.0]
+2016/07/21 13:47:47 - T_CARGA_CONCURSOS -  Allocated 1 rowsets for step 0 --> concursos  
+2016/07/21 13:47:47 - T_CARGA_CONCURSOS -  Allocating rowsets for step 1 --> Table output
+2016/07/21 13:47:47 - T_CARGA_CONCURSOS -  Allocated 1 rowsets for step 1 --> Table output  
+2016/07/21 13:47:47 - T_CARGA_CONCURSOS -  Allocating rowsets for step 2 --> adjudicacion
+2016/07/21 13:47:47 - T_CARGA_CONCURSOS -   prevcopies = 1, nextcopies=1
+2016/07/21 13:47:47 - T_CARGA_CONCURSOS - Transformation allocated new rowset [adjudicacion.0 - Table output 2.0]
+2016/07/21 13:47:47 - T_CARGA_CONCURSOS -  Allocated 2 rowsets for step 2 --> adjudicacion  
+2016/07/21 13:47:47 - T_CARGA_CONCURSOS -  Allocating rowsets for step 3 --> Table output 2
+2016/07/21 13:47:47 - T_CARGA_CONCURSOS -  Allocated 2 rowsets for step 3 --> Table output 2  
+2016/07/21 13:47:47 - T_CARGA_CONCURSOS -  Allocating rowsets for step 4 --> evaluacion
+2016/07/21 13:47:47 - T_CARGA_CONCURSOS -   prevcopies = 1, nextcopies=1
+2016/07/21 13:47:47 - T_CARGA_CONCURSOS - Transformation allocated new rowset [evaluacion.0 - Table output 3.0]
+2016/07/21 13:47:47 - T_CARGA_CONCURSOS -  Allocated 3 rowsets for step 4 --> evaluacion  
+2016/07/21 13:47:47 - T_CARGA_CONCURSOS -  Allocating rowsets for step 5 --> Table output 3
+2016/07/21 13:47:47 - T_CARGA_CONCURSOS -  Allocated 3 rowsets for step 5 --> Table output 3  
+2016/07/21 13:47:47 - T_CARGA_CONCURSOS -  Allocating rowsets for step 6 --> postulacion
+2016/07/21 13:47:47 - T_CARGA_CONCURSOS -   prevcopies = 1, nextcopies=1
+2016/07/21 13:47:47 - T_CARGA_CONCURSOS - Transformation allocated new rowset [postulacion.0 - Table output 3 2.0]
+2016/07/21 13:47:47 - T_CARGA_CONCURSOS -  Allocated 4 rowsets for step 6 --> postulacion  
+2016/07/21 13:47:47 - T_CARGA_CONCURSOS -  Allocating rowsets for step 7 --> Table output 3 2
+2016/07/21 13:47:47 - T_CARGA_CONCURSOS -  Allocated 4 rowsets for step 7 --> Table output 3 2  
+2016/07/21 13:47:47 - T_CARGA_CONCURSOS -  Allocating rowsets for step 8 --> Get Variables
+2016/07/21 13:47:47 - T_CARGA_CONCURSOS -   prevcopies = 1, nextcopies=1
+2016/07/21 13:47:47 - T_CARGA_CONCURSOS - Transformation allocated new rowset [Get Variables.0 - concursos.0]
+2016/07/21 13:47:47 - T_CARGA_CONCURSOS -   prevcopies = 1, nextcopies=1
+2016/07/21 13:47:47 - T_CARGA_CONCURSOS - Transformation allocated new rowset [Get Variables.0 - adjudicacion.0]
+2016/07/21 13:47:47 - T_CARGA_CONCURSOS -   prevcopies = 1, nextcopies=1
+2016/07/21 13:47:47 - T_CARGA_CONCURSOS - Transformation allocated new rowset [Get Variables.0 - evaluacion.0]
+2016/07/21 13:47:47 - T_CARGA_CONCURSOS -   prevcopies = 1, nextcopies=1
+2016/07/21 13:47:47 - T_CARGA_CONCURSOS - Transformation allocated new rowset [Get Variables.0 - postulacion.0]
+2016/07/21 13:47:47 - T_CARGA_CONCURSOS -   prevcopies = 1, nextcopies=1
+2016/07/21 13:47:47 - T_CARGA_CONCURSOS - Transformation allocated new rowset [Get Variables.0 - concursabilidad.0]
+2016/07/21 13:47:47 - T_CARGA_CONCURSOS -  Allocated 9 rowsets for step 8 --> Get Variables  
+2016/07/21 13:47:47 - T_CARGA_CONCURSOS -  Allocating rowsets for step 9 --> concursabilidad
+2016/07/21 13:47:47 - T_CARGA_CONCURSOS -   prevcopies = 1, nextcopies=1
+2016/07/21 13:47:47 - T_CARGA_CONCURSOS - Transformation allocated new rowset [concursabilidad.0 - Table output 3 2 2.0]
+2016/07/21 13:47:47 - T_CARGA_CONCURSOS -  Allocated 10 rowsets for step 9 --> concursabilidad  
+2016/07/21 13:47:47 - T_CARGA_CONCURSOS -  Allocating rowsets for step 10 --> Table output 3 2 2
+2016/07/21 13:47:47 - T_CARGA_CONCURSOS -  Allocated 10 rowsets for step 10 --> Table output 3 2 2  
+2016/07/21 13:47:47 - T_CARGA_CONCURSOS - Allocating Steps & StepData...
+2016/07/21 13:47:47 - T_CARGA_CONCURSOS -  Transformation is about to allocate step [concursos] of type [TableInput]
+2016/07/21 13:47:47 - concursos.0 - distribution activated
+2016/07/21 13:47:47 - concursos.0 - Starting allocation of buffers & new threads...
+2016/07/21 13:47:47 - concursos.0 - Step info: nrinput=1 nroutput=1
+2016/07/21 13:47:47 - concursos.0 - Got previous step from [concursos] #0 --> Get Variables
+2016/07/21 13:47:47 - concursos.0 - input rel is 1:1
+2016/07/21 13:47:47 - concursos.0 - Found input rowset [Get Variables.0 - concursos.0]
+2016/07/21 13:47:47 - concursos.0 - output rel. is  1:1
+2016/07/21 13:47:47 - concursos.0 - Found output rowset [concursos.0 - Table output.0]
+2016/07/21 13:47:47 - concursos.0 - Finished dispatching
+2016/07/21 13:47:47 - T_CARGA_CONCURSOS -  Transformation has allocated a new step: [concursos].0
+2016/07/21 13:47:47 - T_CARGA_CONCURSOS -  Transformation is about to allocate step [Table output] of type [TableOutput]
+2016/07/21 13:47:47 - Table output.0 - distribution activated
+2016/07/21 13:47:47 - Table output.0 - Starting allocation of buffers & new threads...
+2016/07/21 13:47:47 - Table output.0 - Step info: nrinput=1 nroutput=0
+2016/07/21 13:47:47 - Table output.0 - Got previous step from [Table output] #0 --> concursos
+2016/07/21 13:47:47 - Table output.0 - input rel is 1:1
+2016/07/21 13:47:47 - Table output.0 - Found input rowset [concursos.0 - Table output.0]
+2016/07/21 13:47:47 - Table output.0 - Finished dispatching
+2016/07/21 13:47:47 - T_CARGA_CONCURSOS -  Transformation has allocated a new step: [Table output].0
+2016/07/21 13:47:47 - T_CARGA_CONCURSOS -  Transformation is about to allocate step [adjudicacion] of type [TableInput]
+2016/07/21 13:47:47 - adjudicacion.0 - distribution activated
+2016/07/21 13:47:47 - adjudicacion.0 - Starting allocation of buffers & new threads...
+2016/07/21 13:47:47 - adjudicacion.0 - Step info: nrinput=1 nroutput=1
+2016/07/21 13:47:47 - adjudicacion.0 - Got previous step from [adjudicacion] #0 --> Get Variables
+2016/07/21 13:47:47 - adjudicacion.0 - input rel is 1:1
+2016/07/21 13:47:47 - adjudicacion.0 - Found input rowset [Get Variables.0 - adjudicacion.0]
+2016/07/21 13:47:47 - adjudicacion.0 - output rel. is  1:1
+2016/07/21 13:47:47 - adjudicacion.0 - Found output rowset [adjudicacion.0 - Table output 2.0]
+2016/07/21 13:47:47 - adjudicacion.0 - Finished dispatching
+2016/07/21 13:47:47 - T_CARGA_CONCURSOS -  Transformation has allocated a new step: [adjudicacion].0
+2016/07/21 13:47:47 - T_CARGA_CONCURSOS -  Transformation is about to allocate step [Table output 2] of type [TableOutput]
+2016/07/21 13:47:47 - Table output 2.0 - distribution activated
+2016/07/21 13:47:47 - Table output 2.0 - Starting allocation of buffers & new threads...
+2016/07/21 13:47:47 - Table output 2.0 - Step info: nrinput=1 nroutput=0
+2016/07/21 13:47:47 - Table output 2.0 - Got previous step from [Table output 2] #0 --> adjudicacion
+2016/07/21 13:47:47 - Table output 2.0 - input rel is 1:1
+2016/07/21 13:47:47 - Table output 2.0 - Found input rowset [adjudicacion.0 - Table output 2.0]
+2016/07/21 13:47:47 - Table output 2.0 - Finished dispatching
+2016/07/21 13:47:47 - T_CARGA_CONCURSOS -  Transformation has allocated a new step: [Table output 2].0
+2016/07/21 13:47:47 - T_CARGA_CONCURSOS -  Transformation is about to allocate step [evaluacion] of type [TableInput]
+2016/07/21 13:47:47 - evaluacion.0 - distribution activated
+2016/07/21 13:47:47 - evaluacion.0 - Starting allocation of buffers & new threads...
+2016/07/21 13:47:47 - evaluacion.0 - Step info: nrinput=1 nroutput=1
+2016/07/21 13:47:47 - evaluacion.0 - Got previous step from [evaluacion] #0 --> Get Variables
+2016/07/21 13:47:47 - evaluacion.0 - input rel is 1:1
+2016/07/21 13:47:47 - evaluacion.0 - Found input rowset [Get Variables.0 - evaluacion.0]
+2016/07/21 13:47:47 - evaluacion.0 - output rel. is  1:1
+2016/07/21 13:47:47 - evaluacion.0 - Found output rowset [evaluacion.0 - Table output 3.0]
+2016/07/21 13:47:47 - evaluacion.0 - Finished dispatching
+2016/07/21 13:47:47 - T_CARGA_CONCURSOS -  Transformation has allocated a new step: [evaluacion].0
+2016/07/21 13:47:47 - T_CARGA_CONCURSOS -  Transformation is about to allocate step [Table output 3] of type [TableOutput]
+2016/07/21 13:47:47 - Table output 3.0 - distribution activated
+2016/07/21 13:47:47 - Table output 3.0 - Starting allocation of buffers & new threads...
+2016/07/21 13:47:47 - Table output 3.0 - Step info: nrinput=1 nroutput=0
+2016/07/21 13:47:47 - Table output 3.0 - Got previous step from [Table output 3] #0 --> evaluacion
+2016/07/21 13:47:47 - Table output 3.0 - input rel is 1:1
+2016/07/21 13:47:47 - Table output 3.0 - Found input rowset [evaluacion.0 - Table output 3.0]
+2016/07/21 13:47:47 - Table output 3.0 - Finished dispatching
+2016/07/21 13:47:47 - T_CARGA_CONCURSOS -  Transformation has allocated a new step: [Table output 3].0
+2016/07/21 13:47:47 - T_CARGA_CONCURSOS -  Transformation is about to allocate step [postulacion] of type [TableInput]
+2016/07/21 13:47:47 - postulacion.0 - distribution activated
+2016/07/21 13:47:47 - postulacion.0 - Starting allocation of buffers & new threads...
+2016/07/21 13:47:47 - postulacion.0 - Step info: nrinput=1 nroutput=1
+2016/07/21 13:47:47 - postulacion.0 - Got previous step from [postulacion] #0 --> Get Variables
+2016/07/21 13:47:47 - postulacion.0 - input rel is 1:1
+2016/07/21 13:47:47 - postulacion.0 - Found input rowset [Get Variables.0 - postulacion.0]
+2016/07/21 13:47:47 - postulacion.0 - output rel. is  1:1
+2016/07/21 13:47:47 - postulacion.0 - Found output rowset [postulacion.0 - Table output 3 2.0]
+2016/07/21 13:47:47 - postulacion.0 - Finished dispatching
+2016/07/21 13:47:47 - T_CARGA_CONCURSOS -  Transformation has allocated a new step: [postulacion].0
+2016/07/21 13:47:47 - T_CARGA_CONCURSOS -  Transformation is about to allocate step [Table output 3 2] of type [TableOutput]
+2016/07/21 13:47:47 - Table output 3 2.0 - distribution activated
+2016/07/21 13:47:47 - Table output 3 2.0 - Starting allocation of buffers & new threads...
+2016/07/21 13:47:47 - Table output 3 2.0 - Step info: nrinput=1 nroutput=0
+2016/07/21 13:47:47 - Table output 3 2.0 - Got previous step from [Table output 3 2] #0 --> postulacion
+2016/07/21 13:47:47 - Table output 3 2.0 - input rel is 1:1
+2016/07/21 13:47:47 - Table output 3 2.0 - Found input rowset [postulacion.0 - Table output 3 2.0]
+2016/07/21 13:47:47 - Table output 3 2.0 - Finished dispatching
+2016/07/21 13:47:47 - T_CARGA_CONCURSOS -  Transformation has allocated a new step: [Table output 3 2].0
+2016/07/21 13:47:47 - T_CARGA_CONCURSOS -  Transformation is about to allocate step [Get Variables] of type [GetVariable]
+2016/07/21 13:47:47 - Get Variables.0 - distribution de-activated
+2016/07/21 13:47:47 - Get Variables.0 - Starting allocation of buffers & new threads...
+2016/07/21 13:47:47 - Get Variables.0 - Step info: nrinput=0 nroutput=5
+2016/07/21 13:47:47 - Get Variables.0 - output rel. is  1:1
+2016/07/21 13:47:47 - Get Variables.0 - Found output rowset [Get Variables.0 - concursos.0]
+2016/07/21 13:47:47 - Get Variables.0 - output rel. is  1:1
+2016/07/21 13:47:47 - Get Variables.0 - Found output rowset [Get Variables.0 - adjudicacion.0]
+2016/07/21 13:47:47 - Get Variables.0 - output rel. is  1:1
+2016/07/21 13:47:47 - Get Variables.0 - Found output rowset [Get Variables.0 - evaluacion.0]
+2016/07/21 13:47:47 - Get Variables.0 - output rel. is  1:1
+2016/07/21 13:47:47 - Get Variables.0 - Found output rowset [Get Variables.0 - postulacion.0]
+2016/07/21 13:47:47 - Get Variables.0 - output rel. is  1:1
+2016/07/21 13:47:47 - Get Variables.0 - Found output rowset [Get Variables.0 - concursabilidad.0]
+2016/07/21 13:47:47 - Get Variables.0 - Finished dispatching
+2016/07/21 13:47:47 - T_CARGA_CONCURSOS -  Transformation has allocated a new step: [Get Variables].0
+2016/07/21 13:47:47 - T_CARGA_CONCURSOS -  Transformation is about to allocate step [concursabilidad] of type [TableInput]
+2016/07/21 13:47:47 - concursabilidad.0 - distribution activated
+2016/07/21 13:47:47 - concursabilidad.0 - Starting allocation of buffers & new threads...
+2016/07/21 13:47:47 - concursabilidad.0 - Step info: nrinput=1 nroutput=1
+2016/07/21 13:47:47 - concursabilidad.0 - Got previous step from [concursabilidad] #0 --> Get Variables
+2016/07/21 13:47:47 - concursabilidad.0 - input rel is 1:1
+2016/07/21 13:47:47 - concursabilidad.0 - Found input rowset [Get Variables.0 - concursabilidad.0]
+2016/07/21 13:47:47 - concursabilidad.0 - output rel. is  1:1
+2016/07/21 13:47:47 - concursabilidad.0 - Found output rowset [concursabilidad.0 - Table output 3 2 2.0]
+2016/07/21 13:47:47 - concursabilidad.0 - Finished dispatching
+2016/07/21 13:47:47 - T_CARGA_CONCURSOS -  Transformation has allocated a new step: [concursabilidad].0
+2016/07/21 13:47:47 - T_CARGA_CONCURSOS -  Transformation is about to allocate step [Table output 3 2 2] of type [TableOutput]
+2016/07/21 13:47:47 - Table output 3 2 2.0 - distribution activated
+2016/07/21 13:47:47 - Table output 3 2 2.0 - Starting allocation of buffers & new threads...
+2016/07/21 13:47:47 - Table output 3 2 2.0 - Step info: nrinput=1 nroutput=0
+2016/07/21 13:47:47 - Table output 3 2 2.0 - Got previous step from [Table output 3 2 2] #0 --> concursabilidad
+2016/07/21 13:47:47 - Table output 3 2 2.0 - input rel is 1:1
+2016/07/21 13:47:47 - Table output 3 2 2.0 - Found input rowset [concursabilidad.0 - Table output 3 2 2.0]
+2016/07/21 13:47:47 - Table output 3 2 2.0 - Finished dispatching
+2016/07/21 13:47:47 - T_CARGA_CONCURSOS -  Transformation has allocated a new step: [Table output 3 2 2].0
+2016/07/21 13:47:47 - T_CARGA_CONCURSOS - This transformation can be replayed with replay date: 2016/07/21 13:47:47
+2016/07/21 13:47:47 - T_CARGA_CONCURSOS - Initialising 11 steps...
+2016/07/21 13:47:47 - concursos.0 - Released server socket on port 0
+2016/07/21 13:47:47 - adjudicacion.0 - Released server socket on port 0
+2016/07/21 13:47:47 - Table output.0 - Released server socket on port 0
+2016/07/21 13:47:47 - Table output 2.0 - Released server socket on port 0
+2016/07/21 13:47:47 - Table output 3.0 - Released server socket on port 0
+2016/07/21 13:47:47 - Get Variables.0 - Released server socket on port 0
+2016/07/21 13:47:47 - evaluacion.0 - Released server socket on port 0
+2016/07/21 13:47:47 - concursabilidad.0 - Released server socket on port 0
+2016/07/21 13:47:47 - Table output 3 2.0 - Released server socket on port 0
+2016/07/21 13:47:47 - postulacion.0 - Released server socket on port 0
+2016/07/21 13:47:47 - Table output 3 2 2.0 - Released server socket on port 0
+2016/07/21 13:47:47 - sfp - New database connection defined
+2016/07/21 13:47:47 - sfp - New database connection defined
+2016/07/21 13:47:47 - ceamso - New database connection defined
+2016/07/21 13:47:47 - ceamso - New database connection defined
+2016/07/21 13:47:47 - sfp - New database connection defined
+2016/07/21 13:47:47 - ceamso - New database connection defined
+2016/07/21 13:47:47 - ceamso - New database connection defined
+2016/07/21 13:47:47 - ceamso - New database connection defined
+2016/07/21 13:47:47 - sfp - New database connection defined
+2016/07/21 13:47:47 - ceamso - New database connection defined
+2016/07/21 13:47:47 - Table output 3.0 - ERROR (version 6.0.0.0-353, build 1 from 2015-10-07 13.27.43 by buildguy) : An error occurred intialising this step: 
+2016/07/21 13:47:47 - Table output 3.0 - Error occurred while trying to connect to the database
+2016/07/21 13:47:47 - Table output 3.0 - 
+2016/07/21 13:47:47 - Table output 3.0 - Error connecting to database: (using class org.postgresql.Driver)
+2016/07/21 13:47:47 - Table output 3.0 - FATAL: database "pentaho" does not exist
+2016/07/21 13:47:47 - concursabilidad.0 - ERROR (version 6.0.0.0-353, build 1 from 2015-10-07 13.27.43 by buildguy) : An error occurred, processing will be stopped: 
+2016/07/21 13:47:47 - concursabilidad.0 - Error occurred while trying to connect to the database
+2016/07/21 13:47:47 - concursabilidad.0 - 
+2016/07/21 13:47:47 - concursabilidad.0 - Error connecting to database: (using class org.postgresql.Driver)
+2016/07/21 13:47:47 - concursabilidad.0 - FATAL: database "pentaho" does not exist
+2016/07/21 13:47:47 - Table output 2.0 - ERROR (version 6.0.0.0-353, build 1 from 2015-10-07 13.27.43 by buildguy) : An error occurred intialising this step: 
+2016/07/21 13:47:47 - Table output 2.0 - Error occurred while trying to connect to the database
+2016/07/21 13:47:47 - Table output 2.0 - 
+2016/07/21 13:47:47 - Table output 2.0 - Error connecting to database: (using class org.postgresql.Driver)
+2016/07/21 13:47:47 - Table output 2.0 - FATAL: database "pentaho" does not exist
+2016/07/21 13:47:47 - Table output 3 2 2.0 - ERROR (version 6.0.0.0-353, build 1 from 2015-10-07 13.27.43 by buildguy) : An error occurred intialising this step: 
+2016/07/21 13:47:47 - Table output 3 2 2.0 - Error occurred while trying to connect to the database
+2016/07/21 13:47:47 - Table output 3 2 2.0 - 
+2016/07/21 13:47:47 - Table output 3 2 2.0 - Error connecting to database: (using class org.postgresql.Driver)
+2016/07/21 13:47:47 - Table output 3 2 2.0 - FATAL: database "pentaho" does not exist
+2016/07/21 13:47:47 - Table output.0 - ERROR (version 6.0.0.0-353, build 1 from 2015-10-07 13.27.43 by buildguy) : An error occurred intialising this step: 
+2016/07/21 13:47:47 - Table output.0 - Error occurred while trying to connect to the database
+2016/07/21 13:47:47 - Table output.0 - 
+2016/07/21 13:47:47 - Table output.0 - Error connecting to database: (using class org.postgresql.Driver)
+2016/07/21 13:47:47 - Table output.0 - FATAL: database "pentaho" does not exist
+2016/07/21 13:47:47 - Table output 3 2.0 - ERROR (version 6.0.0.0-353, build 1 from 2015-10-07 13.27.43 by buildguy) : An error occurred intialising this step: 
+2016/07/21 13:47:47 - Table output 3 2.0 - Error occurred while trying to connect to the database
+2016/07/21 13:47:47 - Table output 3 2.0 - 
+2016/07/21 13:47:47 - Table output 3 2.0 - Error connecting to database: (using class org.postgresql.Driver)
+2016/07/21 13:47:47 - Table output 3 2.0 - FATAL: database "pentaho" does not exist
+2016/07/21 13:47:47 - sfp - Auto commit off
+2016/07/21 13:47:47 - sfp - Auto commit off
+2016/07/21 13:47:47 - evaluacion.0 - Connected to database...
+2016/07/21 13:47:47 - sfp - Auto commit off
+2016/07/21 13:47:47 - concursos.0 - Connected to database...
+2016/07/21 13:47:47 - sfp - Auto commit off
+2016/07/21 13:47:47 - postulacion.0 - Connected to database...
+2016/07/21 13:47:47 - adjudicacion.0 - Connected to database...
+2016/07/21 13:47:47 - concursabilidad.0 - ERROR (version 6.0.0.0-353, build 1 from 2015-10-07 13.27.43 by buildguy) : Error initializing step [concursabilidad]
+2016/07/21 13:47:47 - Table output 2.0 - ERROR (version 6.0.0.0-353, build 1 from 2015-10-07 13.27.43 by buildguy) : Error initializing step [Table output 2]
+2016/07/21 13:47:47 - Table output 3 2.0 - ERROR (version 6.0.0.0-353, build 1 from 2015-10-07 13.27.43 by buildguy) : Error initializing step [Table output 3 2]
+2016/07/21 13:47:47 - Table output 3.0 - ERROR (version 6.0.0.0-353, build 1 from 2015-10-07 13.27.43 by buildguy) : Error initializing step [Table output 3]
+2016/07/21 13:47:47 - Table output.0 - ERROR (version 6.0.0.0-353, build 1 from 2015-10-07 13.27.43 by buildguy) : Error initializing step [Table output]
+2016/07/21 13:47:47 - Table output 3 2 2.0 - ERROR (version 6.0.0.0-353, build 1 from 2015-10-07 13.27.43 by buildguy) : Error initializing step [Table output 3 2 2]
+2016/07/21 13:47:47 - T_CARGA_CONCURSOS - Step [concursos.0] initialized flawlessly.
+2016/07/21 13:47:47 - T_CARGA_CONCURSOS - ERROR (version 6.0.0.0-353, build 1 from 2015-10-07 13.27.43 by buildguy) : Step [Table output.0] failed to initialize!
+2016/07/21 13:47:47 - T_CARGA_CONCURSOS - Step [adjudicacion.0] initialized flawlessly.
+2016/07/21 13:47:47 - T_CARGA_CONCURSOS - ERROR (version 6.0.0.0-353, build 1 from 2015-10-07 13.27.43 by buildguy) : Step [Table output 2.0] failed to initialize!
+2016/07/21 13:47:47 - T_CARGA_CONCURSOS - Step [evaluacion.0] initialized flawlessly.
+2016/07/21 13:47:47 - T_CARGA_CONCURSOS - ERROR (version 6.0.0.0-353, build 1 from 2015-10-07 13.27.43 by buildguy) : Step [Table output 3.0] failed to initialize!
+2016/07/21 13:47:47 - T_CARGA_CONCURSOS - Step [postulacion.0] initialized flawlessly.
+2016/07/21 13:47:47 - T_CARGA_CONCURSOS - ERROR (version 6.0.0.0-353, build 1 from 2015-10-07 13.27.43 by buildguy) : Step [Table output 3 2.0] failed to initialize!
+2016/07/21 13:47:47 - T_CARGA_CONCURSOS - Step [Get Variables.0] initialized flawlessly.
+2016/07/21 13:47:47 - T_CARGA_CONCURSOS - ERROR (version 6.0.0.0-353, build 1 from 2015-10-07 13.27.43 by buildguy) : Step [concursabilidad.0] failed to initialize!
+2016/07/21 13:47:47 - T_CARGA_CONCURSOS - ERROR (version 6.0.0.0-353, build 1 from 2015-10-07 13.27.43 by buildguy) : Step [Table output 3 2 2.0] failed to initialize!
+2016/07/21 13:47:47 - concursos.0 - Finished reading query, closing connection.
+2016/07/21 13:47:47 - sfp - Connection to database closed!
+2016/07/21 13:47:47 - Table output.0 - ERROR (version 6.0.0.0-353, build 1 from 2015-10-07 13.27.43 by buildguy) : Unexpected error rolling back the database connection.
+2016/07/21 13:47:47 - Table output.0 - ERROR (version 6.0.0.0-353, build 1 from 2015-10-07 13.27.43 by buildguy) : org.pentaho.di.core.exception.KettleDatabaseException: 
+2016/07/21 13:47:47 - Table output.0 - Unable to get database metadata from this database connection
+2016/07/21 13:47:47 - Table output.0 -  at org.pentaho.di.job.Job.run (Job.java:435)
+2016/07/21 13:47:47 - Table output.0 -  at org.pentaho.di.job.Job.execute (Job.java:546)
+2016/07/21 13:47:47 - Table output.0 -  at org.pentaho.di.job.Job.execute (Job.java:873)
+2016/07/21 13:47:47 - Table output.0 -  at org.pentaho.di.job.Job.execute (Job.java:730)
+2016/07/21 13:47:47 - Table output.0 -  at org.pentaho.di.job.entries.trans.JobEntryTrans.execute (JobEntryTrans.java:1068)
+2016/07/21 13:47:47 - Table output.0 -  at org.pentaho.di.trans.Trans.execute (Trans.java:613)
+2016/07/21 13:47:47 - Table output.0 -  at org.pentaho.di.trans.Trans.prepareExecution (Trans.java:1126)
+2016/07/21 13:47:47 - Table output.0 -  at org.pentaho.di.trans.steps.tableoutput.TableOutput.dispose (TableOutput.java:610)
+2016/07/21 13:47:47 - Table output.0 -  at org.pentaho.di.core.database.Database.rollback (Database.java:825)
+2016/07/21 13:47:47 - Table output.0 -  at org.pentaho.di.core.database.Database.rollback (Database.java:833)
+2016/07/21 13:47:47 - Table output.0 -  at org.pentaho.di.core.database.Database.getDatabaseMetaData (Database.java:2738)
+2016/07/21 13:47:47 - Table output.0 - 
+2016/07/21 13:47:47 - Table output.0 - 	at org.pentaho.di.core.database.Database.getDatabaseMetaData(Database.java:2740)
+2016/07/21 13:47:47 - Table output.0 - 	at org.pentaho.di.core.database.Database.rollback(Database.java:833)
+2016/07/21 13:47:47 - Table output.0 - 	at org.pentaho.di.core.database.Database.rollback(Database.java:825)
+2016/07/21 13:47:47 - Table output.0 - 	at org.pentaho.di.trans.steps.tableoutput.TableOutput.dispose(TableOutput.java:610)
+2016/07/21 13:47:47 - Table output.0 - 	at org.pentaho.di.trans.Trans.prepareExecution(Trans.java:1126)
+2016/07/21 13:47:47 - Table output.0 - 	at org.pentaho.di.trans.Trans.execute(Trans.java:613)
+2016/07/21 13:47:47 - Table output.0 - 	at org.pentaho.di.job.entries.trans.JobEntryTrans.execute(JobEntryTrans.java:1068)
+2016/07/21 13:47:47 - Table output.0 - 	at org.pentaho.di.job.Job.execute(Job.java:730)
+2016/07/21 13:47:47 - Table output.0 - 	at org.pentaho.di.job.Job.execute(Job.java:873)
+2016/07/21 13:47:47 - Table output.0 - 	at org.pentaho.di.job.Job.execute(Job.java:546)
+2016/07/21 13:47:47 - Table output.0 - 	at org.pentaho.di.job.Job.run(Job.java:435)
+2016/07/21 13:47:47 - Table output.0 - Caused by: java.lang.NullPointerException
+2016/07/21 13:47:47 - Table output.0 - 	at org.pentaho.di.core.database.Database.getDatabaseMetaData(Database.java:2738)
+2016/07/21 13:47:47 - Table output.0 - 	... 10 more
+2016/07/21 13:47:47 - adjudicacion.0 - Finished reading query, closing connection.
+2016/07/21 13:47:47 - sfp - Connection to database closed!
+2016/07/21 13:47:47 - Table output 2.0 - ERROR (version 6.0.0.0-353, build 1 from 2015-10-07 13.27.43 by buildguy) : Unexpected error rolling back the database connection.
+2016/07/21 13:47:47 - Table output 2.0 - ERROR (version 6.0.0.0-353, build 1 from 2015-10-07 13.27.43 by buildguy) : org.pentaho.di.core.exception.KettleDatabaseException: 
+2016/07/21 13:47:47 - Table output 2.0 - Unable to get database metadata from this database connection
+2016/07/21 13:47:47 - Table output 2.0 -  at org.pentaho.di.job.Job.run (Job.java:435)
+2016/07/21 13:47:47 - Table output 2.0 -  at org.pentaho.di.job.Job.execute (Job.java:546)
+2016/07/21 13:47:47 - Table output 2.0 -  at org.pentaho.di.job.Job.execute (Job.java:873)
+2016/07/21 13:47:47 - Table output 2.0 -  at org.pentaho.di.job.Job.execute (Job.java:730)
+2016/07/21 13:47:47 - Table output 2.0 -  at org.pentaho.di.job.entries.trans.JobEntryTrans.execute (JobEntryTrans.java:1068)
+2016/07/21 13:47:47 - Table output 2.0 -  at org.pentaho.di.trans.Trans.execute (Trans.java:613)
+2016/07/21 13:47:47 - Table output 2.0 -  at org.pentaho.di.trans.Trans.prepareExecution (Trans.java:1126)
+2016/07/21 13:47:47 - Table output 2.0 -  at org.pentaho.di.trans.steps.tableoutput.TableOutput.dispose (TableOutput.java:610)
+2016/07/21 13:47:47 - Table output 2.0 -  at org.pentaho.di.core.database.Database.rollback (Database.java:825)
+2016/07/21 13:47:47 - Table output 2.0 -  at org.pentaho.di.core.database.Database.rollback (Database.java:833)
+2016/07/21 13:47:47 - Table output 2.0 -  at org.pentaho.di.core.database.Database.getDatabaseMetaData (Database.java:2738)
+2016/07/21 13:47:47 - Table output 2.0 - 
+2016/07/21 13:47:47 - Table output 2.0 - 	at org.pentaho.di.core.database.Database.getDatabaseMetaData(Database.java:2740)
+2016/07/21 13:47:47 - Table output 2.0 - 	at org.pentaho.di.core.database.Database.rollback(Database.java:833)
+2016/07/21 13:47:47 - Table output 2.0 - 	at org.pentaho.di.core.database.Database.rollback(Database.java:825)
+2016/07/21 13:47:47 - Table output 2.0 - 	at org.pentaho.di.trans.steps.tableoutput.TableOutput.dispose(TableOutput.java:610)
+2016/07/21 13:47:47 - Table output 2.0 - 	at org.pentaho.di.trans.Trans.prepareExecution(Trans.java:1126)
+2016/07/21 13:47:47 - Table output 2.0 - 	at org.pentaho.di.trans.Trans.execute(Trans.java:613)
+2016/07/21 13:47:47 - Table output 2.0 - 	at org.pentaho.di.job.entries.trans.JobEntryTrans.execute(JobEntryTrans.java:1068)
+2016/07/21 13:47:47 - Table output 2.0 - 	at org.pentaho.di.job.Job.execute(Job.java:730)
+2016/07/21 13:47:47 - Table output 2.0 - 	at org.pentaho.di.job.Job.execute(Job.java:873)
+2016/07/21 13:47:47 - Table output 2.0 - 	at org.pentaho.di.job.Job.execute(Job.java:546)
+2016/07/21 13:47:47 - Table output 2.0 - 	at org.pentaho.di.job.Job.run(Job.java:435)
+2016/07/21 13:47:47 - Table output 2.0 - Caused by: java.lang.NullPointerException
+2016/07/21 13:47:47 - Table output 2.0 - 	at org.pentaho.di.core.database.Database.getDatabaseMetaData(Database.java:2738)
+2016/07/21 13:47:47 - Table output 2.0 - 	... 10 more
+2016/07/21 13:47:47 - evaluacion.0 - Finished reading query, closing connection.
+2016/07/21 13:47:47 - sfp - Connection to database closed!
+2016/07/21 13:47:47 - Table output 3.0 - ERROR (version 6.0.0.0-353, build 1 from 2015-10-07 13.27.43 by buildguy) : Unexpected error rolling back the database connection.
+2016/07/21 13:47:47 - Table output 3.0 - ERROR (version 6.0.0.0-353, build 1 from 2015-10-07 13.27.43 by buildguy) : org.pentaho.di.core.exception.KettleDatabaseException: 
+2016/07/21 13:47:47 - Table output 3.0 - Unable to get database metadata from this database connection
+2016/07/21 13:47:47 - Table output 3.0 -  at org.pentaho.di.job.Job.run (Job.java:435)
+2016/07/21 13:47:47 - Table output 3.0 -  at org.pentaho.di.job.Job.execute (Job.java:546)
+2016/07/21 13:47:47 - Table output 3.0 -  at org.pentaho.di.job.Job.execute (Job.java:873)
+2016/07/21 13:47:47 - Table output 3.0 -  at org.pentaho.di.job.Job.execute (Job.java:730)
+2016/07/21 13:47:47 - Table output 3.0 -  at org.pentaho.di.job.entries.trans.JobEntryTrans.execute (JobEntryTrans.java:1068)
+2016/07/21 13:47:47 - Table output 3.0 -  at org.pentaho.di.trans.Trans.execute (Trans.java:613)
+2016/07/21 13:47:47 - Table output 3.0 -  at org.pentaho.di.trans.Trans.prepareExecution (Trans.java:1126)
+2016/07/21 13:47:47 - Table output 3.0 -  at org.pentaho.di.trans.steps.tableoutput.TableOutput.dispose (TableOutput.java:610)
+2016/07/21 13:47:47 - Table output 3.0 -  at org.pentaho.di.core.database.Database.rollback (Database.java:825)
+2016/07/21 13:47:47 - Table output 3.0 -  at org.pentaho.di.core.database.Database.rollback (Database.java:833)
+2016/07/21 13:47:47 - Table output 3.0 -  at org.pentaho.di.core.database.Database.getDatabaseMetaData (Database.java:2738)
+2016/07/21 13:47:47 - Table output 3.0 - 
+2016/07/21 13:47:47 - Table output 3.0 - 	at org.pentaho.di.core.database.Database.getDatabaseMetaData(Database.java:2740)
+2016/07/21 13:47:47 - Table output 3.0 - 	at org.pentaho.di.core.database.Database.rollback(Database.java:833)
+2016/07/21 13:47:47 - Table output 3.0 - 	at org.pentaho.di.core.database.Database.rollback(Database.java:825)
+2016/07/21 13:47:47 - Table output 3.0 - 	at org.pentaho.di.trans.steps.tableoutput.TableOutput.dispose(TableOutput.java:610)
+2016/07/21 13:47:47 - Table output 3.0 - 	at org.pentaho.di.trans.Trans.prepareExecution(Trans.java:1126)
+2016/07/21 13:47:47 - Table output 3.0 - 	at org.pentaho.di.trans.Trans.execute(Trans.java:613)
+2016/07/21 13:47:47 - Table output 3.0 - 	at org.pentaho.di.job.entries.trans.JobEntryTrans.execute(JobEntryTrans.java:1068)
+2016/07/21 13:47:47 - Table output 3.0 - 	at org.pentaho.di.job.Job.execute(Job.java:730)
+2016/07/21 13:47:47 - Table output 3.0 - 	at org.pentaho.di.job.Job.execute(Job.java:873)
+2016/07/21 13:47:47 - Table output 3.0 - 	at org.pentaho.di.job.Job.execute(Job.java:546)
+2016/07/21 13:47:47 - Table output 3.0 - 	at org.pentaho.di.job.Job.run(Job.java:435)
+2016/07/21 13:47:47 - Table output 3.0 - Caused by: java.lang.NullPointerException
+2016/07/21 13:47:47 - Table output 3.0 - 	at org.pentaho.di.core.database.Database.getDatabaseMetaData(Database.java:2738)
+2016/07/21 13:47:47 - Table output 3.0 - 	... 10 more
+2016/07/21 13:47:47 - postulacion.0 - Finished reading query, closing connection.
+2016/07/21 13:47:47 - sfp - Connection to database closed!
+2016/07/21 13:47:47 - Table output 3 2.0 - ERROR (version 6.0.0.0-353, build 1 from 2015-10-07 13.27.43 by buildguy) : Unexpected error rolling back the database connection.
+2016/07/21 13:47:47 - Table output 3 2.0 - ERROR (version 6.0.0.0-353, build 1 from 2015-10-07 13.27.43 by buildguy) : org.pentaho.di.core.exception.KettleDatabaseException: 
+2016/07/21 13:47:47 - Table output 3 2.0 - Unable to get database metadata from this database connection
+2016/07/21 13:47:47 - Table output 3 2.0 -  at org.pentaho.di.job.Job.run (Job.java:435)
+2016/07/21 13:47:47 - Table output 3 2.0 -  at org.pentaho.di.job.Job.execute (Job.java:546)
+2016/07/21 13:47:47 - Table output 3 2.0 -  at org.pentaho.di.job.Job.execute (Job.java:873)
+2016/07/21 13:47:47 - Table output 3 2.0 -  at org.pentaho.di.job.Job.execute (Job.java:730)
+2016/07/21 13:47:47 - Table output 3 2.0 -  at org.pentaho.di.job.entries.trans.JobEntryTrans.execute (JobEntryTrans.java:1068)
+2016/07/21 13:47:47 - Table output 3 2.0 -  at org.pentaho.di.trans.Trans.execute (Trans.java:613)
+2016/07/21 13:47:47 - Table output 3 2.0 -  at org.pentaho.di.trans.Trans.prepareExecution (Trans.java:1126)
+2016/07/21 13:47:47 - Table output 3 2.0 -  at org.pentaho.di.trans.steps.tableoutput.TableOutput.dispose (TableOutput.java:610)
+2016/07/21 13:47:47 - Table output 3 2.0 -  at org.pentaho.di.core.database.Database.rollback (Database.java:825)
+2016/07/21 13:47:47 - Table output 3 2.0 -  at org.pentaho.di.core.database.Database.rollback (Database.java:833)
+2016/07/21 13:47:47 - Table output 3 2.0 -  at org.pentaho.di.core.database.Database.getDatabaseMetaData (Database.java:2738)
+2016/07/21 13:47:47 - Table output 3 2.0 - 
+2016/07/21 13:47:47 - Table output 3 2.0 - 	at org.pentaho.di.core.database.Database.getDatabaseMetaData(Database.java:2740)
+2016/07/21 13:47:47 - Table output 3 2.0 - 	at org.pentaho.di.core.database.Database.rollback(Database.java:833)
+2016/07/21 13:47:47 - Table output 3 2.0 - 	at org.pentaho.di.core.database.Database.rollback(Database.java:825)
+2016/07/21 13:47:47 - Table output 3 2.0 - 	at org.pentaho.di.trans.steps.tableoutput.TableOutput.dispose(TableOutput.java:610)
+2016/07/21 13:47:47 - Table output 3 2.0 - 	at org.pentaho.di.trans.Trans.prepareExecution(Trans.java:1126)
+2016/07/21 13:47:47 - Table output 3 2.0 - 	at org.pentaho.di.trans.Trans.execute(Trans.java:613)
+2016/07/21 13:47:47 - Table output 3 2.0 - 	at org.pentaho.di.job.entries.trans.JobEntryTrans.execute(JobEntryTrans.java:1068)
+2016/07/21 13:47:47 - Table output 3 2.0 - 	at org.pentaho.di.job.Job.execute(Job.java:730)
+2016/07/21 13:47:47 - Table output 3 2.0 - 	at org.pentaho.di.job.Job.execute(Job.java:873)
+2016/07/21 13:47:47 - Table output 3 2.0 - 	at org.pentaho.di.job.Job.execute(Job.java:546)
+2016/07/21 13:47:47 - Table output 3 2.0 - 	at org.pentaho.di.job.Job.run(Job.java:435)
+2016/07/21 13:47:47 - Table output 3 2.0 - Caused by: java.lang.NullPointerException
+2016/07/21 13:47:47 - Table output 3 2.0 - 	at org.pentaho.di.core.database.Database.getDatabaseMetaData(Database.java:2738)
+2016/07/21 13:47:47 - Table output 3 2.0 - 	... 10 more
+2016/07/21 13:47:47 - concursabilidad.0 - Finished reading query, closing connection.
+2016/07/21 13:47:47 - Table output 3 2 2.0 - ERROR (version 6.0.0.0-353, build 1 from 2015-10-07 13.27.43 by buildguy) : Unexpected error rolling back the database connection.
+2016/07/21 13:47:47 - Table output 3 2 2.0 - ERROR (version 6.0.0.0-353, build 1 from 2015-10-07 13.27.43 by buildguy) : org.pentaho.di.core.exception.KettleDatabaseException: 
+2016/07/21 13:47:47 - Table output 3 2 2.0 - Unable to get database metadata from this database connection
+2016/07/21 13:47:47 - Table output 3 2 2.0 -  at org.pentaho.di.job.Job.run (Job.java:435)
+2016/07/21 13:47:47 - Table output 3 2 2.0 -  at org.pentaho.di.job.Job.execute (Job.java:546)
+2016/07/21 13:47:47 - Table output 3 2 2.0 -  at org.pentaho.di.job.Job.execute (Job.java:873)
+2016/07/21 13:47:47 - Table output 3 2 2.0 -  at org.pentaho.di.job.Job.execute (Job.java:730)
+2016/07/21 13:47:47 - Table output 3 2 2.0 -  at org.pentaho.di.job.entries.trans.JobEntryTrans.execute (JobEntryTrans.java:1068)
+2016/07/21 13:47:47 - Table output 3 2 2.0 -  at org.pentaho.di.trans.Trans.execute (Trans.java:613)
+2016/07/21 13:47:47 - Table output 3 2 2.0 -  at org.pentaho.di.trans.Trans.prepareExecution (Trans.java:1126)
+2016/07/21 13:47:47 - Table output 3 2 2.0 -  at org.pentaho.di.trans.steps.tableoutput.TableOutput.dispose (TableOutput.java:610)
+2016/07/21 13:47:47 - Table output 3 2 2.0 -  at org.pentaho.di.core.database.Database.rollback (Database.java:825)
+2016/07/21 13:47:47 - Table output 3 2 2.0 -  at org.pentaho.di.core.database.Database.rollback (Database.java:833)
+2016/07/21 13:47:47 - Table output 3 2 2.0 -  at org.pentaho.di.core.database.Database.getDatabaseMetaData (Database.java:2738)
+2016/07/21 13:47:47 - Table output 3 2 2.0 - 
+2016/07/21 13:47:47 - Table output 3 2 2.0 - 	at org.pentaho.di.core.database.Database.getDatabaseMetaData(Database.java:2740)
+2016/07/21 13:47:47 - Table output 3 2 2.0 - 	at org.pentaho.di.core.database.Database.rollback(Database.java:833)
+2016/07/21 13:47:47 - Table output 3 2 2.0 - 	at org.pentaho.di.core.database.Database.rollback(Database.java:825)
+2016/07/21 13:47:47 - Table output 3 2 2.0 - 	at org.pentaho.di.trans.steps.tableoutput.TableOutput.dispose(TableOutput.java:610)
+2016/07/21 13:47:47 - Table output 3 2 2.0 - 	at org.pentaho.di.trans.Trans.prepareExecution(Trans.java:1126)
+2016/07/21 13:47:47 - Table output 3 2 2.0 - 	at org.pentaho.di.trans.Trans.execute(Trans.java:613)
+2016/07/21 13:47:47 - Table output 3 2 2.0 - 	at org.pentaho.di.job.entries.trans.JobEntryTrans.execute(JobEntryTrans.java:1068)
+2016/07/21 13:47:47 - Table output 3 2 2.0 - 	at org.pentaho.di.job.Job.execute(Job.java:730)
+2016/07/21 13:47:47 - Table output 3 2 2.0 - 	at org.pentaho.di.job.Job.execute(Job.java:873)
+2016/07/21 13:47:47 - Table output 3 2 2.0 - 	at org.pentaho.di.job.Job.execute(Job.java:546)
+2016/07/21 13:47:47 - Table output 3 2 2.0 - 	at org.pentaho.di.job.Job.run(Job.java:435)
+2016/07/21 13:47:47 - Table output 3 2 2.0 - Caused by: java.lang.NullPointerException
+2016/07/21 13:47:47 - Table output 3 2 2.0 - 	at org.pentaho.di.core.database.Database.getDatabaseMetaData(Database.java:2738)
+2016/07/21 13:47:47 - Table output 3 2 2.0 - 	... 10 more
+2016/07/21 13:47:47 - Transformation 2 - ERROR (version 6.0.0.0-353, build 1 from 2015-10-07 13.27.43 by buildguy) : Unable to prepare for execution of the transformation
+2016/07/21 13:47:47 - Transformation 2 - ERROR (version 6.0.0.0-353, build 1 from 2015-10-07 13.27.43 by buildguy) : org.pentaho.di.core.exception.KettleException: 
+2016/07/21 13:47:47 - Transformation 2 - We failed to initialize at least one step.  Execution can not begin!
+2016/07/21 13:47:47 - Transformation 2 - 
+2016/07/21 13:47:47 - Transformation 2 - 
+2016/07/21 13:47:47 - Transformation 2 - 	at org.pentaho.di.trans.Trans.prepareExecution(Trans.java:1155)
+2016/07/21 13:47:47 - Transformation 2 - 	at org.pentaho.di.trans.Trans.execute(Trans.java:613)
+2016/07/21 13:47:47 - Transformation 2 - 	at org.pentaho.di.job.entries.trans.JobEntryTrans.execute(JobEntryTrans.java:1068)
+2016/07/21 13:47:47 - Transformation 2 - 	at org.pentaho.di.job.Job.execute(Job.java:730)
+2016/07/21 13:47:47 - Transformation 2 - 	at org.pentaho.di.job.Job.execute(Job.java:873)
+2016/07/21 13:47:47 - Transformation 2 - 	at org.pentaho.di.job.Job.execute(Job.java:546)
+2016/07/21 13:47:47 - Transformation 2 - 	at org.pentaho.di.job.Job.run(Job.java:435)
+2016/07/21 13:47:47 - CARGAR_TABLA_CONCURSOS - Starting entry [UpdateFallido 2]
+2016/07/21 13:47:47 - UpdateFallido 2 - Loading transformation from XML file [file:///home/marcosd94/ETL-portal/cambioETL/UpdateFallido.ktr]
+2016/07/21 13:47:47 - UpdateFallido - Dispatching started for transformation [UpdateFallido]
+2016/07/21 13:47:47 - Execute SQL script.0 - Finished reading query, closing connection.
+2016/07/21 13:47:47 - Get Variables.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/07/21 13:47:47 - Execute SQL script.0 - Finished processing (I=0, O=0, R=0, W=1, U=0, E=0)
+2016/07/21 13:47:47 - CARGAR_TABLA_CONCURSOS - Starting entry [Write To Log 2]
+2016/07/21 13:47:47 - ETL_PORTAL_SFP - Error durante la inserción en la tabla de concursos
+2016/07/21 13:47:47 - CARGAR_TABLA_CONCURSOS - Starting entry [Mail 2]
+2016/07/21 13:47:47 - Mail 2 - Added file 'file:///home/marcosd94/ETL-portal/data-integration/LOGFILE.log' to the mail message in a zip archive.
+2016/07/21 13:49:55 - Mail 2 - ERROR (version 6.0.0.0-353, build 1 from 2015-10-07 13.27.43 by buildguy) : Problem while sending message: javax.mail.MessagingException: Could not connect to SMTP host: mail.konecta.com.py, port: 25;
+2016/07/21 13:49:55 - Mail 2 -   nested exception is:
+2016/07/21 13:49:55 - Mail 2 - 	java.net.ConnectException: Connection timed out
+2016/07/21 13:49:55 - CARGAR_TABLA_CONCURSOS - Finished job entry [Mail 2] (result=[false])
+2016/07/21 13:49:55 - CARGAR_TABLA_CONCURSOS - Finished job entry [Write To Log 2] (result=[false])
+2016/07/21 13:49:55 - CARGAR_TABLA_CONCURSOS - Finished job entry [UpdateFallido 2] (result=[false])
+2016/07/21 13:49:55 - CARGAR_TABLA_CONCURSOS - Finished job entry [Transformation 2] (result=[false])
+2016/07/21 13:49:55 - CARGAR_TABLA_CONCURSOS - Job execution finished
+2016/07/21 13:49:55 - Kitchen - Finished!
+2016/07/21 13:49:55 - Kitchen - ERROR (version 6.0.0.0-353, build 1 from 2015-10-07 13.27.43 by buildguy) : Finished with errors
+2016/07/21 13:49:55 - Kitchen - Start=2016/07/21 13:47:37.958, Stop=2016/07/21 13:49:55.337
+2016/07/21 13:49:55 - Kitchen - Processing ended after 2 minutes and 17 seconds (137 seconds total).
+13:49:57,158 ERROR [KarafInstance] Could not get lock on /home/marcosd94/ETL-portal/data-integration/./system/karaf//data2/LOCKFILE
+java.io.FileNotFoundException: /home/marcosd94/ETL-portal/data-integration/./system/karaf/data2/LOCKFILE (Permission denied)
+	at java.io.RandomAccessFile.open(Native Method)
+	at java.io.RandomAccessFile.<init>(RandomAccessFile.java:241)
+	at org.pentaho.platform.osgi.KarafInstance.testLock(KarafInstance.java:192)
+	at org.pentaho.platform.osgi.KarafInstance.access$200(KarafInstance.java:53)
+	at org.pentaho.platform.osgi.KarafInstance$1.accept(KarafInstance.java:160)
+	at java.io.File.list(File.java:1155)
+	at org.pentaho.platform.osgi.KarafInstance.assignInstanceNumber(KarafInstance.java:147)
+	at org.pentaho.platform.osgi.KarafInstance.<init>(KarafInstance.java:73)
+	at org.pentaho.platform.osgi.KarafBoot.startup(KarafBoot.java:149)
+	at org.pentaho.di.osgi.registryExtension.OSGIPluginRegistryExtension.init(OSGIPluginRegistryExtension.java:105)
+	at org.pentaho.di.core.plugins.PluginRegistry.init(PluginRegistry.java:558)
+	at org.pentaho.di.core.KettleClientEnvironment.init(KettleClientEnvironment.java:101)
+	at org.pentaho.di.kitchen.Kitchen$1.call(Kitchen.java:89)
+	at org.pentaho.di.kitchen.Kitchen$1.call(Kitchen.java:83)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+13:49:57,231 INFO  [KarafInstance] 
+*******************************************************************************
+*** Karaf Instance Number: 1 at /home/marcosd94/ETL-portal/data-integration ***
+***   /./system/karaf//data1                                                ***
+*** Karaf Port:8801                                                         ***
+*** OSGI Service Port:9050                                                  ***
+*******************************************************************************
+Jul 21, 2016 1:49:58 PM org.apache.karaf.main.Main$KarafLockCallback lockAquired
+INFO: Lock acquired. Setting startlevel to 100
+log4j: System property is :null
+log4j: Standard DocumentBuilderFactory search succeded.
+log4j: DocumentBuilderFactory is: org.apache.xerces.jaxp.DocumentBuilderFactoryImpl
+log4j: debug attribute= "null".
+log4j: Ignoring debug attribute.
+log4j: reset attribute= "false".
+log4j: Threshold ="null".
+log4j: Retreiving an instance of org.apache.log4j.Logger.
+log4j: Setting [org.pentaho.di] additivity to [true].
+log4j: Level value for org.pentaho.di is  [off].
+log4j: org.pentaho.di level set to OFF
+log4j: Class name: [org.apache.log4j.ConsoleAppender]
+log4j: Setting property [target] to [System.out].
+log4j: Parsing layout of class: "org.apache.log4j.PatternLayout"
+log4j: Setting property [conversionPattern] to [%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n].
+log4j: Adding appender named [console] to category [org.pentaho.di].
+log4j: Level value for root is  [off].
+log4j: root level set to OFF
+log4j: Adding appender named [console] to category [root].
+2016/07/21 13:49:58 - Kitchen - Start of run.
+2016-07-21 13:50:00.486:INFO:oejs.Server:jetty-8.1.15.v20140411
+2016-07-21 13:50:00.514:INFO:oejs.AbstractConnector:Started NIOSocketConnectorWrapper@0.0.0.0:9050
+log4j: reset attribute= "false".
+log4j: Threshold ="null".
+log4j:WARN No appenders could be found for logger (org.springframework.osgi.extender.internal.activator.ContextLoaderListener).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+Jul 21, 2016 1:50:01 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/core
+Jul 21, 2016 1:50:01 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/configuration/beans
+Jul 21, 2016 1:50:01 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/configuration/parameterized-types
+Jul 21, 2016 1:50:01 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/configuration/security
+Jul 21, 2016 1:50:01 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://schemas.xmlsoap.org/wsdl/
+Jul 21, 2016 1:50:01 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://www.w3.org/2005/08/addressing
+Jul 21, 2016 1:50:01 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://schemas.xmlsoap.org/ws/2004/08/addressing
+Jul 21, 2016 1:50:01 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-management (135) [org.apache.cxf.management.InstrumentationManager]
+Jul 21, 2016 1:50:01 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-wsdl (138) [org.apache.cxf.wsdl.WSDLManager]
+Jul 21, 2016 1:50:01 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-bindings-xml (140) [org.apache.cxf.binding.xml.XMLBindingFactory, org.apache.cxf.binding.xml.wsdl11.XMLWSDLExtensionLoader]
+Jul 21, 2016 1:50:01 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-bindings-soap (141) [org.apache.cxf.binding.soap.SoapBindingFactory, org.apache.cxf.binding.soap.SoapTransportFactory]
+Jul 21, 2016 1:50:01 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/bindings/soap
+Jul 21, 2016 1:50:01 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-transports-http (142) [org.apache.cxf.transport.http.HTTPTransportFactory, org.apache.cxf.transport.http.HTTPWSDLExtensionLoader, org.apache.cxf.transport.http.policy.HTTPClientAssertionBuilder, org.apache.cxf.transport.http.policy.HTTPServerAssertionBuilder, org.apache.cxf.transport.http.policy.NoOpPolicyInterceptorProvider]
+Jul 21, 2016 1:50:01 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-policy (165) [org.apache.cxf.ws.policy.PolicyEngine, org.apache.cxf.policy.PolicyDataEngine, org.apache.cxf.ws.policy.AssertionBuilderRegistry, org.apache.cxf.ws.policy.PolicyInterceptorProviderRegistry, org.apache.cxf.ws.policy.PolicyBuilder, org.apache.cxf.ws.policy.PolicyAnnotationListener, org.apache.cxf.ws.policy.attachment.ServiceModelPolicyProvider, org.apache.cxf.ws.policy.attachment.external.DomainExpressionBuilderRegistry, org.apache.cxf.ws.policy.attachment.external.EndpointReferenceDomainExpressionBuilder, org.apache.cxf.ws.policy.attachment.external.URIDomainExpressionBuilder, org.apache.cxf.ws.policy.attachment.wsdl11.Wsdl11AttachmentPolicyProvider, org.apache.cxf.ws.policy.mtom.MTOMAssertionBuilder, org.apache.cxf.ws.policy.mtom.MTOMPolicyInterceptorProvider]
+Jul 21, 2016 1:50:01 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/transports/http/configuration
+Jul 21, 2016 1:50:01 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/simple
+Jul 21, 2016 1:50:01 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-frontend-jaxws (144) [org.apache.cxf.jaxws.context.WebServiceContextResourceResolver]
+Jul 21, 2016 1:50:01 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/jaxws
+Jul 21, 2016 1:50:01 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/jaxrs
+Jul 21, 2016 1:50:01 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/jaxrs-client
+Jul 21, 2016 1:50:01 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-bindings-corba (154) [org.apache.cxf.binding.corba.CorbaBindingFactory, org.apache.cxf.binding.corba.wsdl.WSDLExtensionRegister]
+Jul 21, 2016 1:50:01 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/binding/coloc
+Jul 21, 2016 1:50:01 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-transports-local (156) [org.apache.cxf.transport.local.LocalTransportFactory]
+Jul 21, 2016 1:50:01 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-bindings-object (157) [org.apache.cxf.binding.object.ObjectBindingFactory]
+Jul 21, 2016 1:50:01 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/binding/object
+Jul 21, 2016 1:50:01 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-transports-http-jetty (158) [org.apache.cxf.transport.http_jetty.JettyDestinationFactory, org.apache.cxf.transport.http_jetty.JettyHTTPServerEngineFactory, org.apache.cxf.transport.http.ContinuationProviderFactory]
+Jul 21, 2016 1:50:01 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/transports/http-jetty/configuration
+Jul 21, 2016 1:50:01 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-transports-jms (160) [org.apache.cxf.transport.jms.JMSTransportFactory, org.apache.cxf.transport.jms.wsdl11.JMSWSDLExtensionLoader]
+Jul 21, 2016 1:50:01 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-transports-udp (162) [org.apache.cxf.transport.udp.UDPTransportFactory]
+Jul 21, 2016 1:50:01 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/policy
+Jul 21, 2016 1:50:01 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://www.w3.org/ns/ws-policy
+Jul 21, 2016 1:50:01 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://www.w3.org/2006/07/ws-policy
+Jul 21, 2016 1:50:01 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://schemas.xmlsoap.org/ws/2004/09/policy
+Jul 21, 2016 1:50:01 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd
+Jul 21, 2016 1:50:01 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd
+Jul 21, 2016 1:50:01 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://www.w3.org/2000/09/xmldsig#
+Jul 21, 2016 1:50:01 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702
+Jul 21, 2016 1:50:01 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-addr (182) [org.apache.cxf.ws.addressing.policy.AddressingAssertionBuilder, org.apache.cxf.ws.addressing.policy.UsingAddressingAssertionBuilder, org.apache.cxf.ws.addressing.policy.AddressingPolicyInterceptorProvider, org.apache.cxf.ws.addressing.impl.AddressingWSDLExtensionLoader, org.apache.cxf.ws.addressing.WSAddressingFeature$WSAddressingFeatureApplier, org.apache.cxf.ws.addressing.MAPAggregator$MAPAggregatorLoader]
+Jul 21, 2016 1:50:01 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/ws/addressing
+Jul 21, 2016 1:50:01 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-security (184) [org.apache.cxf.ws.security.policy.WSSecurityPolicyLoader, org.apache.cxf.ws.security.cache.CacheCleanupListener]
+Jul 21, 2016 1:50:01 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-mex (187) [org.apache.cxf.ws.mex.MEXServerListener]
+Jul 21, 2016 1:50:01 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-rm (186) [org.apache.cxf.ws.rm.RMManager, org.apache.cxf.ws.rm.policy.RMPolicyInterceptorProvider, org.apache.cxf.ws.rm.policy.RM10AssertionBuilder, org.apache.cxf.ws.rm.policy.RM12AssertionBuilder, org.apache.cxf.ws.rm.policy.WSRMP12PolicyLoader, org.apache.cxf.ws.rm.policy.MC11PolicyLoader, org.apache.cxf.ws.rm.policy.RSPPolicyLoader]
+Jul 21, 2016 1:50:01 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/ws/rm/manager
+Jul 21, 2016 1:50:01 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://schemas.xmlsoap.org/ws/2005/02/rm/policy
+Jul 21, 2016 1:50:01 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-javascript (188) [org.apache.cxf.javascript.JavascriptServerListener]
+Jul 21, 2016 1:50:01 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/clustering
+Jul 21, 2016 1:50:01 PM org.pentaho.caching.impl.PentahoCacheManagerFactory$RegistrationHandler$1 onSuccess
+INFO: New Caching Service registered
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/home/marcosd94/ETL-portal/data-integration/launcher/../lib/slf4j-log4j12-1.7.7.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/home/marcosd94/ETL-portal/data-integration/plugins/pentaho-big-data-plugin/lib/slf4j-log4j12-1.7.3.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+Jul 21, 2016 1:50:03 PM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be /lineage
+Jul 21, 2016 1:50:03 PM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be /marketplace
+13:50:03,692 ERROR [WebjarsURLConnection] Error Transforming zip
+java.io.IOException: Pipe closed
+	at java.io.PipedInputStream.checkStateForReceive(PipedInputStream.java:261)
+	at java.io.PipedInputStream.receive(PipedInputStream.java:227)
+	at java.io.PipedOutputStream.write(PipedOutputStream.java:149)
+	at java.util.zip.DeflaterOutputStream.deflate(DeflaterOutputStream.java:253)
+	at java.util.zip.ZipOutputStream.closeEntry(ZipOutputStream.java:238)
+	at org.pentaho.osgi.platform.webjars.WebjarsURLConnection.transform(WebjarsURLConnection.java:190)
+	at org.pentaho.osgi.platform.webjars.WebjarsURLConnection.access$000(WebjarsURLConnection.java:54)
+	at org.pentaho.osgi.platform.webjars.WebjarsURLConnection$2.call(WebjarsURLConnection.java:90)
+	at org.pentaho.osgi.platform.webjars.WebjarsURLConnection$2.call(WebjarsURLConnection.java:87)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+13:50:03,695 ERROR [WebjarsURLConnection] Error Transforming zip
+java.io.IOException: Pipe closed
+	at java.io.PipedInputStream.checkStateForReceive(PipedInputStream.java:261)
+	at java.io.PipedInputStream.receive(PipedInputStream.java:227)
+	at java.io.PipedOutputStream.write(PipedOutputStream.java:149)
+	at java.util.zip.DeflaterOutputStream.deflate(DeflaterOutputStream.java:253)
+	at java.util.zip.ZipOutputStream.closeEntry(ZipOutputStream.java:238)
+	at org.pentaho.osgi.platform.webjars.WebjarsURLConnection.transform(WebjarsURLConnection.java:190)
+	at org.pentaho.osgi.platform.webjars.WebjarsURLConnection.access$000(WebjarsURLConnection.java:54)
+	at org.pentaho.osgi.platform.webjars.WebjarsURLConnection$2.call(WebjarsURLConnection.java:90)
+	at org.pentaho.osgi.platform.webjars.WebjarsURLConnection$2.call(WebjarsURLConnection.java:87)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2016/07/21 13:50:04 - GENERAR_JSON_CONCURSOS - Start of job execution
+2016/07/21 13:50:04 - GENERAR_JSON_CONCURSOS - Starting entry [Transformation]
+2016/07/21 13:50:04 - Transformation - Loading transformation from XML file [file:///home/marcosd94/ETL-portal/cambioETL/T_JSON_CONCURSOS.ktr]
+2016/07/21 13:50:04 - T_JSON_CONCURSOS - Dispatching started for transformation [T_JSON_CONCURSOS]
+2016/07/21 13:50:04 - T_JSON_CONCURSOS - Nr of arguments detected:1 
+2016/07/21 13:50:04 - T_JSON_CONCURSOS - This is not a replay transformation
+2016/07/21 13:50:04 - T_JSON_CONCURSOS - I found 3 different steps to launch.
+2016/07/21 13:50:04 - T_JSON_CONCURSOS - Allocating rowsets...
+2016/07/21 13:50:04 - T_JSON_CONCURSOS -  Allocating rowsets for step 0 --> Get Variables
+2016/07/21 13:50:04 - T_JSON_CONCURSOS -   prevcopies = 1, nextcopies=1
+2016/07/21 13:50:04 - T_JSON_CONCURSOS - Transformation allocated new rowset [Get Variables.0 - EntradaConcursos.0]
+2016/07/21 13:50:04 - T_JSON_CONCURSOS -  Allocated 1 rowsets for step 0 --> Get Variables  
+2016/07/21 13:50:04 - T_JSON_CONCURSOS -  Allocating rowsets for step 1 --> EntradaConcursos
+2016/07/21 13:50:04 - T_JSON_CONCURSOS -   prevcopies = 1, nextcopies=1
+2016/07/21 13:50:04 - T_JSON_CONCURSOS - Transformation allocated new rowset [EntradaConcursos.0 - JsonConcursos.0]
+2016/07/21 13:50:04 - T_JSON_CONCURSOS -  Allocated 2 rowsets for step 1 --> EntradaConcursos  
+2016/07/21 13:50:04 - T_JSON_CONCURSOS -  Allocating rowsets for step 2 --> JsonConcursos
+2016/07/21 13:50:04 - T_JSON_CONCURSOS -  Allocated 2 rowsets for step 2 --> JsonConcursos  
+2016/07/21 13:50:04 - T_JSON_CONCURSOS - Allocating Steps & StepData...
+2016/07/21 13:50:04 - T_JSON_CONCURSOS -  Transformation is about to allocate step [Get Variables] of type [GetVariable]
+2016/07/21 13:50:04 - T_JSON_CONCURSOS -   Step has nrcopies=1
+2016/07/21 13:50:04 - Get Variables.0 - distribution activated
+2016/07/21 13:50:04 - Get Variables.0 - Starting allocation of buffers & new threads...
+2016/07/21 13:50:04 - Get Variables.0 - Step info: nrinput=0 nroutput=1
+2016/07/21 13:50:04 - Get Variables.0 - output rel. is  1:1
+2016/07/21 13:50:04 - Get Variables.0 - Found output rowset [Get Variables.0 - EntradaConcursos.0]
+2016/07/21 13:50:04 - Get Variables.0 - Finished dispatching
+2016/07/21 13:50:04 - T_JSON_CONCURSOS -  Transformation has allocated a new step: [Get Variables].0
+2016/07/21 13:50:04 - T_JSON_CONCURSOS -  Transformation is about to allocate step [EntradaConcursos] of type [TableInput]
+2016/07/21 13:50:04 - T_JSON_CONCURSOS -   Step has nrcopies=1
+2016/07/21 13:50:04 - EntradaConcursos.0 - distribution activated
+2016/07/21 13:50:04 - EntradaConcursos.0 - Starting allocation of buffers & new threads...
+2016/07/21 13:50:04 - EntradaConcursos.0 - Step info: nrinput=1 nroutput=1
+2016/07/21 13:50:04 - EntradaConcursos.0 - Got previous step from [EntradaConcursos] #0 --> Get Variables
+2016/07/21 13:50:04 - EntradaConcursos.0 - input rel is 1:1
+2016/07/21 13:50:04 - EntradaConcursos.0 - Found input rowset [Get Variables.0 - EntradaConcursos.0]
+2016/07/21 13:50:04 - EntradaConcursos.0 - output rel. is  1:1
+2016/07/21 13:50:04 - EntradaConcursos.0 - Found output rowset [EntradaConcursos.0 - JsonConcursos.0]
+2016/07/21 13:50:04 - EntradaConcursos.0 - Finished dispatching
+2016/07/21 13:50:04 - T_JSON_CONCURSOS -  Transformation has allocated a new step: [EntradaConcursos].0
+2016/07/21 13:50:04 - T_JSON_CONCURSOS -  Transformation is about to allocate step [JsonConcursos] of type [JsonOutput]
+2016/07/21 13:50:04 - T_JSON_CONCURSOS -   Step has nrcopies=1
+2016/07/21 13:50:04 - JsonConcursos.0 - distribution activated
+2016/07/21 13:50:04 - JsonConcursos.0 - Starting allocation of buffers & new threads...
+2016/07/21 13:50:04 - JsonConcursos.0 - Step info: nrinput=1 nroutput=0
+2016/07/21 13:50:04 - JsonConcursos.0 - Got previous step from [JsonConcursos] #0 --> EntradaConcursos
+2016/07/21 13:50:04 - JsonConcursos.0 - input rel is 1:1
+2016/07/21 13:50:04 - JsonConcursos.0 - Found input rowset [EntradaConcursos.0 - JsonConcursos.0]
+2016/07/21 13:50:04 - JsonConcursos.0 - Finished dispatching
+2016/07/21 13:50:04 - T_JSON_CONCURSOS -  Transformation has allocated a new step: [JsonConcursos].0
+2016/07/21 13:50:04 - T_JSON_CONCURSOS - This transformation can be replayed with replay date: 2016/07/21 13:50:04
+2016/07/21 13:50:04 - T_JSON_CONCURSOS - Initialising 3 steps...
+2016/07/21 13:50:04 - Get Variables.0 - Released server socket on port 0
+2016/07/21 13:50:04 - EntradaConcursos.0 - Released server socket on port 0
+2016/07/21 13:50:04 - JsonConcursos.0 - Released server socket on port 0
+2016/07/21 13:50:04 - ceamso - New database connection defined
+2016/07/21 13:50:04 - JsonConcursos.0 - Opened new file with name [/home/marcosd94/portal-sfp/client/dist/data/concursos.json]
+2016/07/21 13:50:04 - EntradaConcursos.0 - ERROR (version 6.0.0.0-353, build 1 from 2015-10-07 13.27.43 by buildguy) : An error occurred, processing will be stopped: 
+2016/07/21 13:50:04 - EntradaConcursos.0 - Error occurred while trying to connect to the database
+2016/07/21 13:50:04 - EntradaConcursos.0 - 
+2016/07/21 13:50:04 - EntradaConcursos.0 - Error connecting to database: (using class org.postgresql.Driver)
+2016/07/21 13:50:04 - EntradaConcursos.0 - FATAL: database "pentaho" does not exist
+2016/07/21 13:50:04 - ceamso - Statement canceled!
+2016/07/21 13:50:04 - ceamso - Statement canceled!
+2016/07/21 13:50:04 - EntradaConcursos.0 - ERROR (version 6.0.0.0-353, build 1 from 2015-10-07 13.27.43 by buildguy) : Error initializing step [EntradaConcursos]
+2016/07/21 13:50:04 - T_JSON_CONCURSOS - Step [Get Variables.0] initialized flawlessly.
+2016/07/21 13:50:04 - T_JSON_CONCURSOS - ERROR (version 6.0.0.0-353, build 1 from 2015-10-07 13.27.43 by buildguy) : Step [EntradaConcursos.0] failed to initialize!
+2016/07/21 13:50:04 - T_JSON_CONCURSOS - Step [JsonConcursos.0] initialized flawlessly.
+2016/07/21 13:50:04 - EntradaConcursos.0 - Finished reading query, closing connection.
+2016/07/21 13:50:04 - Transformation - ERROR (version 6.0.0.0-353, build 1 from 2015-10-07 13.27.43 by buildguy) : Unable to prepare for execution of the transformation
+2016/07/21 13:50:04 - Transformation - ERROR (version 6.0.0.0-353, build 1 from 2015-10-07 13.27.43 by buildguy) : org.pentaho.di.core.exception.KettleException: 
+2016/07/21 13:50:04 - Transformation - We failed to initialize at least one step.  Execution can not begin!
+2016/07/21 13:50:04 - Transformation - 
+2016/07/21 13:50:04 - Transformation - 
+2016/07/21 13:50:04 - Transformation - 	at org.pentaho.di.trans.Trans.prepareExecution(Trans.java:1155)
+2016/07/21 13:50:04 - Transformation - 	at org.pentaho.di.trans.Trans.execute(Trans.java:613)
+2016/07/21 13:50:04 - Transformation - 	at org.pentaho.di.job.entries.trans.JobEntryTrans.execute(JobEntryTrans.java:1068)
+2016/07/21 13:50:04 - Transformation - 	at org.pentaho.di.job.Job.execute(Job.java:730)
+2016/07/21 13:50:04 - Transformation - 	at org.pentaho.di.job.Job.execute(Job.java:873)
+2016/07/21 13:50:04 - Transformation - 	at org.pentaho.di.job.Job.execute(Job.java:546)
+2016/07/21 13:50:04 - Transformation - 	at org.pentaho.di.job.Job.run(Job.java:435)
+2016/07/21 13:50:04 - GENERAR_JSON_CONCURSOS - Starting entry [Transformation 2 2]
+2016/07/21 13:50:04 - Transformation 2 2 - Loading transformation from XML file [file:///home/marcosd94/ETL-portal/cambioETL/UpdateFallido.ktr]
+2016/07/21 13:50:04 - UpdateFallido - Dispatching started for transformation [UpdateFallido]
+2016/07/21 13:50:04 - Execute SQL script.0 - ERROR (version 6.0.0.0-353, build 1 from 2015-10-07 13.27.43 by buildguy) : An error occurred, processing will be stopped: 
+2016/07/21 13:50:04 - Execute SQL script.0 - Error occurred while trying to connect to the database
+2016/07/21 13:50:04 - Execute SQL script.0 - 
+2016/07/21 13:50:04 - Execute SQL script.0 - Error connecting to database: (using class org.postgresql.Driver)
+2016/07/21 13:50:04 - Execute SQL script.0 - No suitable driver found for jdbc:postgresql://:/
+2016/07/21 13:50:04 - Execute SQL script.0 - ERROR (version 6.0.0.0-353, build 1 from 2015-10-07 13.27.43 by buildguy) : Error initializing step [Execute SQL script]
+2016/07/21 13:50:04 - UpdateFallido - ERROR (version 6.0.0.0-353, build 1 from 2015-10-07 13.27.43 by buildguy) : Step [Execute SQL script.0] failed to initialize!
+2016/07/21 13:50:04 - Execute SQL script.0 - Finished reading query, closing connection.
+2016/07/21 13:50:04 - Transformation 2 2 - ERROR (version 6.0.0.0-353, build 1 from 2015-10-07 13.27.43 by buildguy) : Unable to prepare for execution of the transformation
+2016/07/21 13:50:04 - Transformation 2 2 - ERROR (version 6.0.0.0-353, build 1 from 2015-10-07 13.27.43 by buildguy) : org.pentaho.di.core.exception.KettleException: 
+2016/07/21 13:50:04 - Transformation 2 2 - We failed to initialize at least one step.  Execution can not begin!
+2016/07/21 13:50:04 - Transformation 2 2 - 
+2016/07/21 13:50:04 - Transformation 2 2 - 
+2016/07/21 13:50:04 - Transformation 2 2 - 	at org.pentaho.di.trans.Trans.prepareExecution(Trans.java:1155)
+2016/07/21 13:50:04 - Transformation 2 2 - 	at org.pentaho.di.trans.Trans.execute(Trans.java:613)
+2016/07/21 13:50:04 - Transformation 2 2 - 	at org.pentaho.di.job.entries.trans.JobEntryTrans.execute(JobEntryTrans.java:1068)
+2016/07/21 13:50:04 - Transformation 2 2 - 	at org.pentaho.di.job.Job.execute(Job.java:730)
+2016/07/21 13:50:04 - Transformation 2 2 - 	at org.pentaho.di.job.Job.execute(Job.java:873)
+2016/07/21 13:50:04 - Transformation 2 2 - 	at org.pentaho.di.job.Job.execute(Job.java:873)
+2016/07/21 13:50:04 - Transformation 2 2 - 	at org.pentaho.di.job.Job.execute(Job.java:546)
+2016/07/21 13:50:04 - Transformation 2 2 - 	at org.pentaho.di.job.Job.run(Job.java:435)
+2016/07/21 13:50:04 - GENERAR_JSON_CONCURSOS - Finished job entry [Transformation 2 2] (result=[false])
+2016/07/21 13:50:04 - GENERAR_JSON_CONCURSOS - Finished job entry [Transformation] (result=[false])
+2016/07/21 13:50:04 - GENERAR_JSON_CONCURSOS - Job execution finished
+2016/07/21 13:50:04 - Kitchen - Finished!
+2016/07/21 13:50:04 - Kitchen - ERROR (version 6.0.0.0-353, build 1 from 2015-10-07 13.27.43 by buildguy) : Finished with errors
+2016/07/21 13:50:04 - Kitchen - Start=2016/07/21 13:49:58.209, Stop=2016/07/21 13:50:04.699
+2016/07/21 13:50:04 - Kitchen - Processing ended after 6 seconds.
+13:50:06,292 ERROR [KarafInstance] Could not get lock on /home/marcosd94/ETL-portal/data-integration/./system/karaf//data2/LOCKFILE
+java.io.FileNotFoundException: /home/marcosd94/ETL-portal/data-integration/./system/karaf/data2/LOCKFILE (Permission denied)
+	at java.io.RandomAccessFile.open(Native Method)
+	at java.io.RandomAccessFile.<init>(RandomAccessFile.java:241)
+	at org.pentaho.platform.osgi.KarafInstance.testLock(KarafInstance.java:192)
+	at org.pentaho.platform.osgi.KarafInstance.access$200(KarafInstance.java:53)
+	at org.pentaho.platform.osgi.KarafInstance$1.accept(KarafInstance.java:160)
+	at java.io.File.list(File.java:1155)
+	at org.pentaho.platform.osgi.KarafInstance.assignInstanceNumber(KarafInstance.java:147)
+	at org.pentaho.platform.osgi.KarafInstance.<init>(KarafInstance.java:73)
+	at org.pentaho.platform.osgi.KarafBoot.startup(KarafBoot.java:149)
+	at org.pentaho.di.osgi.registryExtension.OSGIPluginRegistryExtension.init(OSGIPluginRegistryExtension.java:105)
+	at org.pentaho.di.core.plugins.PluginRegistry.init(PluginRegistry.java:558)
+	at org.pentaho.di.core.KettleClientEnvironment.init(KettleClientEnvironment.java:101)
+	at org.pentaho.di.kitchen.Kitchen$1.call(Kitchen.java:89)
+	at org.pentaho.di.kitchen.Kitchen$1.call(Kitchen.java:83)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+13:50:06,362 INFO  [KarafInstance] 
+*******************************************************************************
+*** Karaf Instance Number: 1 at /home/marcosd94/ETL-portal/data-integration ***
+***   /./system/karaf//data1                                                ***
+*** Karaf Port:8801                                                         ***
+*** OSGI Service Port:9050                                                  ***
+*******************************************************************************
+Jul 21, 2016 1:50:07 PM org.apache.karaf.main.Main$KarafLockCallback lockAquired
+INFO: Lock acquired. Setting startlevel to 100
+log4j: System property is :null
+log4j: Standard DocumentBuilderFactory search succeded.
+log4j: DocumentBuilderFactory is: org.apache.xerces.jaxp.DocumentBuilderFactoryImpl
+log4j: debug attribute= "null".
+log4j: Ignoring debug attribute.
+log4j: reset attribute= "false".
+log4j: Threshold ="null".
+log4j: Retreiving an instance of org.apache.log4j.Logger.
+log4j: Setting [org.pentaho.di] additivity to [true].
+log4j: Level value for org.pentaho.di is  [off].
+log4j: org.pentaho.di level set to OFF
+log4j: Class name: [org.apache.log4j.ConsoleAppender]
+log4j: Setting property [target] to [System.out].
+log4j: Parsing layout of class: "org.apache.log4j.PatternLayout"
+log4j: Setting property [conversionPattern] to [%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n].
+log4j: Adding appender named [console] to category [org.pentaho.di].
+log4j: Level value for root is  [off].
+log4j: root level set to OFF
+log4j: Adding appender named [console] to category [root].
+2016/07/21 13:50:07 - Kitchen - Start of run.
+2016-07-21 13:50:09.447:INFO:oejs.Server:jetty-8.1.15.v20140411
+2016-07-21 13:50:09.477:INFO:oejs.AbstractConnector:Started NIOSocketConnectorWrapper@0.0.0.0:9050
+log4j: reset attribute= "false".
+log4j: Threshold ="null".
+log4j:WARN No appenders could be found for logger (org.springframework.osgi.extender.internal.activator.ContextLoaderListener).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+Jul 21, 2016 1:50:10 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/core
+Jul 21, 2016 1:50:10 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/configuration/beans
+Jul 21, 2016 1:50:10 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/configuration/parameterized-types
+Jul 21, 2016 1:50:10 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/configuration/security
+Jul 21, 2016 1:50:10 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://schemas.xmlsoap.org/wsdl/
+Jul 21, 2016 1:50:10 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://www.w3.org/2005/08/addressing
+Jul 21, 2016 1:50:10 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://schemas.xmlsoap.org/ws/2004/08/addressing
+Jul 21, 2016 1:50:10 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-management (135) [org.apache.cxf.management.InstrumentationManager]
+Jul 21, 2016 1:50:10 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-wsdl (138) [org.apache.cxf.wsdl.WSDLManager]
+Jul 21, 2016 1:50:10 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-bindings-xml (140) [org.apache.cxf.binding.xml.XMLBindingFactory, org.apache.cxf.binding.xml.wsdl11.XMLWSDLExtensionLoader]
+Jul 21, 2016 1:50:10 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-bindings-soap (141) [org.apache.cxf.binding.soap.SoapBindingFactory, org.apache.cxf.binding.soap.SoapTransportFactory]
+Jul 21, 2016 1:50:10 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/bindings/soap
+Jul 21, 2016 1:50:10 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-policy (165) [org.apache.cxf.ws.policy.PolicyEngine, org.apache.cxf.policy.PolicyDataEngine, org.apache.cxf.ws.policy.AssertionBuilderRegistry, org.apache.cxf.ws.policy.PolicyInterceptorProviderRegistry, org.apache.cxf.ws.policy.PolicyBuilder, org.apache.cxf.ws.policy.PolicyAnnotationListener, org.apache.cxf.ws.policy.attachment.ServiceModelPolicyProvider, org.apache.cxf.ws.policy.attachment.external.DomainExpressionBuilderRegistry, org.apache.cxf.ws.policy.attachment.external.EndpointReferenceDomainExpressionBuilder, org.apache.cxf.ws.policy.attachment.external.URIDomainExpressionBuilder, org.apache.cxf.ws.policy.attachment.wsdl11.Wsdl11AttachmentPolicyProvider, org.apache.cxf.ws.policy.mtom.MTOMAssertionBuilder, org.apache.cxf.ws.policy.mtom.MTOMPolicyInterceptorProvider]
+Jul 21, 2016 1:50:10 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-transports-http (142) [org.apache.cxf.transport.http.HTTPTransportFactory, org.apache.cxf.transport.http.HTTPWSDLExtensionLoader, org.apache.cxf.transport.http.policy.HTTPClientAssertionBuilder, org.apache.cxf.transport.http.policy.HTTPServerAssertionBuilder, org.apache.cxf.transport.http.policy.NoOpPolicyInterceptorProvider]
+Jul 21, 2016 1:50:10 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/transports/http/configuration
+Jul 21, 2016 1:50:10 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/simple
+Jul 21, 2016 1:50:10 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-frontend-jaxws (144) [org.apache.cxf.jaxws.context.WebServiceContextResourceResolver]
+Jul 21, 2016 1:50:10 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/jaxws
+Jul 21, 2016 1:50:10 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/jaxrs
+Jul 21, 2016 1:50:10 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/jaxrs-client
+Jul 21, 2016 1:50:10 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-bindings-corba (154) [org.apache.cxf.binding.corba.CorbaBindingFactory, org.apache.cxf.binding.corba.wsdl.WSDLExtensionRegister]
+Jul 21, 2016 1:50:10 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/binding/coloc
+Jul 21, 2016 1:50:10 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-transports-local (156) [org.apache.cxf.transport.local.LocalTransportFactory]
+Jul 21, 2016 1:50:10 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-bindings-object (157) [org.apache.cxf.binding.object.ObjectBindingFactory]
+Jul 21, 2016 1:50:10 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/binding/object
+Jul 21, 2016 1:50:10 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-transports-http-jetty (158) [org.apache.cxf.transport.http_jetty.JettyDestinationFactory, org.apache.cxf.transport.http_jetty.JettyHTTPServerEngineFactory, org.apache.cxf.transport.http.ContinuationProviderFactory]
+Jul 21, 2016 1:50:10 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/transports/http-jetty/configuration
+Jul 21, 2016 1:50:10 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-transports-jms (160) [org.apache.cxf.transport.jms.JMSTransportFactory, org.apache.cxf.transport.jms.wsdl11.JMSWSDLExtensionLoader]
+Jul 21, 2016 1:50:10 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-transports-udp (162) [org.apache.cxf.transport.udp.UDPTransportFactory]
+Jul 21, 2016 1:50:10 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/policy
+Jul 21, 2016 1:50:10 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://www.w3.org/ns/ws-policy
+Jul 21, 2016 1:50:10 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://www.w3.org/2006/07/ws-policy
+Jul 21, 2016 1:50:10 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://schemas.xmlsoap.org/ws/2004/09/policy
+Jul 21, 2016 1:50:10 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd
+Jul 21, 2016 1:50:10 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd
+Jul 21, 2016 1:50:10 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://www.w3.org/2000/09/xmldsig#
+Jul 21, 2016 1:50:10 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702
+Jul 21, 2016 1:50:10 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-addr (182) [org.apache.cxf.ws.addressing.policy.AddressingAssertionBuilder, org.apache.cxf.ws.addressing.policy.UsingAddressingAssertionBuilder, org.apache.cxf.ws.addressing.policy.AddressingPolicyInterceptorProvider, org.apache.cxf.ws.addressing.impl.AddressingWSDLExtensionLoader, org.apache.cxf.ws.addressing.WSAddressingFeature$WSAddressingFeatureApplier, org.apache.cxf.ws.addressing.MAPAggregator$MAPAggregatorLoader]
+Jul 21, 2016 1:50:10 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/ws/addressing
+Jul 21, 2016 1:50:10 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-mex (187) [org.apache.cxf.ws.mex.MEXServerListener]
+Jul 21, 2016 1:50:10 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-security (184) [org.apache.cxf.ws.security.policy.WSSecurityPolicyLoader, org.apache.cxf.ws.security.cache.CacheCleanupListener]
+Jul 21, 2016 1:50:10 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-rm (186) [org.apache.cxf.ws.rm.RMManager, org.apache.cxf.ws.rm.policy.RMPolicyInterceptorProvider, org.apache.cxf.ws.rm.policy.RM10AssertionBuilder, org.apache.cxf.ws.rm.policy.RM12AssertionBuilder, org.apache.cxf.ws.rm.policy.WSRMP12PolicyLoader, org.apache.cxf.ws.rm.policy.MC11PolicyLoader, org.apache.cxf.ws.rm.policy.RSPPolicyLoader]
+Jul 21, 2016 1:50:10 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/ws/rm/manager
+Jul 21, 2016 1:50:10 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://schemas.xmlsoap.org/ws/2005/02/rm/policy
+Jul 21, 2016 1:50:10 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-javascript (188) [org.apache.cxf.javascript.JavascriptServerListener]
+Jul 21, 2016 1:50:10 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/clustering
+Jul 21, 2016 1:50:10 PM org.pentaho.caching.impl.PentahoCacheManagerFactory$RegistrationHandler$1 onSuccess
+INFO: New Caching Service registered
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/home/marcosd94/ETL-portal/data-integration/launcher/../lib/slf4j-log4j12-1.7.7.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/home/marcosd94/ETL-portal/data-integration/plugins/pentaho-big-data-plugin/lib/slf4j-log4j12-1.7.3.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+Jul 21, 2016 1:50:12 PM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be /lineage
+13:50:12,782 ERROR [WebjarsURLConnection] Error Transforming zip
+java.io.IOException: Pipe closed
+	at java.io.PipedInputStream.checkStateForReceive(PipedInputStream.java:261)
+	at java.io.PipedInputStream.receive(PipedInputStream.java:227)
+	at java.io.PipedOutputStream.write(PipedOutputStream.java:149)
+	at java.util.zip.DeflaterOutputStream.deflate(DeflaterOutputStream.java:253)
+	at java.util.zip.ZipOutputStream.closeEntry(ZipOutputStream.java:238)
+	at org.pentaho.osgi.platform.webjars.WebjarsURLConnection.transform(WebjarsURLConnection.java:190)
+	at org.pentaho.osgi.platform.webjars.WebjarsURLConnection.access$000(WebjarsURLConnection.java:54)
+	at org.pentaho.osgi.platform.webjars.WebjarsURLConnection$2.call(WebjarsURLConnection.java:90)
+	at org.pentaho.osgi.platform.webjars.WebjarsURLConnection$2.call(WebjarsURLConnection.java:87)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+13:50:12,787 ERROR [WebjarsURLConnection] Error Transforming zip
+java.io.IOException: Pipe closed
+	at java.io.PipedInputStream.checkStateForReceive(PipedInputStream.java:261)
+	at java.io.PipedInputStream.receive(PipedInputStream.java:227)
+	at java.io.PipedOutputStream.write(PipedOutputStream.java:149)
+	at java.util.zip.DeflaterOutputStream.deflate(DeflaterOutputStream.java:253)
+	at java.util.zip.ZipOutputStream.closeEntry(ZipOutputStream.java:238)
+	at org.pentaho.osgi.platform.webjars.WebjarsURLConnection.transform(WebjarsURLConnection.java:190)
+	at org.pentaho.osgi.platform.webjars.WebjarsURLConnection.access$000(WebjarsURLConnection.java:54)
+	at org.pentaho.osgi.platform.webjars.WebjarsURLConnection$2.call(WebjarsURLConnection.java:90)
+	at org.pentaho.osgi.platform.webjars.WebjarsURLConnection$2.call(WebjarsURLConnection.java:87)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Jul 21, 2016 1:50:13 PM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be /marketplace
+2016/07/21 13:50:13 - GENERAR_CSV_CONCURSOS - Start of job execution
+2016/07/21 13:50:13 - GENERAR_CSV_CONCURSOS - Starting entry [Transformation]
+2016/07/21 13:50:13 - Transformation - Loading transformation from XML file [file:///home/marcosd94/ETL-portal/cambioETL/T_CSV_CONCURSOS.ktr]
+2016/07/21 13:50:13 - T_CSV_CONCURSOS - Dispatching started for transformation [T_CSV_CONCURSOS]
+2016/07/21 13:50:13 - T_CSV_CONCURSOS - Nr of arguments detected:1 
+2016/07/21 13:50:13 - T_CSV_CONCURSOS - This is not a replay transformation
+2016/07/21 13:50:13 - T_CSV_CONCURSOS - I found 3 different steps to launch.
+2016/07/21 13:50:13 - T_CSV_CONCURSOS - Allocating rowsets...
+2016/07/21 13:50:13 - T_CSV_CONCURSOS -  Allocating rowsets for step 0 --> Get Variables
+2016/07/21 13:50:13 - T_CSV_CONCURSOS -   prevcopies = 1, nextcopies=1
+2016/07/21 13:50:13 - T_CSV_CONCURSOS - Transformation allocated new rowset [Get Variables.0 - EntradaConcursos.0]
+2016/07/21 13:50:13 - T_CSV_CONCURSOS -  Allocated 1 rowsets for step 0 --> Get Variables  
+2016/07/21 13:50:13 - T_CSV_CONCURSOS -  Allocating rowsets for step 1 --> EntradaConcursos
+2016/07/21 13:50:13 - T_CSV_CONCURSOS -   prevcopies = 1, nextcopies=1
+2016/07/21 13:50:13 - T_CSV_CONCURSOS - Transformation allocated new rowset [EntradaConcursos.0 - CSVConcursos.0]
+2016/07/21 13:50:13 - T_CSV_CONCURSOS -  Allocated 2 rowsets for step 1 --> EntradaConcursos  
+2016/07/21 13:50:13 - T_CSV_CONCURSOS -  Allocating rowsets for step 2 --> CSVConcursos
+2016/07/21 13:50:13 - T_CSV_CONCURSOS -  Allocated 2 rowsets for step 2 --> CSVConcursos  
+2016/07/21 13:50:13 - T_CSV_CONCURSOS - Allocating Steps & StepData...
+2016/07/21 13:50:13 - T_CSV_CONCURSOS -  Transformation is about to allocate step [Get Variables] of type [GetVariable]
+2016/07/21 13:50:13 - T_CSV_CONCURSOS -   Step has nrcopies=1
+2016/07/21 13:50:13 - Get Variables.0 - distribution activated
+2016/07/21 13:50:13 - Get Variables.0 - Starting allocation of buffers & new threads...
+2016/07/21 13:50:13 - Get Variables.0 - Step info: nrinput=0 nroutput=1
+2016/07/21 13:50:13 - Get Variables.0 - output rel. is  1:1
+2016/07/21 13:50:13 - Get Variables.0 - Found output rowset [Get Variables.0 - EntradaConcursos.0]
+2016/07/21 13:50:13 - Get Variables.0 - Finished dispatching
+2016/07/21 13:50:13 - T_CSV_CONCURSOS -  Transformation has allocated a new step: [Get Variables].0
+2016/07/21 13:50:13 - T_CSV_CONCURSOS -  Transformation is about to allocate step [EntradaConcursos] of type [TableInput]
+2016/07/21 13:50:13 - T_CSV_CONCURSOS -   Step has nrcopies=1
+2016/07/21 13:50:13 - EntradaConcursos.0 - distribution activated
+2016/07/21 13:50:13 - EntradaConcursos.0 - Starting allocation of buffers & new threads...
+2016/07/21 13:50:13 - EntradaConcursos.0 - Step info: nrinput=1 nroutput=1
+2016/07/21 13:50:13 - EntradaConcursos.0 - Got previous step from [EntradaConcursos] #0 --> Get Variables
+2016/07/21 13:50:13 - EntradaConcursos.0 - input rel is 1:1
+2016/07/21 13:50:13 - EntradaConcursos.0 - Found input rowset [Get Variables.0 - EntradaConcursos.0]
+2016/07/21 13:50:13 - EntradaConcursos.0 - output rel. is  1:1
+2016/07/21 13:50:13 - EntradaConcursos.0 - Found output rowset [EntradaConcursos.0 - CSVConcursos.0]
+2016/07/21 13:50:13 - EntradaConcursos.0 - Finished dispatching
+2016/07/21 13:50:13 - T_CSV_CONCURSOS -  Transformation has allocated a new step: [EntradaConcursos].0
+2016/07/21 13:50:13 - T_CSV_CONCURSOS -  Transformation is about to allocate step [CSVConcursos] of type [TextFileOutput]
+2016/07/21 13:50:13 - T_CSV_CONCURSOS -   Step has nrcopies=1
+2016/07/21 13:50:13 - CSVConcursos.0 - distribution activated
+2016/07/21 13:50:13 - CSVConcursos.0 - Starting allocation of buffers & new threads...
+2016/07/21 13:50:13 - CSVConcursos.0 - Step info: nrinput=1 nroutput=0
+2016/07/21 13:50:13 - CSVConcursos.0 - Got previous step from [CSVConcursos] #0 --> EntradaConcursos
+2016/07/21 13:50:13 - CSVConcursos.0 - input rel is 1:1
+2016/07/21 13:50:13 - CSVConcursos.0 - Found input rowset [EntradaConcursos.0 - CSVConcursos.0]
+2016/07/21 13:50:13 - CSVConcursos.0 - Finished dispatching
+2016/07/21 13:50:13 - T_CSV_CONCURSOS -  Transformation has allocated a new step: [CSVConcursos].0
+2016/07/21 13:50:13 - T_CSV_CONCURSOS - This transformation can be replayed with replay date: 2016/07/21 13:50:13
+2016/07/21 13:50:13 - T_CSV_CONCURSOS - Initialising 3 steps...
+2016/07/21 13:50:13 - EntradaConcursos.0 - Released server socket on port 0
+2016/07/21 13:50:13 - Get Variables.0 - Released server socket on port 0
+2016/07/21 13:50:13 - CSVConcursos.0 - Released server socket on port 0
+2016/07/21 13:50:13 - CSVConcursos.0 - Parent folder exists [file:///home/marcosd94/portal-sfp/client/dist/data]!
+2016/07/21 13:50:13 - CSVConcursos.0 - Opening output stream using provider: None
+2016/07/21 13:50:13 - ceamso - New database connection defined
+2016/07/21 13:50:13 - CSVConcursos.0 - Opening output stream in default encoding
+2016/07/21 13:50:13 - CSVConcursos.0 - Opened new file with name [file:///home/marcosd94/portal-sfp/client/dist/data/concursos.csv]
+2016/07/21 13:50:15 - EntradaConcursos.0 - ERROR (version 6.0.0.0-353, build 1 from 2015-10-07 13.27.43 by buildguy) : An error occurred, processing will be stopped: 
+2016/07/21 13:50:15 - EntradaConcursos.0 - Error occurred while trying to connect to the database
+2016/07/21 13:50:15 - EntradaConcursos.0 - 
+2016/07/21 13:50:15 - EntradaConcursos.0 - Error connecting to database: (using class org.postgresql.Driver)
+2016/07/21 13:50:15 - EntradaConcursos.0 - FATAL: database "pentaho" does not exist
+2016/07/21 13:50:15 - ceamso - Statement canceled!
+2016/07/21 13:50:15 - ceamso - Statement canceled!
+2016/07/21 13:50:15 - EntradaConcursos.0 - ERROR (version 6.0.0.0-353, build 1 from 2015-10-07 13.27.43 by buildguy) : Error initializing step [EntradaConcursos]
+2016/07/21 13:50:15 - T_CSV_CONCURSOS - Step [Get Variables.0] initialized flawlessly.
+2016/07/21 13:50:15 - T_CSV_CONCURSOS - ERROR (version 6.0.0.0-353, build 1 from 2015-10-07 13.27.43 by buildguy) : Step [EntradaConcursos.0] failed to initialize!
+2016/07/21 13:50:15 - T_CSV_CONCURSOS - Step [CSVConcursos.0] initialized flawlessly.
+2016/07/21 13:50:15 - EntradaConcursos.0 - Finished reading query, closing connection.
+2016/07/21 13:50:15 - CSVConcursos.0 - Closing normal file ...
+2016/07/21 13:50:15 - Transformation - ERROR (version 6.0.0.0-353, build 1 from 2015-10-07 13.27.43 by buildguy) : Unable to prepare for execution of the transformation
+2016/07/21 13:50:15 - Transformation - ERROR (version 6.0.0.0-353, build 1 from 2015-10-07 13.27.43 by buildguy) : org.pentaho.di.core.exception.KettleException: 
+2016/07/21 13:50:15 - Transformation - We failed to initialize at least one step.  Execution can not begin!
+2016/07/21 13:50:15 - Transformation - 
+2016/07/21 13:50:15 - Transformation - 
+2016/07/21 13:50:15 - Transformation - 	at org.pentaho.di.trans.Trans.prepareExecution(Trans.java:1155)
+2016/07/21 13:50:15 - Transformation - 	at org.pentaho.di.trans.Trans.execute(Trans.java:613)
+2016/07/21 13:50:15 - Transformation - 	at org.pentaho.di.job.entries.trans.JobEntryTrans.execute(JobEntryTrans.java:1068)
+2016/07/21 13:50:15 - Transformation - 	at org.pentaho.di.job.Job.execute(Job.java:730)
+2016/07/21 13:50:15 - Transformation - 	at org.pentaho.di.job.Job.execute(Job.java:873)
+2016/07/21 13:50:15 - Transformation - 	at org.pentaho.di.job.Job.execute(Job.java:546)
+2016/07/21 13:50:15 - Transformation - 	at org.pentaho.di.job.Job.run(Job.java:435)
+2016/07/21 13:50:15 - GENERAR_CSV_CONCURSOS - Starting entry [Transformation 2]
+2016/07/21 13:50:15 - Transformation 2 - Loading transformation from XML file [file:///home/marcosd94/ETL-portal/cambioETL/UpdateFallido.ktr]
+2016/07/21 13:50:15 - UpdateFallido - Dispatching started for transformation [UpdateFallido]
+2016/07/21 13:50:15 - Execute SQL script.0 - ERROR (version 6.0.0.0-353, build 1 from 2015-10-07 13.27.43 by buildguy) : An error occurred, processing will be stopped: 
+2016/07/21 13:50:15 - Execute SQL script.0 - Error occurred while trying to connect to the database
+2016/07/21 13:50:15 - Execute SQL script.0 - 
+2016/07/21 13:50:15 - Execute SQL script.0 - Error connecting to database: (using class org.postgresql.Driver)
+2016/07/21 13:50:15 - Execute SQL script.0 - No suitable driver found for jdbc:postgresql://:/sfp
+2016/07/21 13:50:15 - Execute SQL script.0 - ERROR (version 6.0.0.0-353, build 1 from 2015-10-07 13.27.43 by buildguy) : Error initializing step [Execute SQL script]
+2016/07/21 13:50:15 - UpdateFallido - ERROR (version 6.0.0.0-353, build 1 from 2015-10-07 13.27.43 by buildguy) : Step [Execute SQL script.0] failed to initialize!
+2016/07/21 13:50:15 - Execute SQL script.0 - Finished reading query, closing connection.
+2016/07/21 13:50:15 - Transformation 2 - ERROR (version 6.0.0.0-353, build 1 from 2015-10-07 13.27.43 by buildguy) : Unable to prepare for execution of the transformation
+2016/07/21 13:50:15 - Transformation 2 - ERROR (version 6.0.0.0-353, build 1 from 2015-10-07 13.27.43 by buildguy) : org.pentaho.di.core.exception.KettleException: 
+2016/07/21 13:50:15 - Transformation 2 - We failed to initialize at least one step.  Execution can not begin!
+2016/07/21 13:50:15 - Transformation 2 - 
+2016/07/21 13:50:15 - Transformation 2 - 
+2016/07/21 13:50:15 - Transformation 2 - 	at org.pentaho.di.trans.Trans.prepareExecution(Trans.java:1155)
+2016/07/21 13:50:15 - Transformation 2 - 	at org.pentaho.di.trans.Trans.execute(Trans.java:613)
+2016/07/21 13:50:15 - Transformation 2 - 	at org.pentaho.di.job.entries.trans.JobEntryTrans.execute(JobEntryTrans.java:1068)
+2016/07/21 13:50:15 - Transformation 2 - 	at org.pentaho.di.job.Job.execute(Job.java:730)
+2016/07/21 13:50:15 - Transformation 2 - 	at org.pentaho.di.job.Job.execute(Job.java:873)
+2016/07/21 13:50:15 - Transformation 2 - 	at org.pentaho.di.job.Job.execute(Job.java:873)
+2016/07/21 13:50:15 - Transformation 2 - 	at org.pentaho.di.job.Job.execute(Job.java:546)
+2016/07/21 13:50:15 - Transformation 2 - 	at org.pentaho.di.job.Job.run(Job.java:435)
+2016/07/21 13:50:15 - GENERAR_CSV_CONCURSOS - Finished job entry [Transformation 2] (result=[false])
+2016/07/21 13:50:15 - GENERAR_CSV_CONCURSOS - Finished job entry [Transformation] (result=[false])
+2016/07/21 13:50:15 - GENERAR_CSV_CONCURSOS - Job execution finished
+2016/07/21 13:50:15 - Kitchen - Finished!
+2016/07/21 13:50:15 - Kitchen - ERROR (version 6.0.0.0-353, build 1 from 2015-10-07 13.27.43 by buildguy) : Finished with errors
+2016/07/21 13:50:15 - Kitchen - Start=2016/07/21 13:50:07.330, Stop=2016/07/21 13:50:15.698
+2016/07/21 13:50:15 - Kitchen - Processing ended after 8 seconds.

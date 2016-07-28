@@ -1,0 +1,330 @@
+14:21:54,636 INFO  [KarafInstance] 
+*******************************************************************************
+*** Karaf Instance Number: 2 at /home/marcosd94/ETL-portal/data-integration ***
+***   /./system/karaf//data2                                                ***
+*** Karaf Port:8802                                                         ***
+*** OSGI Service Port:9051                                                  ***
+*******************************************************************************
+Jul 22, 2016 2:21:55 PM org.apache.karaf.main.Main$KarafLockCallback lockAquired
+INFO: Lock acquired. Setting startlevel to 100
+log4j: System property is :null
+log4j: Standard DocumentBuilderFactory search succeded.
+log4j: DocumentBuilderFactory is: org.apache.xerces.jaxp.DocumentBuilderFactoryImpl
+log4j: debug attribute= "null".
+log4j: Ignoring debug attribute.
+log4j: reset attribute= "false".
+log4j: Threshold ="null".
+log4j: Retreiving an instance of org.apache.log4j.Logger.
+log4j: Setting [org.pentaho.di] additivity to [true].
+log4j: Level value for org.pentaho.di is  [off].
+log4j: org.pentaho.di level set to OFF
+log4j: Class name: [org.apache.log4j.ConsoleAppender]
+log4j: Setting property [target] to [System.out].
+log4j: Parsing layout of class: "org.apache.log4j.PatternLayout"
+log4j: Setting property [conversionPattern] to [%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n].
+log4j: Adding appender named [console] to category [org.pentaho.di].
+log4j: Level value for root is  [off].
+log4j: root level set to OFF
+log4j: Adding appender named [console] to category [root].
+2016/07/22 14:21:55 - Kitchen - Start of run.
+2016-07-22 14:21:57.648:INFO:oejs.Server:jetty-8.1.15.v20140411
+2016-07-22 14:21:57.676:INFO:oejs.AbstractConnector:Started NIOSocketConnectorWrapper@0.0.0.0:9051
+log4j: reset attribute= "false".
+log4j: Threshold ="null".
+log4j:WARN No appenders could be found for logger (org.springframework.osgi.extender.internal.activator.ContextLoaderListener).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+Jul 22, 2016 2:21:58 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/core
+Jul 22, 2016 2:21:58 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/configuration/beans
+Jul 22, 2016 2:21:58 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/configuration/parameterized-types
+Jul 22, 2016 2:21:58 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/configuration/security
+Jul 22, 2016 2:21:58 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://schemas.xmlsoap.org/wsdl/
+Jul 22, 2016 2:21:58 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://www.w3.org/2005/08/addressing
+Jul 22, 2016 2:21:58 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://schemas.xmlsoap.org/ws/2004/08/addressing
+Jul 22, 2016 2:21:58 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-management (135) [org.apache.cxf.management.InstrumentationManager]
+Jul 22, 2016 2:21:58 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-wsdl (138) [org.apache.cxf.wsdl.WSDLManager]
+Jul 22, 2016 2:21:58 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-bindings-xml (140) [org.apache.cxf.binding.xml.XMLBindingFactory, org.apache.cxf.binding.xml.wsdl11.XMLWSDLExtensionLoader]
+Jul 22, 2016 2:21:58 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-bindings-soap (141) [org.apache.cxf.binding.soap.SoapBindingFactory, org.apache.cxf.binding.soap.SoapTransportFactory]
+Jul 22, 2016 2:21:58 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/bindings/soap
+Jul 22, 2016 2:21:58 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-transports-http (142) [org.apache.cxf.transport.http.HTTPTransportFactory, org.apache.cxf.transport.http.HTTPWSDLExtensionLoader, org.apache.cxf.transport.http.policy.HTTPClientAssertionBuilder, org.apache.cxf.transport.http.policy.HTTPServerAssertionBuilder, org.apache.cxf.transport.http.policy.NoOpPolicyInterceptorProvider]
+Jul 22, 2016 2:21:58 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-policy (165) [org.apache.cxf.ws.policy.PolicyEngine, org.apache.cxf.policy.PolicyDataEngine, org.apache.cxf.ws.policy.AssertionBuilderRegistry, org.apache.cxf.ws.policy.PolicyInterceptorProviderRegistry, org.apache.cxf.ws.policy.PolicyBuilder, org.apache.cxf.ws.policy.PolicyAnnotationListener, org.apache.cxf.ws.policy.attachment.ServiceModelPolicyProvider, org.apache.cxf.ws.policy.attachment.external.DomainExpressionBuilderRegistry, org.apache.cxf.ws.policy.attachment.external.EndpointReferenceDomainExpressionBuilder, org.apache.cxf.ws.policy.attachment.external.URIDomainExpressionBuilder, org.apache.cxf.ws.policy.attachment.wsdl11.Wsdl11AttachmentPolicyProvider, org.apache.cxf.ws.policy.mtom.MTOMAssertionBuilder, org.apache.cxf.ws.policy.mtom.MTOMPolicyInterceptorProvider]
+Jul 22, 2016 2:21:58 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/transports/http/configuration
+Jul 22, 2016 2:21:58 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/simple
+Jul 22, 2016 2:21:58 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-frontend-jaxws (144) [org.apache.cxf.jaxws.context.WebServiceContextResourceResolver]
+Jul 22, 2016 2:21:58 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/jaxws
+Jul 22, 2016 2:21:58 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/jaxrs
+Jul 22, 2016 2:21:58 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/jaxrs-client
+Jul 22, 2016 2:21:58 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-bindings-corba (154) [org.apache.cxf.binding.corba.CorbaBindingFactory, org.apache.cxf.binding.corba.wsdl.WSDLExtensionRegister]
+Jul 22, 2016 2:21:58 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/binding/coloc
+Jul 22, 2016 2:21:58 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-transports-local (156) [org.apache.cxf.transport.local.LocalTransportFactory]
+Jul 22, 2016 2:21:58 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-bindings-object (157) [org.apache.cxf.binding.object.ObjectBindingFactory]
+Jul 22, 2016 2:21:58 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/binding/object
+Jul 22, 2016 2:21:58 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-transports-http-jetty (158) [org.apache.cxf.transport.http_jetty.JettyDestinationFactory, org.apache.cxf.transport.http_jetty.JettyHTTPServerEngineFactory, org.apache.cxf.transport.http.ContinuationProviderFactory]
+Jul 22, 2016 2:21:58 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/transports/http-jetty/configuration
+Jul 22, 2016 2:21:58 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-transports-jms (160) [org.apache.cxf.transport.jms.JMSTransportFactory, org.apache.cxf.transport.jms.wsdl11.JMSWSDLExtensionLoader]
+Jul 22, 2016 2:21:58 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-transports-udp (162) [org.apache.cxf.transport.udp.UDPTransportFactory]
+Jul 22, 2016 2:21:58 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/policy
+Jul 22, 2016 2:21:58 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://www.w3.org/ns/ws-policy
+Jul 22, 2016 2:21:58 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://www.w3.org/2006/07/ws-policy
+Jul 22, 2016 2:21:58 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://schemas.xmlsoap.org/ws/2004/09/policy
+Jul 22, 2016 2:21:58 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd
+Jul 22, 2016 2:21:58 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd
+Jul 22, 2016 2:21:58 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://www.w3.org/2000/09/xmldsig#
+Jul 22, 2016 2:21:58 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702
+Jul 22, 2016 2:21:58 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-addr (182) [org.apache.cxf.ws.addressing.policy.AddressingAssertionBuilder, org.apache.cxf.ws.addressing.policy.UsingAddressingAssertionBuilder, org.apache.cxf.ws.addressing.policy.AddressingPolicyInterceptorProvider, org.apache.cxf.ws.addressing.impl.AddressingWSDLExtensionLoader, org.apache.cxf.ws.addressing.WSAddressingFeature$WSAddressingFeatureApplier, org.apache.cxf.ws.addressing.MAPAggregator$MAPAggregatorLoader]
+Jul 22, 2016 2:21:58 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/ws/addressing
+Jul 22, 2016 2:21:58 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-mex (187) [org.apache.cxf.ws.mex.MEXServerListener]
+Jul 22, 2016 2:21:58 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-security (184) [org.apache.cxf.ws.security.policy.WSSecurityPolicyLoader, org.apache.cxf.ws.security.cache.CacheCleanupListener]
+Jul 22, 2016 2:21:58 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-rm (186) [org.apache.cxf.ws.rm.RMManager, org.apache.cxf.ws.rm.policy.RMPolicyInterceptorProvider, org.apache.cxf.ws.rm.policy.RM10AssertionBuilder, org.apache.cxf.ws.rm.policy.RM12AssertionBuilder, org.apache.cxf.ws.rm.policy.WSRMP12PolicyLoader, org.apache.cxf.ws.rm.policy.MC11PolicyLoader, org.apache.cxf.ws.rm.policy.RSPPolicyLoader]
+Jul 22, 2016 2:21:58 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/ws/rm/manager
+Jul 22, 2016 2:21:58 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://schemas.xmlsoap.org/ws/2005/02/rm/policy
+Jul 22, 2016 2:21:58 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-javascript (188) [org.apache.cxf.javascript.JavascriptServerListener]
+Jul 22, 2016 2:21:58 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/clustering
+Jul 22, 2016 2:21:58 PM org.pentaho.caching.impl.PentahoCacheManagerFactory$RegistrationHandler$1 onSuccess
+INFO: New Caching Service registered
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/home/marcosd94/ETL-portal/data-integration/launcher/../lib/slf4j-log4j12-1.7.7.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/home/marcosd94/ETL-portal/data-integration/plugins/pentaho-big-data-plugin/lib/slf4j-log4j12-1.7.3.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+Jul 22, 2016 2:21:59 PM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be /lineage
+2016/07/22 14:22:01 - PROCESAR_NUEVOS_REGISTROS - Start of job execution
+2016/07/22 14:22:01 - PROCESAR_NUEVOS_REGISTROS - Starting entry [ProcesoNuevo]
+2016/07/22 14:22:01 - PROCESONUEVO - Starting entry [ObtenerOEEModificada]
+2016/07/22 14:22:01 - ObtenerOEEModificada - Loading transformation from XML file [file:///home/marcosd94/ETL-portal/cambioETL/ObtenerOEEModificada.ktr]
+2016/07/22 14:22:01 - ObtenerOEEModificada - Dispatching started for transformation [ObtenerOEEModificada]
+2016/07/22 14:22:02 - Get Variables.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/07/22 14:22:03 - Table input.0 - Finished reading query, closing connection.
+2016/07/22 14:22:03 - Select values.0 - Finished processing (I=0, O=0, R=8, W=8, U=0, E=0)
+2016/07/22 14:22:03 - Copy rows to result.0 - Finished processing (I=0, O=0, R=8, W=8, U=0, E=0)
+2016/07/22 14:22:03 - Table input.0 - Finished processing (I=8, O=0, R=0, W=8, U=0, E=0)
+2016/07/22 14:22:03 - PROCESONUEVO - Starting entry [ProcesarOEEModificadas]
+2016/07/22 14:22:03 - ProcesarOEEModificadas - Starting entry [DefinirVariables]
+2016/07/22 14:22:03 - DefinirVariables - Loading transformation from XML file [file:///home/marcosd94/ETL-portal/cambioETL/DefinirVariables.ktr]
+2016/07/22 14:22:03 - DefinirVariables - Dispatching started for transformation [DefinirVariables]
+2016/07/22 14:22:03 - Get rows from result.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/07/22 14:22:03 - Set Variables.0 - Setting environment variables...
+2016/07/22 14:22:03 - Set Variables.0 - Set variable anho to value [2016]
+2016/07/22 14:22:03 - Set Variables.0 - Set variable mes to value [2]
+2016/07/22 14:22:03 - Set Variables.0 - Set variable nivel to value [30]
+2016/07/22 14:22:03 - Set Variables.0 - Set variable entidad to value [6]
+2016/07/22 14:22:03 - Set Variables.0 - Set variable oee to value [87]
+2016/07/22 14:22:03 - Set Variables.0 - Finished after 1 rows.
+2016/07/22 14:22:03 - Set Variables.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/07/22 14:22:03 - ProcesarOEEModificadas - Starting entry [Elimina]
+2016/07/22 14:22:03 - Elimina - Loading transformation from XML file [file:///home/marcosd94/ETL-portal/cambioETL/Elimina.ktr]
+2016/07/22 14:22:03 - Elimina - Dispatching started for transformation [Elimina]
+2016/07/22 14:22:05 - Get Variables.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/07/22 14:22:05 - Execute SQL script.0 - Finished reading query, closing connection.
+2016/07/22 14:22:05 - Execute SQL script.0 - Finished processing (I=0, O=0, R=0, W=1, U=0, E=0)
+2016/07/22 14:22:05 - ProcesarOEEModificadas - Finished job entry [Elimina] (result=[true])
+2016/07/22 14:22:05 - ProcesarOEEModificadas - Finished job entry [DefinirVariables] (result=[true])
+2016/07/22 14:22:05 - ProcesarOEEModificadas - Starting entry [DefinirVariables]
+2016/07/22 14:22:05 - DefinirVariables - Loading transformation from XML file [file:///home/marcosd94/ETL-portal/cambioETL/DefinirVariables.ktr]
+2016/07/22 14:22:05 - DefinirVariables - Dispatching started for transformation [DefinirVariables]
+2016/07/22 14:22:05 - Get rows from result.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/07/22 14:22:05 - Set Variables.0 - Setting environment variables...
+2016/07/22 14:22:05 - Set Variables.0 - Set variable anho to value [2016]
+2016/07/22 14:22:05 - Set Variables.0 - Set variable mes to value [6]
+2016/07/22 14:22:05 - Set Variables.0 - Set variable nivel to value [12]
+2016/07/22 14:22:05 - Set Variables.0 - Set variable entidad to value [8]
+2016/07/22 14:22:05 - Set Variables.0 - Set variable oee to value [1]
+2016/07/22 14:22:05 - Set Variables.0 - Finished after 1 rows.
+2016/07/22 14:22:05 - Set Variables.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/07/22 14:22:05 - ProcesarOEEModificadas - Starting entry [Elimina]
+2016/07/22 14:22:05 - Elimina - Loading transformation from XML file [file:///home/marcosd94/ETL-portal/cambioETL/Elimina.ktr]
+2016/07/22 14:22:05 - Elimina - Dispatching started for transformation [Elimina]
+2016/07/22 14:22:06 - Execute SQL script.0 - Finished reading query, closing connection.
+2016/07/22 14:22:06 - Execute SQL script.0 - Finished processing (I=0, O=0, R=0, W=1, U=0, E=0)
+2016/07/22 14:22:06 - Get Variables.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/07/22 14:22:06 - ProcesarOEEModificadas - Finished job entry [Elimina] (result=[true])
+2016/07/22 14:22:06 - ProcesarOEEModificadas - Finished job entry [DefinirVariables] (result=[true])
+2016/07/22 14:22:06 - ProcesarOEEModificadas - Starting entry [DefinirVariables]
+2016/07/22 14:22:06 - ProcesarOEEModificadas - Loading transformation from XML file [file:///home/marcosd94/ETL-portal/cambioETL/DefinirVariables.ktr]
+2016/07/22 14:22:06 - DefinirVariables - Dispatching started for transformation [DefinirVariables]
+2016/07/22 14:22:06 - Get rows from result.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/07/22 14:22:06 - Set Variables.0 - Setting environment variables...
+2016/07/22 14:22:06 - Set Variables.0 - Set variable anho to value [2016]
+2016/07/22 14:22:06 - Set Variables.0 - Set variable mes to value [6]
+2016/07/22 14:22:06 - Set Variables.0 - Set variable nivel to value [22]
+2016/07/22 14:22:06 - Set Variables.0 - Set variable entidad to value [13]
+2016/07/22 14:22:06 - Set Variables.0 - Set variable oee to value [1]
+2016/07/22 14:22:06 - Set Variables.0 - Finished after 1 rows.
+2016/07/22 14:22:06 - Set Variables.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/07/22 14:22:06 - ProcesarOEEModificadas - Starting entry [Elimina]
+2016/07/22 14:22:06 - ProcesarOEEModificadas - Loading transformation from XML file [file:///home/marcosd94/ETL-portal/cambioETL/Elimina.ktr]
+2016/07/22 14:22:06 - Elimina - Dispatching started for transformation [Elimina]
+2016/07/22 14:22:06 - Execute SQL script.0 - Finished reading query, closing connection.
+2016/07/22 14:22:06 - Get Variables.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/07/22 14:22:06 - Execute SQL script.0 - Finished processing (I=0, O=0, R=0, W=1, U=0, E=0)
+2016/07/22 14:22:06 - ProcesarOEEModificadas - Finished job entry [Elimina] (result=[true])
+2016/07/22 14:22:06 - ProcesarOEEModificadas - Finished job entry [DefinirVariables] (result=[true])
+2016/07/22 14:22:06 - ProcesarOEEModificadas - Starting entry [DefinirVariables]
+2016/07/22 14:22:06 - ProcesarOEEModificadas - Loading transformation from XML file [file:///home/marcosd94/ETL-portal/cambioETL/DefinirVariables.ktr]
+2016/07/22 14:22:06 - ProcesarOEEModificadas - Dispatching started for transformation [DefinirVariables]
+2016/07/22 14:22:06 - Get rows from result.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/07/22 14:22:06 - Set Variables.0 - Setting environment variables...
+2016/07/22 14:22:06 - Set Variables.0 - Set variable anho to value [2016]
+2016/07/22 14:22:06 - Set Variables.0 - Set variable mes to value [6]
+2016/07/22 14:22:06 - Set Variables.0 - Set variable nivel to value [23]
+2016/07/22 14:22:06 - Set Variables.0 - Set variable entidad to value [10]
+2016/07/22 14:22:06 - Set Variables.0 - Set variable oee to value [1]
+2016/07/22 14:22:06 - Set Variables.0 - Finished after 1 rows.
+2016/07/22 14:22:06 - Set Variables.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/07/22 14:22:06 - ProcesarOEEModificadas - Starting entry [Elimina]
+2016/07/22 14:22:06 - ProcesarOEEModificadas - Loading transformation from XML file [file:///home/marcosd94/ETL-portal/cambioETL/Elimina.ktr]
+2016/07/22 14:22:06 - ProcesarOEEModificadas - Dispatching started for transformation [Elimina]
+2016/07/22 14:22:07 - Execute SQL script.0 - Finished reading query, closing connection.
+2016/07/22 14:22:07 - Execute SQL script.0 - Finished processing (I=0, O=0, R=0, W=1, U=0, E=0)
+2016/07/22 14:22:07 - Get Variables.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/07/22 14:22:07 - ProcesarOEEModificadas - Finished job entry [Elimina] (result=[true])
+2016/07/22 14:22:07 - ProcesarOEEModificadas - Finished job entry [DefinirVariables] (result=[true])
+2016/07/22 14:22:07 - ProcesarOEEModificadas - Starting entry [DefinirVariables]
+2016/07/22 14:22:07 - ProcesarOEEModificadas - Loading transformation from XML file [file:///home/marcosd94/ETL-portal/cambioETL/DefinirVariables.ktr]
+2016/07/22 14:22:07 - ProcesarOEEModificadas - Dispatching started for transformation [DefinirVariables]
+2016/07/22 14:22:07 - ProcesarOEEModificadas - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/07/22 14:22:07 - ProcesarOEEModificadas - Setting environment variables...
+2016/07/22 14:22:07 - ProcesarOEEModificadas - Set variable anho to value [2016]
+2016/07/22 14:22:07 - ProcesarOEEModificadas - Set variable mes to value [6]
+2016/07/22 14:22:07 - ProcesarOEEModificadas - Set variable nivel to value [28]
+2016/07/22 14:22:07 - ProcesarOEEModificadas - Set variable entidad to value [1]
+2016/07/22 14:22:07 - ProcesarOEEModificadas - Set variable oee to value [2]
+2016/07/22 14:22:07 - ProcesarOEEModificadas - Finished after 1 rows.
+2016/07/22 14:22:07 - ProcesarOEEModificadas - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/07/22 14:22:07 - ProcesarOEEModificadas - Starting entry [Elimina]
+2016/07/22 14:22:07 - ProcesarOEEModificadas - Loading transformation from XML file [file:///home/marcosd94/ETL-portal/cambioETL/Elimina.ktr]
+2016/07/22 14:22:07 - ProcesarOEEModificadas - Dispatching started for transformation [Elimina]
+2016/07/22 14:22:07 - ProcesarOEEModificadas - Finished reading query, closing connection.
+2016/07/22 14:22:07 - ProcesarOEEModificadas - Finished processing (I=0, O=0, R=0, W=1, U=0, E=0)
+2016/07/22 14:22:07 - ProcesarOEEModificadas - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/07/22 14:22:07 - ProcesarOEEModificadas - Finished job entry [Elimina] (result=[true])
+2016/07/22 14:22:07 - ProcesarOEEModificadas - Finished job entry [DefinirVariables] (result=[true])
+2016/07/22 14:22:07 - ProcesarOEEModificadas - Starting entry [DefinirVariables]
+2016/07/22 14:22:07 - ProcesarOEEModificadas - Loading transformation from XML file [file:///home/marcosd94/ETL-portal/cambioETL/DefinirVariables.ktr]
+2016/07/22 14:22:07 - ProcesarOEEModificadas - Dispatching started for transformation [DefinirVariables]
+2016/07/22 14:22:07 - ProcesarOEEModificadas - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/07/22 14:22:07 - ProcesarOEEModificadas - Setting environment variables...
+2016/07/22 14:22:07 - ProcesarOEEModificadas - Set variable anho to value [2016]
+2016/07/22 14:22:07 - ProcesarOEEModificadas - Set variable mes to value [6]
+2016/07/22 14:22:07 - ProcesarOEEModificadas - Set variable nivel to value [30]
+2016/07/22 14:22:07 - ProcesarOEEModificadas - Set variable entidad to value [5]
+2016/07/22 14:22:07 - ProcesarOEEModificadas - Set variable oee to value [70]
+2016/07/22 14:22:07 - ProcesarOEEModificadas - Finished after 1 rows.
+2016/07/22 14:22:07 - ProcesarOEEModificadas - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/07/22 14:22:07 - ProcesarOEEModificadas - Starting entry [Elimina]
+2016/07/22 14:22:07 - ProcesarOEEModificadas - Loading transformation from XML file [file:///home/marcosd94/ETL-portal/cambioETL/Elimina.ktr]
+2016/07/22 14:22:07 - ProcesarOEEModificadas - Dispatching started for transformation [Elimina]
+2016/07/22 14:22:07 - ProcesarOEEModificadas - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/07/22 14:22:07 - ProcesarOEEModificadas - Finished reading query, closing connection.
+2016/07/22 14:22:07 - ProcesarOEEModificadas - Finished processing (I=0, O=0, R=0, W=1, U=0, E=0)
+2016/07/22 14:22:07 - ProcesarOEEModificadas - Finished job entry [Elimina] (result=[true])
+2016/07/22 14:22:07 - ProcesarOEEModificadas - Finished job entry [DefinirVariables] (result=[true])
+2016/07/22 14:22:07 - ProcesarOEEModificadas - Starting entry [DefinirVariables]
+2016/07/22 14:22:07 - ProcesarOEEModificadas - Loading transformation from XML file [file:///home/marcosd94/ETL-portal/cambioETL/DefinirVariables.ktr]
+2016/07/22 14:22:07 - ProcesarOEEModificadas - Dispatching started for transformation [DefinirVariables]
+2016/07/22 14:22:07 - ProcesarOEEModificadas - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/07/22 14:22:07 - ProcesarOEEModificadas - Setting environment variables...
+2016/07/22 14:22:07 - ProcesarOEEModificadas - Set variable anho to value [2016]
+2016/07/22 14:22:07 - ProcesarOEEModificadas - Set variable mes to value [6]
+2016/07/22 14:22:07 - ProcesarOEEModificadas - Set variable nivel to value [30]
+2016/07/22 14:22:07 - ProcesarOEEModificadas - Set variable entidad to value [7]
+2016/07/22 14:22:07 - ProcesarOEEModificadas - Set variable oee to value [102]
+2016/07/22 14:22:07 - ProcesarOEEModificadas - Finished after 1 rows.
+2016/07/22 14:22:07 - ProcesarOEEModificadas - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/07/22 14:22:07 - ProcesarOEEModificadas - Starting entry [Elimina]
+2016/07/22 14:22:07 - ProcesarOEEModificadas - Loading transformation from XML file [file:///home/marcosd94/ETL-portal/cambioETL/Elimina.ktr]
+2016/07/22 14:22:07 - ProcesarOEEModificadas - Dispatching started for transformation [Elimina]
+2016/07/22 14:22:07 - ProcesarOEEModificadas - Finished reading query, closing connection.
+2016/07/22 14:22:07 - ProcesarOEEModificadas - Finished processing (I=0, O=0, R=0, W=1, U=0, E=0)
+2016/07/22 14:22:07 - ProcesarOEEModificadas - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/07/22 14:22:07 - ProcesarOEEModificadas - Finished job entry [Elimina] (result=[true])
+2016/07/22 14:22:07 - ProcesarOEEModificadas - Finished job entry [DefinirVariables] (result=[true])
+2016/07/22 14:22:07 - ProcesarOEEModificadas - Starting entry [DefinirVariables]
+2016/07/22 14:22:07 - ProcesarOEEModificadas - Loading transformation from XML file [file:///home/marcosd94/ETL-portal/cambioETL/DefinirVariables.ktr]
+2016/07/22 14:22:07 - ProcesarOEEModificadas - Dispatching started for transformation [DefinirVariables]
+2016/07/22 14:22:07 - ProcesarOEEModificadas - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/07/22 14:22:07 - ProcesarOEEModificadas - Setting environment variables...
+2016/07/22 14:22:07 - ProcesarOEEModificadas - Set variable anho to value [2016]
+2016/07/22 14:22:07 - ProcesarOEEModificadas - Set variable mes to value [6]
+2016/07/22 14:22:07 - ProcesarOEEModificadas - Set variable nivel to value [30]
+2016/07/22 14:22:07 - ProcesarOEEModificadas - Set variable entidad to value [7]
+2016/07/22 14:22:07 - ProcesarOEEModificadas - Set variable oee to value [117]
+2016/07/22 14:22:07 - ProcesarOEEModificadas - Finished after 1 rows.
+2016/07/22 14:22:07 - ProcesarOEEModificadas - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/07/22 14:22:07 - ProcesarOEEModificadas - Starting entry [Elimina]
+2016/07/22 14:22:07 - ProcesarOEEModificadas - Loading transformation from XML file [file:///home/marcosd94/ETL-portal/cambioETL/Elimina.ktr]
+2016/07/22 14:22:07 - ProcesarOEEModificadas - Dispatching started for transformation [Elimina]
+2016/07/22 14:22:08 - ProcesarOEEModificadas - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/07/22 14:22:08 - ProcesarOEEModificadas - Finished reading query, closing connection.
+2016/07/22 14:22:08 - ProcesarOEEModificadas - Finished processing (I=0, O=0, R=0, W=1, U=0, E=0)
+2016/07/22 14:22:08 - ProcesarOEEModificadas - Finished job entry [Elimina] (result=[true])
+2016/07/22 14:22:08 - ProcesarOEEModificadas - Finished job entry [DefinirVariables] (result=[true])
+2016/07/22 14:22:08 - PROCESONUEVO - Starting entry [Carga]
+2016/07/22 14:22:08 - Carga - Loading transformation from XML file [file:///home/marcosd94/ETL-portal/cambioETL/CargaRegistros.ktr]
+2016/07/22 14:22:08 - CargaRegistros - Dispatching started for transformation [CargaRegistros]
+2016/07/22 14:22:08 - Table output.0 - Connected to database [ceamso] (commit=1000)
+2016/07/22 14:22:08 - Get Variables.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/07/22 14:33:02 - Table input.0 - linenr 50000
+2016/07/22 14:35:22 - Table output.0 - linenr 50000
+2016/07/22 14:44:49 - Table input.0 - linenr 100000
+2016/07/22 14:47:03 - Table output.0 - linenr 100000
+2016/07/22 14:58:10 - Table input.0 - linenr 150000
+2016/07/22 15:01:55 - Table output.0 - linenr 150000
+2016/07/22 15:04:29 - Table input.0 - Finished reading query, closing connection.
+2016/07/22 15:04:29 - Table input.0 - Finished processing (I=164489, O=0, R=0, W=164489, U=0, E=0)
+2016/07/22 15:08:01 - Table output.0 - Finished processing (I=0, O=164489, R=164489, W=164489, U=0, E=0)
+2016/07/22 15:08:01 - PROCESONUEVO - Finished job entry [Carga] (result=[true])
+2016/07/22 15:08:01 - PROCESONUEVO - Finished job entry [ProcesarOEEModificadas] (result=[true])
+2016/07/22 15:08:01 - PROCESONUEVO - Finished job entry [ObtenerOEEModificada] (result=[true])
+2016/07/22 15:08:01 - PROCESAR_NUEVOS_REGISTROS - Finished job entry [ProcesoNuevo] (result=[true])
+2016/07/22 15:08:01 - PROCESAR_NUEVOS_REGISTROS - Job execution finished
+2016/07/22 15:08:01 - Kitchen - Finished!
+2016/07/22 15:08:01 - Kitchen - Start=2016/07/22 14:21:55.516, Stop=2016/07/22 15:08:01.339
+2016/07/22 15:08:01 - Kitchen - Processing ended after 46 minutes and 5 seconds (2765 seconds total).

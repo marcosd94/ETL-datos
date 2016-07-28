@@ -1,0 +1,1417 @@
+19:34:53,857 INFO  [KarafInstance] 
+*******************************************************************************
+*** Karaf Instance Number: 1 at /home/marcosd94/ETL-portal/data-integration ***
+***   /./system/karaf//data1                                                ***
+*** Karaf Port:8801                                                         ***
+*** OSGI Service Port:9050                                                  ***
+*******************************************************************************
+Jul 25, 2016 7:34:56 PM org.apache.karaf.main.Main$KarafLockCallback lockAquired
+INFO: Lock acquired. Setting startlevel to 100
+log4j: System property is :null
+log4j: Standard DocumentBuilderFactory search succeded.
+log4j: DocumentBuilderFactory is: org.apache.xerces.jaxp.DocumentBuilderFactoryImpl
+log4j: debug attribute= "null".
+log4j: Ignoring debug attribute.
+log4j: reset attribute= "false".
+log4j: Threshold ="null".
+log4j: Retreiving an instance of org.apache.log4j.Logger.
+log4j: Setting [org.pentaho.di] additivity to [true].
+log4j: Level value for org.pentaho.di is  [off].
+log4j: org.pentaho.di level set to OFF
+log4j: Class name: [org.apache.log4j.ConsoleAppender]
+log4j: Setting property [target] to [System.out].
+log4j: Parsing layout of class: "org.apache.log4j.PatternLayout"
+log4j: Setting property [conversionPattern] to [%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n].
+log4j: Adding appender named [console] to category [org.pentaho.di].
+log4j: Level value for root is  [off].
+log4j: root level set to OFF
+log4j: Adding appender named [console] to category [root].
+2016/07/25 19:34:56 - Kitchen - Start of run.
+2016-07-25 19:34:58.842:INFO:oejs.Server:jetty-8.1.15.v20140411
+2016-07-25 19:34:58.876:INFO:oejs.AbstractConnector:Started NIOSocketConnectorWrapper@0.0.0.0:9050
+log4j: reset attribute= "false".
+log4j: Threshold ="null".
+log4j:WARN No appenders could be found for logger (org.springframework.osgi.extender.internal.activator.ContextLoaderListener).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+Jul 25, 2016 7:34:59 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/core
+Jul 25, 2016 7:34:59 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/configuration/beans
+Jul 25, 2016 7:34:59 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/configuration/parameterized-types
+Jul 25, 2016 7:34:59 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/configuration/security
+Jul 25, 2016 7:34:59 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://schemas.xmlsoap.org/wsdl/
+Jul 25, 2016 7:34:59 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://www.w3.org/2005/08/addressing
+Jul 25, 2016 7:34:59 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://schemas.xmlsoap.org/ws/2004/08/addressing
+Jul 25, 2016 7:34:59 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-management (135) [org.apache.cxf.management.InstrumentationManager]
+Jul 25, 2016 7:34:59 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-wsdl (138) [org.apache.cxf.wsdl.WSDLManager]
+Jul 25, 2016 7:34:59 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-bindings-xml (140) [org.apache.cxf.binding.xml.XMLBindingFactory, org.apache.cxf.binding.xml.wsdl11.XMLWSDLExtensionLoader]
+Jul 25, 2016 7:34:59 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-bindings-soap (141) [org.apache.cxf.binding.soap.SoapBindingFactory, org.apache.cxf.binding.soap.SoapTransportFactory]
+Jul 25, 2016 7:34:59 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/bindings/soap
+Jul 25, 2016 7:34:59 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-transports-http (142) [org.apache.cxf.transport.http.HTTPTransportFactory, org.apache.cxf.transport.http.HTTPWSDLExtensionLoader, org.apache.cxf.transport.http.policy.HTTPClientAssertionBuilder, org.apache.cxf.transport.http.policy.HTTPServerAssertionBuilder, org.apache.cxf.transport.http.policy.NoOpPolicyInterceptorProvider]
+Jul 25, 2016 7:34:59 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-policy (165) [org.apache.cxf.ws.policy.PolicyEngine, org.apache.cxf.policy.PolicyDataEngine, org.apache.cxf.ws.policy.AssertionBuilderRegistry, org.apache.cxf.ws.policy.PolicyInterceptorProviderRegistry, org.apache.cxf.ws.policy.PolicyBuilder, org.apache.cxf.ws.policy.PolicyAnnotationListener, org.apache.cxf.ws.policy.attachment.ServiceModelPolicyProvider, org.apache.cxf.ws.policy.attachment.external.DomainExpressionBuilderRegistry, org.apache.cxf.ws.policy.attachment.external.EndpointReferenceDomainExpressionBuilder, org.apache.cxf.ws.policy.attachment.external.URIDomainExpressionBuilder, org.apache.cxf.ws.policy.attachment.wsdl11.Wsdl11AttachmentPolicyProvider, org.apache.cxf.ws.policy.mtom.MTOMAssertionBuilder, org.apache.cxf.ws.policy.mtom.MTOMPolicyInterceptorProvider]
+Jul 25, 2016 7:34:59 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/transports/http/configuration
+Jul 25, 2016 7:34:59 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/simple
+Jul 25, 2016 7:34:59 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-frontend-jaxws (144) [org.apache.cxf.jaxws.context.WebServiceContextResourceResolver]
+Jul 25, 2016 7:34:59 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/jaxws
+Jul 25, 2016 7:34:59 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/jaxrs
+Jul 25, 2016 7:34:59 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/jaxrs-client
+Jul 25, 2016 7:34:59 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-bindings-corba (154) [org.apache.cxf.binding.corba.CorbaBindingFactory, org.apache.cxf.binding.corba.wsdl.WSDLExtensionRegister]
+Jul 25, 2016 7:34:59 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/binding/coloc
+Jul 25, 2016 7:34:59 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-transports-local (156) [org.apache.cxf.transport.local.LocalTransportFactory]
+Jul 25, 2016 7:34:59 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-bindings-object (157) [org.apache.cxf.binding.object.ObjectBindingFactory]
+Jul 25, 2016 7:34:59 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/binding/object
+Jul 25, 2016 7:34:59 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-transports-http-jetty (158) [org.apache.cxf.transport.http_jetty.JettyDestinationFactory, org.apache.cxf.transport.http_jetty.JettyHTTPServerEngineFactory, org.apache.cxf.transport.http.ContinuationProviderFactory]
+Jul 25, 2016 7:34:59 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/transports/http-jetty/configuration
+Jul 25, 2016 7:34:59 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-transports-jms (160) [org.apache.cxf.transport.jms.JMSTransportFactory, org.apache.cxf.transport.jms.wsdl11.JMSWSDLExtensionLoader]
+Jul 25, 2016 7:34:59 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-transports-udp (162) [org.apache.cxf.transport.udp.UDPTransportFactory]
+Jul 25, 2016 7:34:59 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/policy
+Jul 25, 2016 7:34:59 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://www.w3.org/ns/ws-policy
+Jul 25, 2016 7:34:59 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://www.w3.org/2006/07/ws-policy
+Jul 25, 2016 7:34:59 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://schemas.xmlsoap.org/ws/2004/09/policy
+Jul 25, 2016 7:34:59 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd
+Jul 25, 2016 7:34:59 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd
+Jul 25, 2016 7:34:59 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://www.w3.org/2000/09/xmldsig#
+Jul 25, 2016 7:34:59 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702
+Jul 25, 2016 7:34:59 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-addr (182) [org.apache.cxf.ws.addressing.policy.AddressingAssertionBuilder, org.apache.cxf.ws.addressing.policy.UsingAddressingAssertionBuilder, org.apache.cxf.ws.addressing.policy.AddressingPolicyInterceptorProvider, org.apache.cxf.ws.addressing.impl.AddressingWSDLExtensionLoader, org.apache.cxf.ws.addressing.WSAddressingFeature$WSAddressingFeatureApplier, org.apache.cxf.ws.addressing.MAPAggregator$MAPAggregatorLoader]
+Jul 25, 2016 7:34:59 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/ws/addressing
+Jul 25, 2016 7:34:59 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-mex (187) [org.apache.cxf.ws.mex.MEXServerListener]
+Jul 25, 2016 7:34:59 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-security (184) [org.apache.cxf.ws.security.policy.WSSecurityPolicyLoader, org.apache.cxf.ws.security.cache.CacheCleanupListener]
+Jul 25, 2016 7:34:59 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-rm (186) [org.apache.cxf.ws.rm.RMManager, org.apache.cxf.ws.rm.policy.RMPolicyInterceptorProvider, org.apache.cxf.ws.rm.policy.RM10AssertionBuilder, org.apache.cxf.ws.rm.policy.RM12AssertionBuilder, org.apache.cxf.ws.rm.policy.WSRMP12PolicyLoader, org.apache.cxf.ws.rm.policy.MC11PolicyLoader, org.apache.cxf.ws.rm.policy.RSPPolicyLoader]
+Jul 25, 2016 7:34:59 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/ws/rm/manager
+Jul 25, 2016 7:34:59 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://schemas.xmlsoap.org/ws/2005/02/rm/policy
+Jul 25, 2016 7:34:59 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-javascript (188) [org.apache.cxf.javascript.JavascriptServerListener]
+Jul 25, 2016 7:34:59 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/clustering
+Jul 25, 2016 7:35:00 PM org.pentaho.caching.impl.PentahoCacheManagerFactory$RegistrationHandler$1 onSuccess
+INFO: New Caching Service registered
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/home/marcosd94/ETL-portal/data-integration/launcher/../lib/slf4j-log4j12-1.7.7.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/home/marcosd94/ETL-portal/data-integration/plugins/pentaho-big-data-plugin/lib/slf4j-log4j12-1.7.3.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+19:35:00,772 ERROR [WebjarsURLConnection] Error Transforming zip
+java.io.IOException: Pipe closed
+	at java.io.PipedInputStream.checkStateForReceive(PipedInputStream.java:261)
+	at java.io.PipedInputStream.receive(PipedInputStream.java:227)
+	at java.io.PipedOutputStream.write(PipedOutputStream.java:149)
+	at java.util.zip.DeflaterOutputStream.deflate(DeflaterOutputStream.java:253)
+	at java.util.zip.ZipOutputStream.closeEntry(ZipOutputStream.java:238)
+	at org.pentaho.osgi.platform.webjars.WebjarsURLConnection.transform(WebjarsURLConnection.java:190)
+	at org.pentaho.osgi.platform.webjars.WebjarsURLConnection.access$000(WebjarsURLConnection.java:54)
+	at org.pentaho.osgi.platform.webjars.WebjarsURLConnection$2.call(WebjarsURLConnection.java:90)
+	at org.pentaho.osgi.platform.webjars.WebjarsURLConnection$2.call(WebjarsURLConnection.java:87)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+19:35:00,849 ERROR [WebjarsURLConnection] Error Transforming zip
+java.io.IOException: Pipe closed
+	at java.io.PipedInputStream.checkStateForReceive(PipedInputStream.java:261)
+	at java.io.PipedInputStream.receive(PipedInputStream.java:202)
+	at java.io.PipedOutputStream.write(PipedOutputStream.java:122)
+	at java.util.zip.ZipOutputStream.writeInt(ZipOutputStream.java:590)
+	at java.util.zip.ZipOutputStream.writeLOC(ZipOutputStream.java:374)
+	at java.util.zip.ZipOutputStream.putNextEntry(ZipOutputStream.java:221)
+	at java.util.jar.JarOutputStream.putNextEntry(JarOutputStream.java:109)
+	at org.pentaho.osgi.platform.webjars.WebjarsURLConnection.transform(WebjarsURLConnection.java:182)
+	at org.pentaho.osgi.platform.webjars.WebjarsURLConnection.access$000(WebjarsURLConnection.java:54)
+	at org.pentaho.osgi.platform.webjars.WebjarsURLConnection$2.call(WebjarsURLConnection.java:90)
+	at org.pentaho.osgi.platform.webjars.WebjarsURLConnection$2.call(WebjarsURLConnection.java:87)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Jul 25, 2016 7:35:01 PM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be /lineage
+Jul 25, 2016 7:35:01 PM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be /marketplace
+2016/07/25 19:35:02 - CARGAR_TABLA_CONCURSOS - Start of job execution
+2016/07/25 19:35:02 - CARGAR_TABLA_CONCURSOS - Starting entry [Transformation 2]
+2016/07/25 19:35:02 - Transformation 2 - Loading transformation from XML file [/home/marcosd94/ETL-portal/pentaho/Transformaciones/T_CARGA_CONCURSOS.ktr]
+2016/07/25 19:35:02 - T_CARGA_CONCURSOS - Dispatching started for transformation [T_CARGA_CONCURSOS]
+2016/07/25 19:35:02 - T_CARGA_CONCURSOS - Nr of arguments detected:1 
+2016/07/25 19:35:02 - T_CARGA_CONCURSOS - This is not a replay transformation
+2016/07/25 19:35:02 - T_CARGA_CONCURSOS - I found 11 different steps to launch.
+2016/07/25 19:35:02 - T_CARGA_CONCURSOS - Allocating rowsets...
+2016/07/25 19:35:02 - T_CARGA_CONCURSOS -  Allocating rowsets for step 0 --> concursos
+2016/07/25 19:35:02 - T_CARGA_CONCURSOS -   prevcopies = 1, nextcopies=1
+2016/07/25 19:35:02 - T_CARGA_CONCURSOS - Transformation allocated new rowset [concursos.0 - Table output.0]
+2016/07/25 19:35:02 - T_CARGA_CONCURSOS -  Allocated 1 rowsets for step 0 --> concursos  
+2016/07/25 19:35:02 - T_CARGA_CONCURSOS -  Allocating rowsets for step 1 --> Table output
+2016/07/25 19:35:02 - T_CARGA_CONCURSOS -  Allocated 1 rowsets for step 1 --> Table output  
+2016/07/25 19:35:02 - T_CARGA_CONCURSOS -  Allocating rowsets for step 2 --> adjudicacion
+2016/07/25 19:35:02 - T_CARGA_CONCURSOS -   prevcopies = 1, nextcopies=1
+2016/07/25 19:35:02 - T_CARGA_CONCURSOS - Transformation allocated new rowset [adjudicacion.0 - Table output 2.0]
+2016/07/25 19:35:02 - T_CARGA_CONCURSOS -  Allocated 2 rowsets for step 2 --> adjudicacion  
+2016/07/25 19:35:02 - T_CARGA_CONCURSOS -  Allocating rowsets for step 3 --> Table output 2
+2016/07/25 19:35:02 - T_CARGA_CONCURSOS -  Allocated 2 rowsets for step 3 --> Table output 2  
+2016/07/25 19:35:02 - T_CARGA_CONCURSOS -  Allocating rowsets for step 4 --> evaluacion
+2016/07/25 19:35:02 - T_CARGA_CONCURSOS -   prevcopies = 1, nextcopies=1
+2016/07/25 19:35:02 - T_CARGA_CONCURSOS - Transformation allocated new rowset [evaluacion.0 - Table output 3.0]
+2016/07/25 19:35:02 - T_CARGA_CONCURSOS -  Allocated 3 rowsets for step 4 --> evaluacion  
+2016/07/25 19:35:02 - T_CARGA_CONCURSOS -  Allocating rowsets for step 5 --> Table output 3
+2016/07/25 19:35:02 - T_CARGA_CONCURSOS -  Allocated 3 rowsets for step 5 --> Table output 3  
+2016/07/25 19:35:02 - T_CARGA_CONCURSOS -  Allocating rowsets for step 6 --> postulacion
+2016/07/25 19:35:02 - T_CARGA_CONCURSOS -   prevcopies = 1, nextcopies=1
+2016/07/25 19:35:02 - T_CARGA_CONCURSOS - Transformation allocated new rowset [postulacion.0 - Table output 3 2.0]
+2016/07/25 19:35:02 - T_CARGA_CONCURSOS -  Allocated 4 rowsets for step 6 --> postulacion  
+2016/07/25 19:35:02 - T_CARGA_CONCURSOS -  Allocating rowsets for step 7 --> Table output 3 2
+2016/07/25 19:35:02 - T_CARGA_CONCURSOS -  Allocated 4 rowsets for step 7 --> Table output 3 2  
+2016/07/25 19:35:02 - T_CARGA_CONCURSOS -  Allocating rowsets for step 8 --> Get Variables
+2016/07/25 19:35:02 - T_CARGA_CONCURSOS -   prevcopies = 1, nextcopies=1
+2016/07/25 19:35:02 - T_CARGA_CONCURSOS - Transformation allocated new rowset [Get Variables.0 - concursos.0]
+2016/07/25 19:35:02 - T_CARGA_CONCURSOS -   prevcopies = 1, nextcopies=1
+2016/07/25 19:35:02 - T_CARGA_CONCURSOS - Transformation allocated new rowset [Get Variables.0 - adjudicacion.0]
+2016/07/25 19:35:02 - T_CARGA_CONCURSOS -   prevcopies = 1, nextcopies=1
+2016/07/25 19:35:02 - T_CARGA_CONCURSOS - Transformation allocated new rowset [Get Variables.0 - evaluacion.0]
+2016/07/25 19:35:02 - T_CARGA_CONCURSOS -   prevcopies = 1, nextcopies=1
+2016/07/25 19:35:02 - T_CARGA_CONCURSOS - Transformation allocated new rowset [Get Variables.0 - postulacion.0]
+2016/07/25 19:35:02 - T_CARGA_CONCURSOS -   prevcopies = 1, nextcopies=1
+2016/07/25 19:35:02 - T_CARGA_CONCURSOS - Transformation allocated new rowset [Get Variables.0 - concursabilidad.0]
+2016/07/25 19:35:02 - T_CARGA_CONCURSOS -  Allocated 9 rowsets for step 8 --> Get Variables  
+2016/07/25 19:35:02 - T_CARGA_CONCURSOS -  Allocating rowsets for step 9 --> concursabilidad
+2016/07/25 19:35:02 - T_CARGA_CONCURSOS -   prevcopies = 1, nextcopies=1
+2016/07/25 19:35:02 - T_CARGA_CONCURSOS - Transformation allocated new rowset [concursabilidad.0 - Table output 3 2 2.0]
+2016/07/25 19:35:02 - T_CARGA_CONCURSOS -  Allocated 10 rowsets for step 9 --> concursabilidad  
+2016/07/25 19:35:02 - T_CARGA_CONCURSOS -  Allocating rowsets for step 10 --> Table output 3 2 2
+2016/07/25 19:35:02 - T_CARGA_CONCURSOS -  Allocated 10 rowsets for step 10 --> Table output 3 2 2  
+2016/07/25 19:35:02 - T_CARGA_CONCURSOS - Allocating Steps & StepData...
+2016/07/25 19:35:02 - T_CARGA_CONCURSOS -  Transformation is about to allocate step [concursos] of type [TableInput]
+2016/07/25 19:35:02 - concursos.0 - distribution activated
+2016/07/25 19:35:02 - concursos.0 - Starting allocation of buffers & new threads...
+2016/07/25 19:35:02 - concursos.0 - Step info: nrinput=1 nroutput=1
+2016/07/25 19:35:02 - concursos.0 - Got previous step from [concursos] #0 --> Get Variables
+2016/07/25 19:35:02 - concursos.0 - input rel is 1:1
+2016/07/25 19:35:02 - concursos.0 - Found input rowset [Get Variables.0 - concursos.0]
+2016/07/25 19:35:02 - concursos.0 - output rel. is  1:1
+2016/07/25 19:35:02 - concursos.0 - Found output rowset [concursos.0 - Table output.0]
+2016/07/25 19:35:02 - concursos.0 - Finished dispatching
+2016/07/25 19:35:02 - T_CARGA_CONCURSOS -  Transformation has allocated a new step: [concursos].0
+2016/07/25 19:35:02 - T_CARGA_CONCURSOS -  Transformation is about to allocate step [Table output] of type [TableOutput]
+2016/07/25 19:35:02 - Table output.0 - distribution activated
+2016/07/25 19:35:02 - Table output.0 - Starting allocation of buffers & new threads...
+2016/07/25 19:35:02 - Table output.0 - Step info: nrinput=1 nroutput=0
+2016/07/25 19:35:02 - Table output.0 - Got previous step from [Table output] #0 --> concursos
+2016/07/25 19:35:02 - Table output.0 - input rel is 1:1
+2016/07/25 19:35:02 - Table output.0 - Found input rowset [concursos.0 - Table output.0]
+2016/07/25 19:35:02 - Table output.0 - Finished dispatching
+2016/07/25 19:35:02 - T_CARGA_CONCURSOS -  Transformation has allocated a new step: [Table output].0
+2016/07/25 19:35:02 - T_CARGA_CONCURSOS -  Transformation is about to allocate step [adjudicacion] of type [TableInput]
+2016/07/25 19:35:02 - adjudicacion.0 - distribution activated
+2016/07/25 19:35:02 - adjudicacion.0 - Starting allocation of buffers & new threads...
+2016/07/25 19:35:02 - adjudicacion.0 - Step info: nrinput=1 nroutput=1
+2016/07/25 19:35:02 - adjudicacion.0 - Got previous step from [adjudicacion] #0 --> Get Variables
+2016/07/25 19:35:02 - adjudicacion.0 - input rel is 1:1
+2016/07/25 19:35:02 - adjudicacion.0 - Found input rowset [Get Variables.0 - adjudicacion.0]
+2016/07/25 19:35:02 - adjudicacion.0 - output rel. is  1:1
+2016/07/25 19:35:02 - adjudicacion.0 - Found output rowset [adjudicacion.0 - Table output 2.0]
+2016/07/25 19:35:02 - adjudicacion.0 - Finished dispatching
+2016/07/25 19:35:02 - T_CARGA_CONCURSOS -  Transformation has allocated a new step: [adjudicacion].0
+2016/07/25 19:35:02 - T_CARGA_CONCURSOS -  Transformation is about to allocate step [Table output 2] of type [TableOutput]
+2016/07/25 19:35:02 - Table output 2.0 - distribution activated
+2016/07/25 19:35:02 - Table output 2.0 - Starting allocation of buffers & new threads...
+2016/07/25 19:35:02 - Table output 2.0 - Step info: nrinput=1 nroutput=0
+2016/07/25 19:35:02 - Table output 2.0 - Got previous step from [Table output 2] #0 --> adjudicacion
+2016/07/25 19:35:02 - Table output 2.0 - input rel is 1:1
+2016/07/25 19:35:02 - Table output 2.0 - Found input rowset [adjudicacion.0 - Table output 2.0]
+2016/07/25 19:35:02 - Table output 2.0 - Finished dispatching
+2016/07/25 19:35:02 - T_CARGA_CONCURSOS -  Transformation has allocated a new step: [Table output 2].0
+2016/07/25 19:35:02 - T_CARGA_CONCURSOS -  Transformation is about to allocate step [evaluacion] of type [TableInput]
+2016/07/25 19:35:02 - evaluacion.0 - distribution activated
+2016/07/25 19:35:02 - evaluacion.0 - Starting allocation of buffers & new threads...
+2016/07/25 19:35:02 - evaluacion.0 - Step info: nrinput=1 nroutput=1
+2016/07/25 19:35:02 - evaluacion.0 - Got previous step from [evaluacion] #0 --> Get Variables
+2016/07/25 19:35:02 - evaluacion.0 - input rel is 1:1
+2016/07/25 19:35:02 - evaluacion.0 - Found input rowset [Get Variables.0 - evaluacion.0]
+2016/07/25 19:35:02 - evaluacion.0 - output rel. is  1:1
+2016/07/25 19:35:02 - evaluacion.0 - Found output rowset [evaluacion.0 - Table output 3.0]
+2016/07/25 19:35:02 - evaluacion.0 - Finished dispatching
+2016/07/25 19:35:02 - T_CARGA_CONCURSOS -  Transformation has allocated a new step: [evaluacion].0
+2016/07/25 19:35:02 - T_CARGA_CONCURSOS -  Transformation is about to allocate step [Table output 3] of type [TableOutput]
+2016/07/25 19:35:02 - Table output 3.0 - distribution activated
+2016/07/25 19:35:02 - Table output 3.0 - Starting allocation of buffers & new threads...
+2016/07/25 19:35:02 - Table output 3.0 - Step info: nrinput=1 nroutput=0
+2016/07/25 19:35:02 - Table output 3.0 - Got previous step from [Table output 3] #0 --> evaluacion
+2016/07/25 19:35:02 - Table output 3.0 - input rel is 1:1
+2016/07/25 19:35:02 - Table output 3.0 - Found input rowset [evaluacion.0 - Table output 3.0]
+2016/07/25 19:35:02 - Table output 3.0 - Finished dispatching
+2016/07/25 19:35:02 - T_CARGA_CONCURSOS -  Transformation has allocated a new step: [Table output 3].0
+2016/07/25 19:35:02 - T_CARGA_CONCURSOS -  Transformation is about to allocate step [postulacion] of type [TableInput]
+2016/07/25 19:35:02 - postulacion.0 - distribution activated
+2016/07/25 19:35:02 - postulacion.0 - Starting allocation of buffers & new threads...
+2016/07/25 19:35:02 - postulacion.0 - Step info: nrinput=1 nroutput=1
+2016/07/25 19:35:02 - postulacion.0 - Got previous step from [postulacion] #0 --> Get Variables
+2016/07/25 19:35:02 - postulacion.0 - input rel is 1:1
+2016/07/25 19:35:02 - postulacion.0 - Found input rowset [Get Variables.0 - postulacion.0]
+2016/07/25 19:35:02 - postulacion.0 - output rel. is  1:1
+2016/07/25 19:35:02 - postulacion.0 - Found output rowset [postulacion.0 - Table output 3 2.0]
+2016/07/25 19:35:02 - postulacion.0 - Finished dispatching
+2016/07/25 19:35:02 - T_CARGA_CONCURSOS -  Transformation has allocated a new step: [postulacion].0
+2016/07/25 19:35:02 - T_CARGA_CONCURSOS -  Transformation is about to allocate step [Table output 3 2] of type [TableOutput]
+2016/07/25 19:35:02 - Table output 3 2.0 - distribution activated
+2016/07/25 19:35:02 - Table output 3 2.0 - Starting allocation of buffers & new threads...
+2016/07/25 19:35:02 - Table output 3 2.0 - Step info: nrinput=1 nroutput=0
+2016/07/25 19:35:02 - Table output 3 2.0 - Got previous step from [Table output 3 2] #0 --> postulacion
+2016/07/25 19:35:02 - Table output 3 2.0 - input rel is 1:1
+2016/07/25 19:35:02 - Table output 3 2.0 - Found input rowset [postulacion.0 - Table output 3 2.0]
+2016/07/25 19:35:02 - Table output 3 2.0 - Finished dispatching
+2016/07/25 19:35:02 - T_CARGA_CONCURSOS -  Transformation has allocated a new step: [Table output 3 2].0
+2016/07/25 19:35:02 - T_CARGA_CONCURSOS -  Transformation is about to allocate step [Get Variables] of type [GetVariable]
+2016/07/25 19:35:02 - Get Variables.0 - distribution de-activated
+2016/07/25 19:35:02 - Get Variables.0 - Starting allocation of buffers & new threads...
+2016/07/25 19:35:02 - Get Variables.0 - Step info: nrinput=0 nroutput=5
+2016/07/25 19:35:02 - Get Variables.0 - output rel. is  1:1
+2016/07/25 19:35:02 - Get Variables.0 - Found output rowset [Get Variables.0 - concursos.0]
+2016/07/25 19:35:02 - Get Variables.0 - output rel. is  1:1
+2016/07/25 19:35:02 - Get Variables.0 - Found output rowset [Get Variables.0 - adjudicacion.0]
+2016/07/25 19:35:02 - Get Variables.0 - output rel. is  1:1
+2016/07/25 19:35:02 - Get Variables.0 - Found output rowset [Get Variables.0 - evaluacion.0]
+2016/07/25 19:35:02 - Get Variables.0 - output rel. is  1:1
+2016/07/25 19:35:02 - Get Variables.0 - Found output rowset [Get Variables.0 - postulacion.0]
+2016/07/25 19:35:02 - Get Variables.0 - output rel. is  1:1
+2016/07/25 19:35:02 - Get Variables.0 - Found output rowset [Get Variables.0 - concursabilidad.0]
+2016/07/25 19:35:02 - Get Variables.0 - Finished dispatching
+2016/07/25 19:35:02 - T_CARGA_CONCURSOS -  Transformation has allocated a new step: [Get Variables].0
+2016/07/25 19:35:02 - T_CARGA_CONCURSOS -  Transformation is about to allocate step [concursabilidad] of type [TableInput]
+2016/07/25 19:35:02 - concursabilidad.0 - distribution activated
+2016/07/25 19:35:02 - concursabilidad.0 - Starting allocation of buffers & new threads...
+2016/07/25 19:35:02 - concursabilidad.0 - Step info: nrinput=1 nroutput=1
+2016/07/25 19:35:02 - concursabilidad.0 - Got previous step from [concursabilidad] #0 --> Get Variables
+2016/07/25 19:35:02 - concursabilidad.0 - input rel is 1:1
+2016/07/25 19:35:02 - concursabilidad.0 - Found input rowset [Get Variables.0 - concursabilidad.0]
+2016/07/25 19:35:02 - concursabilidad.0 - output rel. is  1:1
+2016/07/25 19:35:02 - concursabilidad.0 - Found output rowset [concursabilidad.0 - Table output 3 2 2.0]
+2016/07/25 19:35:02 - concursabilidad.0 - Finished dispatching
+2016/07/25 19:35:02 - T_CARGA_CONCURSOS -  Transformation has allocated a new step: [concursabilidad].0
+2016/07/25 19:35:02 - T_CARGA_CONCURSOS -  Transformation is about to allocate step [Table output 3 2 2] of type [TableOutput]
+2016/07/25 19:35:02 - Table output 3 2 2.0 - distribution activated
+2016/07/25 19:35:02 - Table output 3 2 2.0 - Starting allocation of buffers & new threads...
+2016/07/25 19:35:02 - Table output 3 2 2.0 - Step info: nrinput=1 nroutput=0
+2016/07/25 19:35:02 - Table output 3 2 2.0 - Got previous step from [Table output 3 2 2] #0 --> concursabilidad
+2016/07/25 19:35:02 - Table output 3 2 2.0 - input rel is 1:1
+2016/07/25 19:35:02 - Table output 3 2 2.0 - Found input rowset [concursabilidad.0 - Table output 3 2 2.0]
+2016/07/25 19:35:02 - Table output 3 2 2.0 - Finished dispatching
+2016/07/25 19:35:02 - T_CARGA_CONCURSOS -  Transformation has allocated a new step: [Table output 3 2 2].0
+2016/07/25 19:35:02 - T_CARGA_CONCURSOS - This transformation can be replayed with replay date: 2016/07/25 19:35:02
+2016/07/25 19:35:02 - T_CARGA_CONCURSOS - Initialising 11 steps...
+2016/07/25 19:35:02 - concursos.0 - Released server socket on port 0
+2016/07/25 19:35:02 - Table output.0 - Released server socket on port 0
+2016/07/25 19:35:02 - adjudicacion.0 - Released server socket on port 0
+2016/07/25 19:35:02 - Table output 2.0 - Released server socket on port 0
+2016/07/25 19:35:02 - Table output 3.0 - Released server socket on port 0
+2016/07/25 19:35:02 - postulacion.0 - Released server socket on port 0
+2016/07/25 19:35:02 - evaluacion.0 - Released server socket on port 0
+2016/07/25 19:35:02 - Table output 3 2.0 - Released server socket on port 0
+2016/07/25 19:35:02 - Get Variables.0 - Released server socket on port 0
+2016/07/25 19:35:02 - concursabilidad.0 - Released server socket on port 0
+2016/07/25 19:35:02 - Table output 3 2 2.0 - Released server socket on port 0
+2016/07/25 19:35:02 - sfp - New database connection defined
+2016/07/25 19:35:02 - sfp - New database connection defined
+2016/07/25 19:35:02 - ceamso - New database connection defined
+2016/07/25 19:35:02 - ceamso - New database connection defined
+2016/07/25 19:35:02 - ceamso - New database connection defined
+2016/07/25 19:35:02 - ceamso - New database connection defined
+2016/07/25 19:35:02 - sfp - New database connection defined
+2016/07/25 19:35:02 - ceamso - New database connection defined
+2016/07/25 19:35:02 - ceamso - New database connection defined
+2016/07/25 19:35:02 - sfp - New database connection defined
+2016/07/25 19:35:02 - sfp - Auto commit off
+2016/07/25 19:35:02 - sfp - Auto commit off
+2016/07/25 19:35:02 - adjudicacion.0 - Connected to database...
+2016/07/25 19:35:02 - postulacion.0 - Connected to database...
+2016/07/25 19:35:02 - sfp - Auto commit off
+2016/07/25 19:35:02 - concursos.0 - Connected to database...
+2016/07/25 19:35:02 - sfp - Auto commit off
+2016/07/25 19:35:02 - evaluacion.0 - Connected to database...
+2016/07/25 19:35:02 - Table output 3 2.0 - Connected to database [ceamso] (commit=1000)
+2016/07/25 19:35:02 - ceamso - Auto commit off
+2016/07/25 19:35:02 - ceamso - Auto commit off
+2016/07/25 19:35:02 - Table output 3.0 - Connected to database [ceamso] (commit=1000)
+2016/07/25 19:35:02 - Table output 2.0 - Connected to database [ceamso] (commit=1000)
+2016/07/25 19:35:02 - ceamso - Auto commit off
+2016/07/25 19:35:02 - concursabilidad.0 - Connected to database...
+2016/07/25 19:35:02 - Table output.0 - Connected to database [ceamso] (commit=1000)
+2016/07/25 19:35:02 - ceamso - Auto commit off
+2016/07/25 19:35:02 - Table output 3 2 2.0 - Connected to database [ceamso] (commit=1000)
+2016/07/25 19:35:02 - ceamso - Auto commit off
+2016/07/25 19:35:02 - ceamso - Auto commit off
+2016/07/25 19:35:02 - T_CARGA_CONCURSOS - Step [concursos.0] initialized flawlessly.
+2016/07/25 19:35:02 - T_CARGA_CONCURSOS - Step [Table output.0] initialized flawlessly.
+2016/07/25 19:35:02 - T_CARGA_CONCURSOS - Step [adjudicacion.0] initialized flawlessly.
+2016/07/25 19:35:02 - T_CARGA_CONCURSOS - Step [Table output 2.0] initialized flawlessly.
+2016/07/25 19:35:02 - T_CARGA_CONCURSOS - Step [evaluacion.0] initialized flawlessly.
+2016/07/25 19:35:02 - T_CARGA_CONCURSOS - Step [Table output 3.0] initialized flawlessly.
+2016/07/25 19:35:02 - T_CARGA_CONCURSOS - Step [postulacion.0] initialized flawlessly.
+2016/07/25 19:35:02 - T_CARGA_CONCURSOS - Step [Table output 3 2.0] initialized flawlessly.
+2016/07/25 19:35:02 - T_CARGA_CONCURSOS - Step [Get Variables.0] initialized flawlessly.
+2016/07/25 19:35:02 - T_CARGA_CONCURSOS - Step [concursabilidad.0] initialized flawlessly.
+2016/07/25 19:35:02 - T_CARGA_CONCURSOS - Step [Table output 3 2 2.0] initialized flawlessly.
+2016/07/25 19:35:02 - concursos.0 - Starting to run...
+2016/07/25 19:35:02 - Table output.0 - Starting to run...
+2016/07/25 19:35:02 - adjudicacion.0 - Starting to run...
+2016/07/25 19:35:02 - Table output 2.0 - Starting to run...
+2016/07/25 19:35:02 - evaluacion.0 - Starting to run...
+2016/07/25 19:35:02 - Table output 3.0 - Starting to run...
+2016/07/25 19:35:02 - postulacion.0 - Starting to run...
+2016/07/25 19:35:02 - Table output 3 2.0 - Starting to run...
+2016/07/25 19:35:02 - concursabilidad.0 - Starting to run...
+2016/07/25 19:35:02 - Get Variables.0 - Starting to run...
+2016/07/25 19:35:02 - T_CARGA_CONCURSOS - Transformation has allocated 11 threads and 10 rowsets.
+2016/07/25 19:35:02 - Table output 3 2 2.0 - Starting to run...
+2016/07/25 19:35:02 - adjudicacion.0 - SQL query : select * from (select co.id_concurso, 
+2016/07/25 19:35:02 - adjudicacion.0 - cpg.id_concurso_puesto_agr, 
+2016/07/25 19:35:02 - adjudicacion.0 - en.nen_codigo,UPPER(sne.nen_nombre) as nen_nombre,
+2016/07/25 19:35:02 - adjudicacion.0 - en.ent_codigo,UPPER(sen.ent_nombre) as ent_nombre,
+2016/07/25 19:35:02 - adjudicacion.0 - oee.orden,UPPER(oee.denominacion_unidad) as OEE, 
+2016/07/25 19:35:02 - adjudicacion.0 - sel.puntaje_realizado as Puntaje,
+2016/07/25 19:35:02 - adjudicacion.0 - per.documento_identidad,
+2016/07/25 19:35:02 - adjudicacion.0 - UPPER(per.nombres) as nombres,
+2016/07/25 19:35:02 - adjudicacion.0 - UPPER(per.apellidos) as apellidos,
+2016/07/25 19:35:02 - adjudicacion.0 - per.fecha_nacimiento,
+2016/07/25 19:35:02 - adjudicacion.0 - cpg.fecha_adjudicacion,
+2016/07/25 19:35:02 - adjudicacion.0 - UPPER(cpg.descripcion_grupo) as descripcion_grupo,
+2016/07/25 19:35:02 - adjudicacion.0 - UPPER(de.descripcion) as tipo_concurso,
+2016/07/25 19:35:02 - adjudicacion.0 - cpg.estado,
+2016/07/25 19:35:02 - adjudicacion.0 - UPPER(re.desc_larga) as desc_larga, 
+2016/07/25 19:35:02 - adjudicacion.0 - cantidad_puestos, 
+2016/07/25 19:35:02 - adjudicacion.0 - cantidades.postulantes,
+2016/07/25 19:35:02 - adjudicacion.0 - 'https://www.paraguayconcursa.gov.py/sicca/seleccion/buscarConcurso/adjudicados/adjudicados.seam?idConcursoPuestoAgr='||cpg.id_concurso_puesto_agr||'&firstResult=0&paginaActual=adjudicados&from=Portal.seam&sugestion=&sugestionGrupo=&logic=and&actionMethod=seleccion%2FbuscarConcurso%2Fadjudicados%2Fadjudicados.xhtml%3AconcursoListFormController.imprimirPerfilMatriz%28%29&cid=22570' as perfil_matriz,
+2016/07/25 19:35:02 - adjudicacion.0 - 'https://www.paraguayconcursa.gov.py/sicca/seleccion/verPostulacion/verPostulacionPortal.seam?idConcursoPuestoAgr='||cpg.id_concurso_puesto_agr||'&idConcurso='||co.id_concurso||'&from=seleccion%2FbuscarConcurso%2Fadjudicados%2Fadjudicados&sugestion=&sugestionGrupo=&firstResult=0&cid=22570' as proceso,
+2016/07/25 19:35:02 - adjudicacion.0 - 'https://www.paraguayconcursa.gov.py/sicca/seleccion/verPostulacion/verPostulacionPortal.seam?&imprimirCU=CU_161&idConcursoPuestoAgr='||cpg.id_concurso_puesto_agr as adjudicados
+2016/07/25 19:35:02 - adjudicacion.0 - 
+2016/07/25 19:35:02 - adjudicacion.0 - FROM seleccion.concurso_puesto_agr cpg
+2016/07/25 19:35:02 - adjudicacion.0 - INNER JOIN seleccion.concurso co ON cpg.id_concurso = co.id_concurso
+2016/07/25 19:35:02 - adjudicacion.0 - INNER JOIN planificacion.configuracion_uo_cab oee ON oee.id_configuracion_uo = co.id_configuracion_uo
+2016/07/25 19:35:02 - adjudicacion.0 - INNER JOIN seleccion.fechas_grupo_puesto fgp ON fgp.id_concurso_puesto_agr = cpg.id_concurso_puesto_agr
+2016/07/25 19:35:02 - adjudicacion.0 - INNER JOIN seleccion.referencias re ON re.valor_num = cpg.estado AND re.dominio LIKE 'ESTADOS_GRUPO'
+2016/07/25 19:35:02 - adjudicacion.0 - INNER JOIN seleccion.datos_especificos de ON co.id_datos_esp_tipo_conc = de.id_datos_especificos
+2016/07/25 19:35:02 - adjudicacion.0 - INNER JOIN planificacion.entidad en ON en.id_entidad = oee.id_entidad 
+2016/07/25 19:35:02 - adjudicacion.0 - INNER JOIN sinarh.sin_entidad sen ON sen.id_sin_entidad = en.id_sin_entidad 
+2016/07/25 19:35:02 - adjudicacion.0 - INNER JOIN sinarh.sin_nivel_entidad sne ON sne.nen_codigo = sen.nen_codigo
+2016/07/25 19:35:02 - adjudicacion.0 - 
+2016/07/25 19:35:02 - adjudicacion.0 - LEFT JOIN (SELECT * FROM seleccion.eval_referencial_postulante eval WHERE 
+2016/07/25 19:35:02 - adjudicacion.0 - eval.seleccionado_replica = TRUE AND eval.seleccionado_replica IS NOT NULL 
+2016/07/25 19:35:02 - adjudicacion.0 - AND EVAL.ACTIVO = TRUE
+2016/07/25 19:35:02 - adjudicacion.0 - AND EVAL.ID_EXCEPCION IS NULL
+2016/07/25 19:35:02 - adjudicacion.0 - AND (EVAL.EXCLUIDO is FALSE or EVAL.EXCLUIDO is NULL) /*and id_concurso_puesto_agr = 32*/) sel on sel.id_concurso_puesto_agr = cpg.id_concurso_puesto_agr
+2016/07/25 19:35:02 - adjudicacion.0 - 
+2016/07/25 19:35:02 - adjudicacion.0 - LEFT JOIN seleccion.postulacion sel_p ON sel_p.id_postulacion = sel.id_postulacion
+2016/07/25 19:35:02 - adjudicacion.0 - LEFT JOIN seleccion.persona_postulante per ON per.id_persona_postulante = sel_p.id_persona_postulante
+2016/07/25 19:35:02 - adjudicacion.0 - 
+2016/07/25 19:35:02 - adjudicacion.0 - LEFT JOIN (
+2016/07/25 19:35:02 - adjudicacion.0 - select count(*) as postulantes, id_concurso_puesto_agr
+2016/07/25 19:35:02 - adjudicacion.0 - from seleccion.postulacion
+2016/07/25 19:35:02 - adjudicacion.0 - where activo = true
+2016/07/25 19:35:02 - adjudicacion.0 - group by id_concurso_puesto_agr) cantidades on  cpg.id_concurso_puesto_agr = cantidades.id_concurso_puesto_agr
+2016/07/25 19:35:02 - adjudicacion.0 - 
+2016/07/25 19:35:02 - adjudicacion.0 - WHERE cpg.activo = TRUE AND co.activo = TRUE 
+2016/07/25 19:35:02 - adjudicacion.0 - 
+2016/07/25 19:35:02 - adjudicacion.0 - 				AND cpg.fecha_adjudicacion is not null 
+2016/07/25 19:35:02 - adjudicacion.0 - 				AND  co.activo = true
+2016/07/25 19:35:02 - adjudicacion.0 - 				OR (cpg.estado IN(select valor_num from seleccion.referencias 
+2016/07/25 19:35:02 - adjudicacion.0 - 				where
+2016/07/25 19:35:02 - adjudicacion.0 - 				dominio = 'ESTADOS_GRUPO' 
+2016/07/25 19:35:02 - adjudicacion.0 - 				and   (desc_abrev = 'GRUPO DESIERTO' 
+2016/07/25 19:35:02 - adjudicacion.0 - 				OR desc_abrev = 'DESIERTO_CON_DOC' 
+2016/07/25 19:35:02 - adjudicacion.0 - 				OR desc_abrev = 'PUBLICACION_FINALIZADO' )))
+2016/07/25 19:35:02 - adjudicacion.0 - AND not cpg.estado in (35,38)
+2016/07/25 19:35:02 - adjudicacion.0 - ORDER BY co.id_concurso, cpg.id_concurso_puesto_agr) as a where documento_identidad is not null
+2016/07/25 19:35:02 - Get Variables.0 - field [ipBDOrigen] has value [10.2.29.182]
+2016/07/25 19:35:02 - Get Variables.0 - field [puertoBDOrigen] has value [5432]
+2016/07/25 19:35:02 - Get Variables.0 - field [nombreBDOrigen] has value [sicca]
+2016/07/25 19:35:02 - Get Variables.0 - field [usuarioBDOrigen] has value [opendata]
+2016/07/25 19:35:02 - Get Variables.0 - field [ipBDDestino] has value [localhost]
+2016/07/25 19:35:02 - Get Variables.0 - field [puertoBDDestino] has value [5434]
+2016/07/25 19:35:02 - Get Variables.0 - field [nombreBDDestino] has value [pentaho]
+2016/07/25 19:35:02 - Get Variables.0 - field [usuarioBDDestino] has value [postgres]
+2016/07/25 19:35:02 - Get Variables.0 - field [passBDOrigen] has value [Op3nd4t4]
+2016/07/25 19:35:02 - Get Variables.0 - field [passBDDestino] has value [Op3nd4t4]
+2016/07/25 19:35:02 - concursabilidad.0 - SQL query : select c.*, c.cantidad_altas_concurso::float / c.cantidad_altas as indice_concursabilidad
+2016/07/25 19:35:02 - concursabilidad.0 - from (
+2016/07/25 19:35:02 - concursabilidad.0 - select 
+2016/07/25 19:35:02 - concursabilidad.0 - f.anho, 
+2016/07/25 19:35:02 - concursabilidad.0 - (f.mes/4)+1 as trimestre, 
+2016/07/25 19:35:02 - concursabilidad.0 - f.nivel,
+2016/07/25 19:35:02 - concursabilidad.0 - o.descripcion_nivel, 
+2016/07/25 19:35:02 - concursabilidad.0 - f.entidad, 
+2016/07/25 19:35:02 - concursabilidad.0 - o.descripcion_entidad, 
+2016/07/25 19:35:02 - concursabilidad.0 - f.oee, 
+2016/07/25 19:35:02 - concursabilidad.0 - o.descripcion_oee, 
+2016/07/25 19:35:02 - concursabilidad.0 - count(a.cedula) as cantidad_altas_concurso,
+2016/07/25 19:35:02 - concursabilidad.0 - count(f.documento) as cantidad_altas
+2016/07/25 19:35:02 - concursabilidad.0 - from opendata.detalles_funcionarios f
+2016/07/25 19:35:02 - concursabilidad.0 - left join opendata.adjudicacion a
+2016/07/25 19:35:02 - concursabilidad.0 - on extract(year from a.fecha_adjudicacion) = f.anho 
+2016/07/25 19:35:02 - concursabilidad.0 - and a.cedula = f.documento
+2016/07/25 19:35:02 - concursabilidad.0 - and a.nivel = f.nivel 
+2016/07/25 19:35:02 - concursabilidad.0 - and a.entidad = f.entidad 
+2016/07/25 19:35:02 - concursabilidad.0 - and a.oee = f.oee
+2016/07/25 19:35:02 - concursabilidad.0 - join opendata.oee o
+2016/07/25 19:35:02 - concursabilidad.0 - on f.nivel = o.codigo_nivel 
+2016/07/25 19:35:02 - concursabilidad.0 - and f.entidad = o.codigo_entidad 
+2016/07/25 19:35:02 - concursabilidad.0 - and f.oee = o.codigo_oee
+2016/07/25 19:35:02 - concursabilidad.0 - where 
+2016/07/25 19:35:02 - concursabilidad.0 - -- categorias de la carrera administrativa (tomamos del sueldo su categoria)
+2016/07/25 19:35:02 - concursabilidad.0 - f.objeto_gasto in (111, 112) 
+2016/07/25 19:35:02 - concursabilidad.0 - and substring(f.categoria,1,1) in ('A','B','C','D','E','F','G')
+2016/07/25 19:35:02 - concursabilidad.0 - -- que fueron dados de alta
+2016/07/25 19:35:02 - concursabilidad.0 - and f.movimiento like '%ALTA%' -- "A - ALTA (INCORPORACIÓN)"
+2016/07/25 19:35:02 - concursabilidad.0 - -- se empieza a computar desde el anho 2015
+2016/07/25 19:35:02 - concursabilidad.0 - and f.anho_ingreso >= 2015
+2016/07/25 19:35:02 - concursabilidad.0 - group by 1,2,3,4,5,6,7,8
+2016/07/25 19:35:02 - concursabilidad.0 - order by 1,3,4,5,2
+2016/07/25 19:35:02 - concursabilidad.0 - ) c
+2016/07/25 19:35:02 - concursos.0 - SQL query : select
+2016/07/25 19:35:02 - concursos.0 - co.id_concurso, cpg.id_concurso_puesto_agr, 
+2016/07/25 19:35:02 - concursos.0 - en.nen_codigo,UPPER(sne.nen_nombre) as nen_nombre,
+2016/07/25 19:35:02 - concursos.0 - en.ent_codigo,UPPER(sen.ent_nombre) as ent_nombre,
+2016/07/25 19:35:02 - concursos.0 - oee.orden,UPPER(oee.denominacion_unidad) as OEE, 
+2016/07/25 19:35:02 - concursos.0 - UPPER(de.descripcion) as tipo_concurso, 
+2016/07/25 19:35:02 - concursos.0 - UPPER(cpg.modalidad) as tipo_funcionario,
+2016/07/25 19:35:02 - concursos.0 - UPPER(plan.descripcion) as cargo,
+2016/07/25 19:35:02 - concursos.0 - UPPER(cpg.descripcion_grupo) as puesto,
+2016/07/25 19:35:02 - concursos.0 - UPPER(cpt_gen.denominacion) as clasificacion_ocupacional,
+2016/07/25 19:35:02 - concursos.0 - gcp.monto, 
+2016/07/25 19:35:02 - concursos.0 - UPPER(cpg.fuente_financiacion) as fuente_financiacion, -- solo se cuenta con este campo tipo text
+2016/07/25 19:35:02 - concursos.0 - gcp.obj_codigo,
+2016/07/25 19:35:02 - concursos.0 - UPPER(obj.obj_nombre) as obj_nombre,
+2016/07/25 19:35:02 - concursos.0 - gcp.categoria,
+2016/07/25 19:35:02 - concursos.0 - UPPER(cpg.lugar) as domicilio,
+2016/07/25 19:35:02 - concursos.0 - UPPER(ciu.descripcion) as localidad,
+2016/07/25 19:35:02 - concursos.0 - UPPER(cpg.otros_beneficios) as benificios_adicionales,
+2016/07/25 19:35:02 - concursos.0 - cantidad_puestos, 
+2016/07/25 19:35:02 - concursos.0 - UPPER(re.desc_larga) AS estado_especifico,
+2016/07/25 19:35:02 - concursos.0 - to_char(fgp.fecha_publicacion_desde + fgp.hora_publicacion_desde,'YYYY-MM-DD hh24:mi:ss')::timestamp as inicio_publicacion,
+2016/07/25 19:35:02 - concursos.0 - to_char(fgp.fecha_publicacion_hasta + fgp.hora_publicacion_hasta,'YYYY-MM-DD hh24:mi:ss')::timestamp as fin_publicacion,
+2016/07/25 19:35:02 - concursos.0 - 'http://datos.sfp.gov.py/id/concursos/'||en.nen_codigo||'/'||en.ent_codigo||'/'||oee.orden||'/'||cpg.id_concurso_puesto_agr as uri,
+2016/07/25 19:35:02 - concursos.0 - cpg.estado,
+2016/07/25 19:35:02 - concursos.0 - 
+2016/07/25 19:35:02 - concursos.0 - case cpg.estado
+2016/07/25 19:35:02 - concursos.0 - --POSTULACION
+2016/07/25 19:35:02 - concursos.0 - when 15 then 'POSTULACIÓN'
+2016/07/25 19:35:02 - concursos.0 - when 13 then 'POSTULACIÓN'
+2016/07/25 19:35:02 - concursos.0 - when 1000 then 'POSTULACIÓN'
+2016/07/25 19:35:02 - concursos.0 - 
+2016/07/25 19:35:02 - concursos.0 - --EVALUACION
+2016/07/25 19:35:02 - concursos.0 - when 22 then 'EVALUACIÓN'
+2016/07/25 19:35:02 - concursos.0 - when 19 then 'EVALUACIÓN'
+2016/07/25 19:35:02 - concursos.0 - when 26 then 'EVALUACIÓN'
+2016/07/25 19:35:02 - concursos.0 - when 36 then 'EVALUACIÓN'
+2016/07/25 19:35:02 - concursos.0 - when 21 then 'EVALUACIÓN'
+2016/07/25 19:35:02 - concursos.0 - when 20 then 'EVALUACIÓN'
+2016/07/25 19:35:02 - concursos.0 - when 25 then 'EVALUACIÓN'
+2016/07/25 19:35:02 - concursos.0 - when 17 then 'EVALUACIÓN'
+2016/07/25 19:35:02 - concursos.0 - when 24 then 'EVALUACIÓN'
+2016/07/25 19:35:02 - concursos.0 - when 23 then 'EVALUACIÓN'
+2016/07/25 19:35:02 - concursos.0 - when 1001 then 'EVALUACIÓN'
+2016/07/25 19:35:02 - concursos.0 - when 1003 then 'EVALUACIÓN'
+2016/07/25 19:35:02 - concursos.0 - when 1004 then 'EVALUACIÓN'
+2016/07/25 19:35:02 - concursos.0 - when 1005 then 'EVALUACIÓN'
+2016/07/25 19:35:02 - concursos.0 - when 37 then 'EVALUACIÓN'
+2016/07/25 19:35:02 - concursos.0 - when 1006 then 'EVALUACIÓN'
+2016/07/25 19:35:02 - concursos.0 - 
+2016/07/25 19:35:02 - concursos.0 - --FINALIZADOS
+2016/07/25 19:35:02 - concursos.0 - when 35 then 'FINALIZADOS'
+2016/07/25 19:35:02 - concursos.0 - when 38 then 'FINALIZADOS'
+2016/07/25 19:35:02 - concursos.0 - when 27 then 'FINALIZADOS'
+2016/07/25 19:35:02 - concursos.0 - when 28 then 'FINALIZADOS'
+2016/07/25 19:35:02 - concursos.0 - when 29 then 'FINALIZADOS'
+2016/07/25 19:35:02 - concursos.0 - when 30 then 'FINALIZADOS'
+2016/07/25 19:35:02 - concursos.0 - when 34 then 'FINALIZADOS'
+2016/07/25 19:35:02 - concursos.0 - when 1002 then 'FINALIZADOS'
+2016/07/25 19:35:02 - concursos.0 - 
+2016/07/25 19:35:02 - concursos.0 - --DESIERTOS
+2016/07/25 19:35:02 - concursos.0 - when 35 then 'DESIERTOS'
+2016/07/25 19:35:02 - concursos.0 - when 38 then 'DESIERTOS'
+2016/07/25 19:35:02 - concursos.0 - 
+2016/07/25 19:35:02 - concursos.0 - --CANCELADOS
+2016/07/25 19:35:02 - concursos.0 - when 12 then 'CANCELADOS'
+2016/07/25 19:35:02 - concursos.0 - 
+2016/07/25 19:35:02 - concursos.0 - end as estado_grupo
+2016/07/25 19:35:02 - concursos.0 - 
+2016/07/25 19:35:02 - concursos.0 - 
+2016/07/25 19:35:02 - concursos.0 - FROM seleccion.concurso_puesto_agr cpg 
+2016/07/25 19:35:02 - concursos.0 - INNER JOIN seleccion.concurso co ON cpg.id_concurso = co.id_concurso
+2016/07/25 19:35:02 - concursos.0 - INNER JOIN planificacion.configuracion_uo_cab oee ON oee.id_configuracion_uo = co.id_configuracion_uo
+2016/07/25 19:35:02 - concursos.0 - INNER JOIN seleccion.fechas_grupo_puesto fgp ON fgp.id_concurso_puesto_agr = cpg.id_concurso_puesto_agr
+2016/07/25 19:35:02 - concursos.0 - INNER JOIN seleccion.referencias re ON re.valor_num = cpg.estado AND re.dominio LIKE 'ESTADOS_GRUPO'
+2016/07/25 19:35:02 - concursos.0 - INNER JOIN seleccion.datos_especificos de ON co.id_datos_esp_tipo_conc = de.id_datos_especificos
+2016/07/25 19:35:02 - concursos.0 - INNER JOIN planificacion.entidad en ON en.id_entidad = oee.id_entidad 
+2016/07/25 19:35:02 - concursos.0 - INNER JOIN sinarh.sin_entidad sen ON sen.id_sin_entidad = en.id_sin_entidad 
+2016/07/25 19:35:02 - concursos.0 - INNER JOIN sinarh.sin_nivel_entidad sne ON sne.nen_codigo = sen.nen_codigo
+2016/07/25 19:35:02 - concursos.0 - LEFT JOIN (select distinct(id_concurso_puesto_agr), monto, obj_codigo, categoria from seleccion.grupo_concepto_pago where activo = true) gcp ON gcp.id_concurso_puesto_agr = cpg.id_concurso_puesto_agr
+2016/07/25 19:35:02 - concursos.0 - LEFT JOIN (select distinct(obj_codigo) as obj_codigo, obj_nombre from sinarh.sin_obj where ani_aniopre = 2016) obj ON gcp.obj_codigo = obj.obj_codigo
+2016/07/25 19:35:02 - concursos.0 - LEFT JOIN (select max(id_planta_cargo_det) as id_planta_cargo_det,id_concurso_puesto_agr,activo,id_concurso  from seleccion.concurso_puesto_det group by id_concurso_puesto_agr,activo,id_concurso order by id_concurso_puesto_agr) det ON det.id_concurso_puesto_agr= cpg.id_concurso_puesto_agr
+2016/07/25 19:35:02 - concursos.0 - LEFT JOIN planificacion.planta_cargo_det plan ON plan.id_planta_cargo_det = det.id_planta_cargo_det
+2016/07/25 19:35:02 - concursos.0 - LEFT JOIN planificacion.oficina ofi ON ofi.id_oficina = plan.id_oficina
+2016/07/25 19:35:02 - concursos.0 - LEFT JOIN general.ciudad ciu ON ciu.id_ciudad = ofi.id_ciudad
+2016/07/25 19:35:02 - concursos.0 - LEFT JOIN planificacion.cpt cpt ON cpt.id_cpt = plan.id_cpt
+2016/07/25 19:35:02 - concursos.0 - LEFT JOIN planificacion.cpt cpt_gen ON cpt_gen.id_cpt = cpt.id_cpt_padre
+2016/07/25 19:35:02 - concursos.0 - 
+2016/07/25 19:35:02 - concursos.0 - WHERE cpg.activo = TRUE AND co.activo = TRUE AND not (cpg.estado in (6, 8, 2, 1))
+2016/07/25 19:35:02 - concursos.0 - 
+2016/07/25 19:35:02 - concursos.0 - ORDER BY co.id_concurso, cpg.id_concurso_puesto_agr
+2016/07/25 19:35:02 - Get Variables.0 - Finished processing (I=0, O=0, R=1, W=5, U=0, E=0)
+2016/07/25 19:35:02 - postulacion.0 - SQL query : select co.id_concurso, 
+2016/07/25 19:35:02 - postulacion.0 - cpg.id_concurso_puesto_agr,
+2016/07/25 19:35:02 - postulacion.0 - 
+2016/07/25 19:35:02 - postulacion.0 - to_char(fgp.fecha_recepcion_desde+fgp.hora_recepcion_desde,'YYYY-MM-DD hh24:mi:ss')::timestamp as inicio_postulacion,
+2016/07/25 19:35:02 - postulacion.0 - to_char(fgp.fecha_recepcion_hasta+fgp.hora_recepcion_hasta,'YYYY-MM-DD hh24:mi:ss')::timestamp as fin_postulacion,
+2016/07/25 19:35:02 - postulacion.0 - cpg.estado, 
+2016/07/25 19:35:02 - postulacion.0 - upper(re.desc_larga),
+2016/07/25 19:35:02 - postulacion.0 - upper(cpg.descripcion_grupo) as puesto,  
+2016/07/25 19:35:02 - postulacion.0 - cantidad_puestos as vacancia,
+2016/07/25 19:35:02 - postulacion.0 - en.nen_codigo,
+2016/07/25 19:35:02 - postulacion.0 - en.ent_codigo,
+2016/07/25 19:35:02 - postulacion.0 - oee.orden,
+2016/07/25 19:35:02 - postulacion.0 - case when cpg.estado=1000 then 'INSTITUCION QUE CONVOCA' ELSE 'CUENTA PARAGUAY CONCURSA' end as postularse,
+2016/07/25 19:35:02 - postulacion.0 - 'https://www.paraguayconcursa.gov.py/sicca/seleccion/buscarConcurso/postulacion/publicados.seam?actionMethod=seleccion%2FbuscarConcurso%2Fpostulacion%2Fpublicados.xhtml%3AconcursoListFormController.imprimirPerfilMatriz()&idConcursoPuestoAgr='||cpg.id_concurso_puesto_agr as perfil_matriz,
+2016/07/25 19:35:02 - postulacion.0 - 'https://www.paraguayconcursa.gov.py/sicca/seleccion/verPostulacion/verPostulacionPortal.seam?idConcursoPuestoAgr='||cpg.id_concurso_puesto_agr||'&idConcurso='||co.id_concurso as informacion
+2016/07/25 19:35:02 - postulacion.0 - 
+2016/07/25 19:35:02 - postulacion.0 - FROM seleccion.concurso_puesto_agr cpg
+2016/07/25 19:35:02 - postulacion.0 - INNER JOIN seleccion.concurso co ON cpg.id_concurso = co.id_concurso
+2016/07/25 19:35:02 - postulacion.0 - INNER JOIN planificacion.configuracion_uo_cab oee ON oee.id_configuracion_uo = co.id_configuracion_uo
+2016/07/25 19:35:02 - postulacion.0 - INNER JOIN planificacion.entidad en ON en.id_entidad = oee.id_entidad 
+2016/07/25 19:35:02 - postulacion.0 - INNER JOIN seleccion.fechas_grupo_puesto fgp ON fgp.id_concurso_puesto_agr = cpg.id_concurso_puesto_agr
+2016/07/25 19:35:02 - postulacion.0 - INNER JOIN seleccion.referencias re ON re.valor_num = cpg.estado AND re.dominio LIKE 'ESTADOS_GRUPO'
+2016/07/25 19:35:02 - postulacion.0 - 
+2016/07/25 19:35:02 - postulacion.0 - WHERE cpg.activo = TRUE AND co.activo = TRUE AND fgp.activo = true 
+2016/07/25 19:35:02 - postulacion.0 - 		and cantidad_puestos is not null and fecha_recepcion_desde is not null and fecha_recepcion_hasta is not null 
+2016/07/25 19:35:02 - postulacion.0 - ORDER BY co.id_concurso, cpg.id_concurso_puesto_agr;
+2016/07/25 19:35:02 - evaluacion.0 - SQL query : select
+2016/07/25 19:35:02 - evaluacion.0 - co.id_concurso, cpg.id_concurso_puesto_agr, 
+2016/07/25 19:35:02 - evaluacion.0 - en.nen_codigo,UPPER(sne.nen_nombre) as nen_nombre,
+2016/07/25 19:35:02 - evaluacion.0 - en.ent_codigo,UPPER(sen.ent_nombre) as ent_nombre,
+2016/07/25 19:35:02 - evaluacion.0 - oee.orden,UPPER(oee.denominacion_unidad) as OEE, 
+2016/07/25 19:35:02 - evaluacion.0 - UPPER(de.descripcion) as tipo_concurso, 
+2016/07/25 19:35:02 - evaluacion.0 - UPPER(cpg.modalidad) as tipo_funcionario,
+2016/07/25 19:35:02 - evaluacion.0 - UPPER(plan.descripcion) as cargo,
+2016/07/25 19:35:02 - evaluacion.0 - UPPER(cpg.descripcion_grupo) as puesto,
+2016/07/25 19:35:02 - evaluacion.0 - UPPER(cpt_gen.denominacion) as clasificacion_ocupacional,
+2016/07/25 19:35:02 - evaluacion.0 - fgp.fecha_recepcion_hasta as fecha_recepcion_hasta,
+2016/07/25 19:35:02 - evaluacion.0 - gcp.monto, 
+2016/07/25 19:35:02 - evaluacion.0 - UPPER(cpg.fuente_financiacion) as fuente_financiacion, -- solo se cuenta con este campo tipo text
+2016/07/25 19:35:02 - evaluacion.0 - gcp.obj_codigo,
+2016/07/25 19:35:02 - evaluacion.0 - UPPER(obj.obj_nombre) as obj_nombre,
+2016/07/25 19:35:02 - evaluacion.0 - gcp.categoria,
+2016/07/25 19:35:02 - evaluacion.0 - UPPER(cpg.lugar) as domicilio,
+2016/07/25 19:35:02 - evaluacion.0 - UPPER(ciu.descripcion) as localidad,
+2016/07/25 19:35:02 - evaluacion.0 - UPPER(cpg.otros_beneficios) as benificios_adicionales,
+2016/07/25 19:35:02 - evaluacion.0 - cantidad_puestos, 
+2016/07/25 19:35:02 - evaluacion.0 - UPPER(re.desc_larga) AS estado_especifico,
+2016/07/25 19:35:02 - evaluacion.0 - cpg.estado,
+2016/07/25 19:35:02 - evaluacion.0 - cantidades.postulantes,
+2016/07/25 19:35:02 - evaluacion.0 - cpg.fecha_adjudicacion as fecha_fin_evaluacion,
+2016/07/25 19:35:02 - evaluacion.0 - 'https://www.paraguayconcursa.gov.py/sicca/seleccion/buscarConcurso/evaluados/evaluados.seam?actionMethod=seleccion%2FbuscarConcurso%2Fevaluados%2Fevaluados.xhtml%3AconcursoListFormController.imprimirPerfilMatriz()&idConcursoPuestoAgr='||cpg.id_concurso_puesto_agr as perfil_matriz,
+2016/07/25 19:35:02 - evaluacion.0 - 'https://www.paraguayconcursa.gov.py/sicca/seleccion/verPostulacion/verPostulacionPortal.seam?idConcursoPuestoAgr='||cpg.id_concurso_puesto_agr||'&idConcurso='||co.id_concurso as proceso
+2016/07/25 19:35:02 - evaluacion.0 - 
+2016/07/25 19:35:02 - evaluacion.0 - 
+2016/07/25 19:35:02 - evaluacion.0 - FROM seleccion.concurso_puesto_agr cpg 
+2016/07/25 19:35:02 - evaluacion.0 - INNER JOIN seleccion.concurso co ON cpg.id_concurso = co.id_concurso
+2016/07/25 19:35:02 - evaluacion.0 - INNER JOIN planificacion.configuracion_uo_cab oee ON oee.id_configuracion_uo = co.id_configuracion_uo
+2016/07/25 19:35:02 - evaluacion.0 - INNER JOIN seleccion.fechas_grupo_puesto fgp ON fgp.id_concurso_puesto_agr = cpg.id_concurso_puesto_agr
+2016/07/25 19:35:02 - evaluacion.0 - INNER JOIN seleccion.referencias re ON re.valor_num = cpg.estado AND re.dominio LIKE 'ESTADOS_GRUPO'
+2016/07/25 19:35:02 - evaluacion.0 - INNER JOIN seleccion.datos_especificos de ON co.id_datos_esp_tipo_conc = de.id_datos_especificos
+2016/07/25 19:35:02 - evaluacion.0 - INNER JOIN planificacion.entidad en ON en.id_entidad = oee.id_entidad 
+2016/07/25 19:35:02 - evaluacion.0 - INNER JOIN sinarh.sin_entidad sen ON sen.id_sin_entidad = en.id_sin_entidad 
+2016/07/25 19:35:02 - evaluacion.0 - INNER JOIN sinarh.sin_nivel_entidad sne ON sne.nen_codigo = sen.nen_codigo
+2016/07/25 19:35:02 - evaluacion.0 - 
+2016/07/25 19:35:02 - evaluacion.0 - LEFT JOIN (select id_concurso_puesto_agr, monto, obj_codigo, categoria from seleccion.grupo_concepto_pago where activo = true and obj_codigo in (111,140,141,142,143,144,145,146,147,148,149)
+2016/07/25 19:35:02 - evaluacion.0 - group by  id_concurso_puesto_agr, monto, obj_codigo, categoria) gcp ON gcp.id_concurso_puesto_agr = cpg.id_concurso_puesto_agr
+2016/07/25 19:35:02 - evaluacion.0 - 
+2016/07/25 19:35:02 - evaluacion.0 - LEFT JOIN (select distinct(obj_codigo) as obj_codigo, obj_nombre from sinarh.sin_obj where ani_aniopre = 2016) obj ON gcp.obj_codigo = obj.obj_codigo
+2016/07/25 19:35:02 - evaluacion.0 - 
+2016/07/25 19:35:02 - evaluacion.0 - LEFT JOIN (select max(id_planta_cargo_det) as id_planta_cargo_det,id_concurso_puesto_agr,activo,id_concurso  from seleccion.concurso_puesto_det 
+2016/07/25 19:35:02 - evaluacion.0 - group by id_concurso_puesto_agr,activo,id_concurso) det ON det.id_concurso_puesto_agr= cpg.id_concurso_puesto_agr
+2016/07/25 19:35:02 - evaluacion.0 - 
+2016/07/25 19:35:02 - evaluacion.0 - LEFT JOIN planificacion.planta_cargo_det plan ON plan.id_planta_cargo_det = det.id_planta_cargo_det
+2016/07/25 19:35:02 - evaluacion.0 - LEFT JOIN planificacion.oficina ofi ON ofi.id_oficina = plan.id_oficina
+2016/07/25 19:35:02 - evaluacion.0 - LEFT JOIN general.ciudad ciu ON ciu.id_ciudad = ofi.id_ciudad
+2016/07/25 19:35:02 - evaluacion.0 - LEFT JOIN planificacion.cpt cpt ON cpt.id_cpt = plan.id_cpt
+2016/07/25 19:35:02 - evaluacion.0 - LEFT JOIN planificacion.cpt cpt_gen ON cpt_gen.id_cpt = cpt.id_cpt_padre
+2016/07/25 19:35:02 - evaluacion.0 - LEFT JOIN (
+2016/07/25 19:35:02 - evaluacion.0 - select count(*) as postulantes, id_concurso_puesto_agr
+2016/07/25 19:35:02 - evaluacion.0 - from seleccion.postulacion
+2016/07/25 19:35:02 - evaluacion.0 - where activo = true
+2016/07/25 19:35:02 - evaluacion.0 - group by id_concurso_puesto_agr) cantidades on  cpg.id_concurso_puesto_agr = cantidades.id_concurso_puesto_agr
+2016/07/25 19:35:02 - evaluacion.0 - 
+2016/07/25 19:35:02 - evaluacion.0 - 
+2016/07/25 19:35:02 - evaluacion.0 - WHERE cpg.activo = TRUE AND co.activo = TRUE AND (cpg.estado in (22,19 ,26,6 ,21,20,25,17,24,23,1001,1003,1004,1005,37,1006))  
+2016/07/25 19:35:02 - evaluacion.0 - 
+2016/07/25 19:35:02 - evaluacion.0 - ORDER BY co.id_concurso, cpg.id_concurso_puesto_agr;
+2016/07/25 19:35:02 - Table output 3.0 - Prepared statement : INSERT INTO opendata.evaluacion (estado, nivel, entidad, oee, perfil_matriz, proceso, identificador_concurso, inicio_evaluacion, cant_postulantes, identificador_concurso_puesto, fin_evaluacion) VALUES ( ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?)
+2016/07/25 19:35:02 - evaluacion.0 - Finished reading query, closing connection.
+2016/07/25 19:35:02 - sfp - Connection to database closed!
+2016/07/25 19:35:02 - evaluacion.0 - Finished processing (I=204, O=0, R=0, W=204, U=0, E=0)
+2016/07/25 19:35:02 - ceamso - Connection to database closed!
+2016/07/25 19:35:02 - Table output 3.0 - Finished processing (I=0, O=204, R=204, W=204, U=0, E=0)
+2016/07/25 19:35:03 - Table output 3 2.0 - Prepared statement : INSERT INTO opendata.postulacion (nivel, entidad, oee, inicio_postulacion, fin_postulacion, perfil_matriz, informacion, identificador_concurso, identificador_concurso_puesto, postularse) VALUES ( ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?)
+2016/07/25 19:35:03 - Table output 2.0 - Prepared statement : INSERT INTO opendata.adjudicacion (apellido, cedula, entidad, fecha_adjudicacion, nivel, nombre, oee, identificador_concurso, identificador_concurso_puesto, descripcion_nivel, descripcion_entidad, descripcion_oee, puntaje, fecha_nacimiento, perfil_matriz, proceso, adjudicados) VALUES ( ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?)
+2016/07/25 19:35:03 - adjudicacion.0 - Finished reading query, closing connection.
+2016/07/25 19:35:03 - Table output.0 - Prepared statement : INSERT INTO opendata.concursos (identificador_concurso_puesto, entidad, descripcion_nivel, descripcion_entidad, nivel, oee, descripcion_oee, tipos_concurso, tipo_funcionario, puesto, domicilio, beneficios_adicionales, vacancia, estado, objeto_gasto, categoria, salario, fuente_financiamiento, concepto, clasificacion_ocupacional, cargo, localidad, identificador_concurso, inicio_publicacion, fin_publicacion, uri) VALUES ( ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?)
+2016/07/25 19:35:03 - sfp - Connection to database closed!
+2016/07/25 19:35:03 - adjudicacion.0 - Finished processing (I=1470, O=0, R=0, W=1470, U=0, E=0)
+2016/07/25 19:35:03 - postulacion.0 - Finished reading query, closing connection.
+2016/07/25 19:35:03 - sfp - Connection to database closed!
+2016/07/25 19:35:03 - postulacion.0 - Finished processing (I=3369, O=0, R=0, W=3369, U=0, E=0)
+2016/07/25 19:35:03 - concursos.0 - Finished reading query, closing connection.
+2016/07/25 19:35:03 - sfp - Connection to database closed!
+2016/07/25 19:35:03 - concursos.0 - Finished processing (I=3380, O=0, R=0, W=3380, U=0, E=0)
+2016/07/25 19:35:03 - ceamso - Connection to database closed!
+2016/07/25 19:35:03 - Table output 2.0 - Finished processing (I=0, O=1470, R=1470, W=1470, U=0, E=0)
+2016/07/25 19:35:03 - ceamso - Connection to database closed!
+2016/07/25 19:35:03 - Table output 3 2.0 - Finished processing (I=0, O=3369, R=3369, W=3369, U=0, E=0)
+2016/07/25 19:35:03 - ceamso - Connection to database closed!
+2016/07/25 19:35:03 - Table output.0 - Finished processing (I=0, O=3380, R=3380, W=3380, U=0, E=0)
+2016/07/25 19:35:45 - concursabilidad.0 - Finished reading query, closing connection.
+2016/07/25 19:35:45 - Table output 3 2 2.0 - Prepared statement : INSERT INTO opendata.concursabilidad (anho, trimestre, nivel, descripcion_nivel, entidad, descripcion_entidad, oee, descripcion_oee, cantidad_altas_concurso, cantidad_altas, indice_concursabilidad) VALUES ( ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?)
+2016/07/25 19:35:46 - ceamso - Connection to database closed!
+2016/07/25 19:35:46 - concursabilidad.0 - Finished processing (I=143, O=0, R=0, W=143, U=0, E=0)
+2016/07/25 19:35:46 - ceamso - Connection to database closed!
+2016/07/25 19:35:46 - Table output 3 2 2.0 - Finished processing (I=0, O=143, R=143, W=143, U=0, E=0)
+2016/07/25 19:35:46 - CARGAR_TABLA_CONCURSOS - Finished job entry [Transformation 2] (result=[true])
+2016/07/25 19:35:46 - CARGAR_TABLA_CONCURSOS - Job execution finished
+2016/07/25 19:35:46 - Kitchen - Finished!
+2016/07/25 19:35:46 - Kitchen - Start=2016/07/25 19:34:56.539, Stop=2016/07/25 19:35:46.259
+2016/07/25 19:35:46 - Kitchen - Processing ended after 49 seconds.
+19:35:52,295 INFO  [KarafInstance] 
+*******************************************************************************
+*** Karaf Instance Number: 1 at /home/marcosd94/ETL-portal/data-integration ***
+***   /./system/karaf//data1                                                ***
+*** Karaf Port:8801                                                         ***
+*** OSGI Service Port:9050                                                  ***
+*******************************************************************************
+Jul 25, 2016 7:35:54 PM org.apache.karaf.main.Main$KarafLockCallback lockAquired
+INFO: Lock acquired. Setting startlevel to 100
+log4j: System property is :null
+log4j: Standard DocumentBuilderFactory search succeded.
+log4j: DocumentBuilderFactory is: org.apache.xerces.jaxp.DocumentBuilderFactoryImpl
+log4j: debug attribute= "null".
+log4j: Ignoring debug attribute.
+log4j: reset attribute= "false".
+log4j: Threshold ="null".
+log4j: Retreiving an instance of org.apache.log4j.Logger.
+log4j: Setting [org.pentaho.di] additivity to [true].
+log4j: Level value for org.pentaho.di is  [off].
+log4j: org.pentaho.di level set to OFF
+log4j: Class name: [org.apache.log4j.ConsoleAppender]
+log4j: Setting property [target] to [System.out].
+log4j: Parsing layout of class: "org.apache.log4j.PatternLayout"
+log4j: Setting property [conversionPattern] to [%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n].
+log4j: Adding appender named [console] to category [org.pentaho.di].
+log4j: Level value for root is  [off].
+log4j: root level set to OFF
+log4j: Adding appender named [console] to category [root].
+2016/07/25 19:35:54 - Kitchen - Start of run.
+2016-07-25 19:35:57.132:INFO:oejs.Server:jetty-8.1.15.v20140411
+2016-07-25 19:35:57.157:INFO:oejs.AbstractConnector:Started NIOSocketConnectorWrapper@0.0.0.0:9050
+log4j: reset attribute= "false".
+log4j: Threshold ="null".
+log4j:WARN No appenders could be found for logger (org.springframework.osgi.extender.internal.activator.ContextLoaderListener).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+Jul 25, 2016 7:35:57 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/core
+Jul 25, 2016 7:35:57 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/configuration/beans
+Jul 25, 2016 7:35:57 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/configuration/parameterized-types
+Jul 25, 2016 7:35:57 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/configuration/security
+Jul 25, 2016 7:35:57 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://schemas.xmlsoap.org/wsdl/
+Jul 25, 2016 7:35:57 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://www.w3.org/2005/08/addressing
+Jul 25, 2016 7:35:57 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://schemas.xmlsoap.org/ws/2004/08/addressing
+Jul 25, 2016 7:35:57 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-management (135) [org.apache.cxf.management.InstrumentationManager]
+Jul 25, 2016 7:35:57 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-wsdl (138) [org.apache.cxf.wsdl.WSDLManager]
+Jul 25, 2016 7:35:57 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-bindings-xml (140) [org.apache.cxf.binding.xml.XMLBindingFactory, org.apache.cxf.binding.xml.wsdl11.XMLWSDLExtensionLoader]
+Jul 25, 2016 7:35:57 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-bindings-soap (141) [org.apache.cxf.binding.soap.SoapBindingFactory, org.apache.cxf.binding.soap.SoapTransportFactory]
+Jul 25, 2016 7:35:57 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/bindings/soap
+Jul 25, 2016 7:35:57 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-policy (165) [org.apache.cxf.ws.policy.PolicyEngine, org.apache.cxf.policy.PolicyDataEngine, org.apache.cxf.ws.policy.AssertionBuilderRegistry, org.apache.cxf.ws.policy.PolicyInterceptorProviderRegistry, org.apache.cxf.ws.policy.PolicyBuilder, org.apache.cxf.ws.policy.PolicyAnnotationListener, org.apache.cxf.ws.policy.attachment.ServiceModelPolicyProvider, org.apache.cxf.ws.policy.attachment.external.DomainExpressionBuilderRegistry, org.apache.cxf.ws.policy.attachment.external.EndpointReferenceDomainExpressionBuilder, org.apache.cxf.ws.policy.attachment.external.URIDomainExpressionBuilder, org.apache.cxf.ws.policy.attachment.wsdl11.Wsdl11AttachmentPolicyProvider, org.apache.cxf.ws.policy.mtom.MTOMAssertionBuilder, org.apache.cxf.ws.policy.mtom.MTOMPolicyInterceptorProvider]
+Jul 25, 2016 7:35:57 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-transports-http (142) [org.apache.cxf.transport.http.HTTPTransportFactory, org.apache.cxf.transport.http.HTTPWSDLExtensionLoader, org.apache.cxf.transport.http.policy.HTTPClientAssertionBuilder, org.apache.cxf.transport.http.policy.HTTPServerAssertionBuilder, org.apache.cxf.transport.http.policy.NoOpPolicyInterceptorProvider]
+Jul 25, 2016 7:35:57 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/transports/http/configuration
+Jul 25, 2016 7:35:57 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/simple
+Jul 25, 2016 7:35:57 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-frontend-jaxws (144) [org.apache.cxf.jaxws.context.WebServiceContextResourceResolver]
+Jul 25, 2016 7:35:57 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/jaxws
+Jul 25, 2016 7:35:57 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/jaxrs
+Jul 25, 2016 7:35:57 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/jaxrs-client
+Jul 25, 2016 7:35:57 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-bindings-corba (154) [org.apache.cxf.binding.corba.CorbaBindingFactory, org.apache.cxf.binding.corba.wsdl.WSDLExtensionRegister]
+Jul 25, 2016 7:35:57 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/binding/coloc
+Jul 25, 2016 7:35:57 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-transports-local (156) [org.apache.cxf.transport.local.LocalTransportFactory]
+Jul 25, 2016 7:35:57 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-bindings-object (157) [org.apache.cxf.binding.object.ObjectBindingFactory]
+Jul 25, 2016 7:35:57 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/binding/object
+Jul 25, 2016 7:35:57 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-transports-http-jetty (158) [org.apache.cxf.transport.http_jetty.JettyDestinationFactory, org.apache.cxf.transport.http_jetty.JettyHTTPServerEngineFactory, org.apache.cxf.transport.http.ContinuationProviderFactory]
+Jul 25, 2016 7:35:57 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/transports/http-jetty/configuration
+Jul 25, 2016 7:35:57 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-transports-jms (160) [org.apache.cxf.transport.jms.JMSTransportFactory, org.apache.cxf.transport.jms.wsdl11.JMSWSDLExtensionLoader]
+Jul 25, 2016 7:35:57 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-transports-udp (162) [org.apache.cxf.transport.udp.UDPTransportFactory]
+Jul 25, 2016 7:35:57 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/policy
+Jul 25, 2016 7:35:57 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://www.w3.org/ns/ws-policy
+Jul 25, 2016 7:35:57 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://www.w3.org/2006/07/ws-policy
+Jul 25, 2016 7:35:57 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://schemas.xmlsoap.org/ws/2004/09/policy
+Jul 25, 2016 7:35:57 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd
+Jul 25, 2016 7:35:57 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd
+Jul 25, 2016 7:35:57 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://www.w3.org/2000/09/xmldsig#
+Jul 25, 2016 7:35:57 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702
+Jul 25, 2016 7:35:58 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-addr (182) [org.apache.cxf.ws.addressing.policy.AddressingAssertionBuilder, org.apache.cxf.ws.addressing.policy.UsingAddressingAssertionBuilder, org.apache.cxf.ws.addressing.policy.AddressingPolicyInterceptorProvider, org.apache.cxf.ws.addressing.impl.AddressingWSDLExtensionLoader, org.apache.cxf.ws.addressing.WSAddressingFeature$WSAddressingFeatureApplier, org.apache.cxf.ws.addressing.MAPAggregator$MAPAggregatorLoader]
+Jul 25, 2016 7:35:58 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/ws/addressing
+Jul 25, 2016 7:35:58 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-security (184) [org.apache.cxf.ws.security.policy.WSSecurityPolicyLoader, org.apache.cxf.ws.security.cache.CacheCleanupListener]
+Jul 25, 2016 7:35:58 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-mex (187) [org.apache.cxf.ws.mex.MEXServerListener]
+Jul 25, 2016 7:35:58 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-rm (186) [org.apache.cxf.ws.rm.RMManager, org.apache.cxf.ws.rm.policy.RMPolicyInterceptorProvider, org.apache.cxf.ws.rm.policy.RM10AssertionBuilder, org.apache.cxf.ws.rm.policy.RM12AssertionBuilder, org.apache.cxf.ws.rm.policy.WSRMP12PolicyLoader, org.apache.cxf.ws.rm.policy.MC11PolicyLoader, org.apache.cxf.ws.rm.policy.RSPPolicyLoader]
+Jul 25, 2016 7:35:58 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/ws/rm/manager
+Jul 25, 2016 7:35:58 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://schemas.xmlsoap.org/ws/2005/02/rm/policy
+Jul 25, 2016 7:35:58 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-javascript (188) [org.apache.cxf.javascript.JavascriptServerListener]
+Jul 25, 2016 7:35:58 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/clustering
+Jul 25, 2016 7:35:58 PM org.pentaho.caching.impl.PentahoCacheManagerFactory$RegistrationHandler$1 onSuccess
+INFO: New Caching Service registered
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/home/marcosd94/ETL-portal/data-integration/launcher/../lib/slf4j-log4j12-1.7.7.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/home/marcosd94/ETL-portal/data-integration/plugins/pentaho-big-data-plugin/lib/slf4j-log4j12-1.7.3.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+19:35:58,843 ERROR [WebjarsURLConnection] Error Transforming zip
+java.io.IOException: Pipe closed
+	at java.io.PipedInputStream.checkStateForReceive(PipedInputStream.java:261)
+	at java.io.PipedInputStream.receive(PipedInputStream.java:202)
+	at java.io.PipedOutputStream.write(PipedOutputStream.java:122)
+	at java.util.zip.ZipOutputStream.writeInt(ZipOutputStream.java:590)
+	at java.util.zip.ZipOutputStream.writeLOC(ZipOutputStream.java:374)
+	at java.util.zip.ZipOutputStream.putNextEntry(ZipOutputStream.java:221)
+	at java.util.jar.JarOutputStream.putNextEntry(JarOutputStream.java:109)
+	at org.pentaho.osgi.platform.webjars.WebjarsURLConnection.transform(WebjarsURLConnection.java:182)
+	at org.pentaho.osgi.platform.webjars.WebjarsURLConnection.access$000(WebjarsURLConnection.java:54)
+	at org.pentaho.osgi.platform.webjars.WebjarsURLConnection$2.call(WebjarsURLConnection.java:90)
+	at org.pentaho.osgi.platform.webjars.WebjarsURLConnection$2.call(WebjarsURLConnection.java:87)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Jul 25, 2016 7:35:59 PM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be /lineage
+Jul 25, 2016 7:35:59 PM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be /marketplace
+19:35:59,802 ERROR [WebjarsURLConnection] Error Transforming zip
+java.io.IOException: Pipe closed
+	at java.io.PipedInputStream.checkStateForReceive(PipedInputStream.java:261)
+	at java.io.PipedInputStream.receive(PipedInputStream.java:227)
+	at java.io.PipedOutputStream.write(PipedOutputStream.java:149)
+	at java.util.zip.DeflaterOutputStream.deflate(DeflaterOutputStream.java:253)
+	at java.util.zip.ZipOutputStream.closeEntry(ZipOutputStream.java:238)
+	at org.pentaho.osgi.platform.webjars.WebjarsURLConnection.transform(WebjarsURLConnection.java:190)
+	at org.pentaho.osgi.platform.webjars.WebjarsURLConnection.access$000(WebjarsURLConnection.java:54)
+	at org.pentaho.osgi.platform.webjars.WebjarsURLConnection$2.call(WebjarsURLConnection.java:90)
+	at org.pentaho.osgi.platform.webjars.WebjarsURLConnection$2.call(WebjarsURLConnection.java:87)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2016/07/25 19:36:00 - GENERAR_JSON_CONCURSOS - Start of job execution
+2016/07/25 19:36:00 - GENERAR_JSON_CONCURSOS - Starting entry [Transformation]
+2016/07/25 19:36:00 - Transformation - Loading transformation from XML file [/home/marcosd94/ETL-portal/pentaho/Transformaciones/T_JSON_CONCURSOS.ktr]
+2016/07/25 19:36:00 - T_JSON_CONCURSOS - Dispatching started for transformation [T_JSON_CONCURSOS]
+2016/07/25 19:36:00 - T_JSON_CONCURSOS - Nr of arguments detected:1 
+2016/07/25 19:36:00 - T_JSON_CONCURSOS - This is not a replay transformation
+2016/07/25 19:36:00 - T_JSON_CONCURSOS - I found 3 different steps to launch.
+2016/07/25 19:36:00 - T_JSON_CONCURSOS - Allocating rowsets...
+2016/07/25 19:36:00 - T_JSON_CONCURSOS -  Allocating rowsets for step 0 --> Get Variables
+2016/07/25 19:36:00 - T_JSON_CONCURSOS -   prevcopies = 1, nextcopies=1
+2016/07/25 19:36:00 - T_JSON_CONCURSOS - Transformation allocated new rowset [Get Variables.0 - EntradaConcursos.0]
+2016/07/25 19:36:00 - T_JSON_CONCURSOS -  Allocated 1 rowsets for step 0 --> Get Variables  
+2016/07/25 19:36:00 - T_JSON_CONCURSOS -  Allocating rowsets for step 1 --> EntradaConcursos
+2016/07/25 19:36:00 - T_JSON_CONCURSOS -   prevcopies = 1, nextcopies=1
+2016/07/25 19:36:00 - T_JSON_CONCURSOS - Transformation allocated new rowset [EntradaConcursos.0 - JsonConcursos.0]
+2016/07/25 19:36:00 - T_JSON_CONCURSOS -  Allocated 2 rowsets for step 1 --> EntradaConcursos  
+2016/07/25 19:36:00 - T_JSON_CONCURSOS -  Allocating rowsets for step 2 --> JsonConcursos
+2016/07/25 19:36:00 - T_JSON_CONCURSOS -  Allocated 2 rowsets for step 2 --> JsonConcursos  
+2016/07/25 19:36:00 - T_JSON_CONCURSOS - Allocating Steps & StepData...
+2016/07/25 19:36:00 - T_JSON_CONCURSOS -  Transformation is about to allocate step [Get Variables] of type [GetVariable]
+2016/07/25 19:36:00 - T_JSON_CONCURSOS -   Step has nrcopies=1
+2016/07/25 19:36:00 - Get Variables.0 - distribution activated
+2016/07/25 19:36:00 - Get Variables.0 - Starting allocation of buffers & new threads...
+2016/07/25 19:36:00 - Get Variables.0 - Step info: nrinput=0 nroutput=1
+2016/07/25 19:36:00 - Get Variables.0 - output rel. is  1:1
+2016/07/25 19:36:00 - Get Variables.0 - Found output rowset [Get Variables.0 - EntradaConcursos.0]
+2016/07/25 19:36:00 - Get Variables.0 - Finished dispatching
+2016/07/25 19:36:00 - T_JSON_CONCURSOS -  Transformation has allocated a new step: [Get Variables].0
+2016/07/25 19:36:00 - T_JSON_CONCURSOS -  Transformation is about to allocate step [EntradaConcursos] of type [TableInput]
+2016/07/25 19:36:00 - T_JSON_CONCURSOS -   Step has nrcopies=1
+2016/07/25 19:36:00 - EntradaConcursos.0 - distribution activated
+2016/07/25 19:36:00 - EntradaConcursos.0 - Starting allocation of buffers & new threads...
+2016/07/25 19:36:00 - EntradaConcursos.0 - Step info: nrinput=1 nroutput=1
+2016/07/25 19:36:00 - EntradaConcursos.0 - Got previous step from [EntradaConcursos] #0 --> Get Variables
+2016/07/25 19:36:00 - EntradaConcursos.0 - input rel is 1:1
+2016/07/25 19:36:00 - EntradaConcursos.0 - Found input rowset [Get Variables.0 - EntradaConcursos.0]
+2016/07/25 19:36:00 - EntradaConcursos.0 - output rel. is  1:1
+2016/07/25 19:36:00 - EntradaConcursos.0 - Found output rowset [EntradaConcursos.0 - JsonConcursos.0]
+2016/07/25 19:36:00 - EntradaConcursos.0 - Finished dispatching
+2016/07/25 19:36:00 - T_JSON_CONCURSOS -  Transformation has allocated a new step: [EntradaConcursos].0
+2016/07/25 19:36:00 - T_JSON_CONCURSOS -  Transformation is about to allocate step [JsonConcursos] of type [JsonOutput]
+2016/07/25 19:36:00 - T_JSON_CONCURSOS -   Step has nrcopies=1
+2016/07/25 19:36:00 - JsonConcursos.0 - distribution activated
+2016/07/25 19:36:00 - JsonConcursos.0 - Starting allocation of buffers & new threads...
+2016/07/25 19:36:00 - JsonConcursos.0 - Step info: nrinput=1 nroutput=0
+2016/07/25 19:36:00 - JsonConcursos.0 - Got previous step from [JsonConcursos] #0 --> EntradaConcursos
+2016/07/25 19:36:00 - JsonConcursos.0 - input rel is 1:1
+2016/07/25 19:36:00 - JsonConcursos.0 - Found input rowset [EntradaConcursos.0 - JsonConcursos.0]
+2016/07/25 19:36:00 - JsonConcursos.0 - Finished dispatching
+2016/07/25 19:36:00 - T_JSON_CONCURSOS -  Transformation has allocated a new step: [JsonConcursos].0
+2016/07/25 19:36:00 - T_JSON_CONCURSOS - This transformation can be replayed with replay date: 2016/07/25 19:36:00
+2016/07/25 19:36:00 - T_JSON_CONCURSOS - Initialising 3 steps...
+2016/07/25 19:36:00 - Get Variables.0 - Released server socket on port 0
+2016/07/25 19:36:00 - EntradaConcursos.0 - Released server socket on port 0
+2016/07/25 19:36:00 - JsonConcursos.0 - Released server socket on port 0
+2016/07/25 19:36:00 - JsonConcursos.0 - Opened new file with name [/home/marcosd94/portal-sfp/client/dist/data/concursos.json]
+2016/07/25 19:36:00 - ceamso - New database connection defined
+2016/07/25 19:36:00 - ceamso - Auto commit off
+2016/07/25 19:36:00 - EntradaConcursos.0 - Connected to database...
+2016/07/25 19:36:00 - T_JSON_CONCURSOS - Step [Get Variables.0] initialized flawlessly.
+2016/07/25 19:36:00 - T_JSON_CONCURSOS - Step [EntradaConcursos.0] initialized flawlessly.
+2016/07/25 19:36:00 - T_JSON_CONCURSOS - Step [JsonConcursos.0] initialized flawlessly.
+2016/07/25 19:36:00 - Get Variables.0 - Starting to run...
+2016/07/25 19:36:00 - Get Variables.0 - field [ipBD] has value [localhost]
+2016/07/25 19:36:00 - Get Variables.0 - field [puertoBD] has value [5434]
+2016/07/25 19:36:00 - Get Variables.0 - field [nombreBD] has value [sfp]
+2016/07/25 19:36:00 - Get Variables.0 - field [usuarioBD] has value [postgres]
+2016/07/25 19:36:00 - Get Variables.0 - field [jsonFile] has value [/home/marcosd94/portal-sfp/client/dist/data/concursos]
+2016/07/25 19:36:00 - Get Variables.0 - Signaling 'output done' to 1 output rowsets.
+2016/07/25 19:36:00 - Get Variables.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2016/07/25 19:36:00 - EntradaConcursos.0 - Starting to run...
+2016/07/25 19:36:00 - JsonConcursos.0 - Starting to run...
+2016/07/25 19:36:00 - EntradaConcursos.0 - SQL query : SELECT con.identificador_concurso, con.identificador_concurso_puesto,
+2016/07/25 19:36:00 - EntradaConcursos.0 - con.nivel,con.descripcion_nivel,
+2016/07/25 19:36:00 - EntradaConcursos.0 - con.entidad,con.descripcion_entidad,
+2016/07/25 19:36:00 - EntradaConcursos.0 - con.oee,con.descripcion_oee,
+2016/07/25 19:36:00 - EntradaConcursos.0 - tipos_concurso,
+2016/07/25 19:36:00 - EntradaConcursos.0 - objeto_gasto, concepto ,
+2016/07/25 19:36:00 - EntradaConcursos.0 - clasificacion_ocupacional,
+2016/07/25 19:36:00 - EntradaConcursos.0 - categoria, cargo, puesto,
+2016/07/25 19:36:00 - EntradaConcursos.0 - vacancia, tipo_funcionario,
+2016/07/25 19:36:00 - EntradaConcursos.0 - localidad,domicilio,
+2016/07/25 19:36:00 - EntradaConcursos.0 - salario, beneficios_adicionales,
+2016/07/25 19:36:00 - EntradaConcursos.0 - con.estado as estado_concurso,
+2016/07/25 19:36:00 - EntradaConcursos.0 - fuente_financiamiento,
+2016/07/25 19:36:00 - EntradaConcursos.0 - inicio_publicacion,
+2016/07/25 19:36:00 - EntradaConcursos.0 - fin_publicacion,
+2016/07/25 19:36:00 - EntradaConcursos.0 - con.uri,
+2016/07/25 19:36:00 - EntradaConcursos.0 - --null as perfil_matriz_postulacion, null as informacion_postulacion,null as postularse, null as inicio_postulacion, null as fin_postulacion--
+2016/07/25 19:36:00 - EntradaConcursos.0 - post.perfil_matriz as perfil_matriz_postulacion , post.informacion as informacion_postulacion, post.postularse, post.inicio_postulacion,post.fin_postulacion,
+2016/07/25 19:36:00 - EntradaConcursos.0 - eva.estado as estado_evaluacion, eva.cant_postulantes, eva.perfil_matriz as perfil_matriz_evaluacion , eva.proceso as proceso_evaluacion, eva.inicio_evaluacion, eva.fin_evaluacion,
+2016/07/25 19:36:00 - EntradaConcursos.0 - adju.cedula,adju.nombre, adju.apellido,adju.fecha_nacimiento, 
+2016/07/25 19:36:00 - EntradaConcursos.0 - adju.fecha_adjudicacion, adju.proceso as proceso_adjudicacion,
+2016/07/25 19:36:00 - EntradaConcursos.0 - adju.adjudicados, adju.puntaje, adju.perfil_matriz as perfil_matriz_adjudicacion
+2016/07/25 19:36:00 - EntradaConcursos.0 - 
+2016/07/25 19:36:00 - EntradaConcursos.0 - FROM opendata.concursos con
+2016/07/25 19:36:00 - EntradaConcursos.0 - 
+2016/07/25 19:36:00 - EntradaConcursos.0 - left JOIN opendata.postulacion post ON post.identificador_concurso_puesto = con.identificador_concurso_puesto
+2016/07/25 19:36:00 - EntradaConcursos.0 - left JOIN opendata.evaluacion eva ON eva.identificador_concurso_puesto = con.identificador_concurso_puesto 
+2016/07/25 19:36:00 - EntradaConcursos.0 - LEFT JOIN opendata.adjudicacion adju ON adju.identificador_concurso_puesto = con.identificador_concurso_puesto
+2016/07/25 19:36:00 - T_JSON_CONCURSOS - Transformation has allocated 3 threads and 2 rowsets.
+2016/07/25 19:36:01 - EntradaConcursos.0 - Signaling 'output done' to 1 output rowsets.
+2016/07/25 19:36:01 - EntradaConcursos.0 - Finished reading query, closing connection.
+2016/07/25 19:36:01 - JsonConcursos.0 - Signaling 'output done' to 0 output rowsets.
+2016/07/25 19:36:01 - JsonConcursos.0 - Finished processing (I=0, O=0, R=0, W=0, U=0, E=0)
+2016/07/25 19:36:01 - ceamso - Commit on database connection [ceamso]
+2016/07/25 19:36:01 - ceamso - Connection to database closed!
+2016/07/25 19:36:01 - EntradaConcursos.0 - Finished processing (I=0, O=0, R=0, W=0, U=0, E=0)
+2016/07/25 19:36:01 - GENERAR_JSON_CONCURSOS - Finished job entry [Transformation] (result=[true])
+2016/07/25 19:36:01 - GENERAR_JSON_CONCURSOS - Job execution finished
+2016/07/25 19:36:01 - Kitchen - Finished!
+2016/07/25 19:36:01 - Kitchen - Start=2016/07/25 19:35:54.902, Stop=2016/07/25 19:36:01.209
+2016/07/25 19:36:01 - Kitchen - Processing ended after 6 seconds.
+19:36:02,824 INFO  [KarafInstance] 
+*******************************************************************************
+*** Karaf Instance Number: 1 at /home/marcosd94/ETL-portal/data-integration ***
+***   /./system/karaf//data1                                                ***
+*** Karaf Port:8801                                                         ***
+*** OSGI Service Port:9050                                                  ***
+*******************************************************************************
+Jul 25, 2016 7:36:03 PM org.apache.karaf.main.Main$KarafLockCallback lockAquired
+INFO: Lock acquired. Setting startlevel to 100
+log4j: System property is :null
+log4j: Standard DocumentBuilderFactory search succeded.
+log4j: DocumentBuilderFactory is: org.apache.xerces.jaxp.DocumentBuilderFactoryImpl
+log4j: debug attribute= "null".
+log4j: Ignoring debug attribute.
+log4j: reset attribute= "false".
+log4j: Threshold ="null".
+log4j: Retreiving an instance of org.apache.log4j.Logger.
+log4j: Setting [org.pentaho.di] additivity to [true].
+log4j: Level value for org.pentaho.di is  [off].
+log4j: org.pentaho.di level set to OFF
+log4j: Class name: [org.apache.log4j.ConsoleAppender]
+log4j: Setting property [target] to [System.out].
+log4j: Parsing layout of class: "org.apache.log4j.PatternLayout"
+log4j: Setting property [conversionPattern] to [%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n].
+log4j: Adding appender named [console] to category [org.pentaho.di].
+log4j: Level value for root is  [off].
+log4j: root level set to OFF
+log4j: Adding appender named [console] to category [root].
+2016/07/25 19:36:03 - Kitchen - Start of run.
+2016-07-25 19:36:05.663:INFO:oejs.Server:jetty-8.1.15.v20140411
+2016-07-25 19:36:05.683:INFO:oejs.AbstractConnector:Started NIOSocketConnectorWrapper@0.0.0.0:9050
+log4j: reset attribute= "false".
+log4j: Threshold ="null".
+log4j:WARN No appenders could be found for logger (org.springframework.osgi.extender.internal.activator.ContextLoaderListener).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+Jul 25, 2016 7:36:06 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/core
+Jul 25, 2016 7:36:06 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/configuration/beans
+Jul 25, 2016 7:36:06 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/configuration/parameterized-types
+Jul 25, 2016 7:36:06 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/configuration/security
+Jul 25, 2016 7:36:06 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://schemas.xmlsoap.org/wsdl/
+Jul 25, 2016 7:36:06 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://www.w3.org/2005/08/addressing
+Jul 25, 2016 7:36:06 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://schemas.xmlsoap.org/ws/2004/08/addressing
+Jul 25, 2016 7:36:06 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-management (135) [org.apache.cxf.management.InstrumentationManager]
+Jul 25, 2016 7:36:06 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-wsdl (138) [org.apache.cxf.wsdl.WSDLManager]
+Jul 25, 2016 7:36:06 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-bindings-xml (140) [org.apache.cxf.binding.xml.XMLBindingFactory, org.apache.cxf.binding.xml.wsdl11.XMLWSDLExtensionLoader]
+Jul 25, 2016 7:36:06 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-bindings-soap (141) [org.apache.cxf.binding.soap.SoapBindingFactory, org.apache.cxf.binding.soap.SoapTransportFactory]
+Jul 25, 2016 7:36:06 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/bindings/soap
+Jul 25, 2016 7:36:06 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-policy (165) [org.apache.cxf.ws.policy.PolicyEngine, org.apache.cxf.policy.PolicyDataEngine, org.apache.cxf.ws.policy.AssertionBuilderRegistry, org.apache.cxf.ws.policy.PolicyInterceptorProviderRegistry, org.apache.cxf.ws.policy.PolicyBuilder, org.apache.cxf.ws.policy.PolicyAnnotationListener, org.apache.cxf.ws.policy.attachment.ServiceModelPolicyProvider, org.apache.cxf.ws.policy.attachment.external.DomainExpressionBuilderRegistry, org.apache.cxf.ws.policy.attachment.external.EndpointReferenceDomainExpressionBuilder, org.apache.cxf.ws.policy.attachment.external.URIDomainExpressionBuilder, org.apache.cxf.ws.policy.attachment.wsdl11.Wsdl11AttachmentPolicyProvider, org.apache.cxf.ws.policy.mtom.MTOMAssertionBuilder, org.apache.cxf.ws.policy.mtom.MTOMPolicyInterceptorProvider]
+Jul 25, 2016 7:36:06 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-transports-http (142) [org.apache.cxf.transport.http.HTTPTransportFactory, org.apache.cxf.transport.http.HTTPWSDLExtensionLoader, org.apache.cxf.transport.http.policy.HTTPClientAssertionBuilder, org.apache.cxf.transport.http.policy.HTTPServerAssertionBuilder, org.apache.cxf.transport.http.policy.NoOpPolicyInterceptorProvider]
+Jul 25, 2016 7:36:06 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/transports/http/configuration
+Jul 25, 2016 7:36:06 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/simple
+Jul 25, 2016 7:36:06 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-frontend-jaxws (144) [org.apache.cxf.jaxws.context.WebServiceContextResourceResolver]
+Jul 25, 2016 7:36:06 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/jaxws
+Jul 25, 2016 7:36:06 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/jaxrs
+Jul 25, 2016 7:36:06 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/jaxrs-client
+Jul 25, 2016 7:36:06 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-bindings-corba (154) [org.apache.cxf.binding.corba.CorbaBindingFactory, org.apache.cxf.binding.corba.wsdl.WSDLExtensionRegister]
+Jul 25, 2016 7:36:06 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/binding/coloc
+Jul 25, 2016 7:36:06 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-transports-local (156) [org.apache.cxf.transport.local.LocalTransportFactory]
+Jul 25, 2016 7:36:06 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-bindings-object (157) [org.apache.cxf.binding.object.ObjectBindingFactory]
+Jul 25, 2016 7:36:06 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/blueprint/binding/object
+Jul 25, 2016 7:36:06 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-transports-http-jetty (158) [org.apache.cxf.transport.http_jetty.JettyDestinationFactory, org.apache.cxf.transport.http_jetty.JettyHTTPServerEngineFactory, org.apache.cxf.transport.http.ContinuationProviderFactory]
+Jul 25, 2016 7:36:06 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/transports/http-jetty/configuration
+Jul 25, 2016 7:36:06 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-transports-jms (160) [org.apache.cxf.transport.jms.JMSTransportFactory, org.apache.cxf.transport.jms.wsdl11.JMSWSDLExtensionLoader]
+Jul 25, 2016 7:36:06 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-transports-udp (162) [org.apache.cxf.transport.udp.UDPTransportFactory]
+Jul 25, 2016 7:36:06 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/policy
+Jul 25, 2016 7:36:06 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://www.w3.org/ns/ws-policy
+Jul 25, 2016 7:36:06 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://www.w3.org/2006/07/ws-policy
+Jul 25, 2016 7:36:06 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://schemas.xmlsoap.org/ws/2004/09/policy
+Jul 25, 2016 7:36:06 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd
+Jul 25, 2016 7:36:06 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd
+Jul 25, 2016 7:36:06 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://www.w3.org/2000/09/xmldsig#
+Jul 25, 2016 7:36:06 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702
+Jul 25, 2016 7:36:06 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-addr (182) [org.apache.cxf.ws.addressing.policy.AddressingAssertionBuilder, org.apache.cxf.ws.addressing.policy.UsingAddressingAssertionBuilder, org.apache.cxf.ws.addressing.policy.AddressingPolicyInterceptorProvider, org.apache.cxf.ws.addressing.impl.AddressingWSDLExtensionLoader, org.apache.cxf.ws.addressing.WSAddressingFeature$WSAddressingFeatureApplier, org.apache.cxf.ws.addressing.MAPAggregator$MAPAggregatorLoader]
+Jul 25, 2016 7:36:06 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/ws/addressing
+Jul 25, 2016 7:36:06 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-security (184) [org.apache.cxf.ws.security.policy.WSSecurityPolicyLoader, org.apache.cxf.ws.security.cache.CacheCleanupListener]
+Jul 25, 2016 7:36:06 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-mex (187) [org.apache.cxf.ws.mex.MEXServerListener]
+Jul 25, 2016 7:36:06 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-rm (186) [org.apache.cxf.ws.rm.RMManager, org.apache.cxf.ws.rm.policy.RMPolicyInterceptorProvider, org.apache.cxf.ws.rm.policy.RM10AssertionBuilder, org.apache.cxf.ws.rm.policy.RM12AssertionBuilder, org.apache.cxf.ws.rm.policy.WSRMP12PolicyLoader, org.apache.cxf.ws.rm.policy.MC11PolicyLoader, org.apache.cxf.ws.rm.policy.RSPPolicyLoader]
+Jul 25, 2016 7:36:06 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/ws/rm/manager
+Jul 25, 2016 7:36:06 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://schemas.xmlsoap.org/ws/2005/02/rm/policy
+Jul 25, 2016 7:36:06 PM org.apache.cxf.bus.osgi.CXFExtensionBundleListener addExtensions
+INFO: Adding the extensions from bundle org.apache.cxf.cxf-rt-javascript (188) [org.apache.cxf.javascript.JavascriptServerListener]
+Jul 25, 2016 7:36:06 PM org.apache.cxf.bus.blueprint.NamespaceHandlerRegisterer register
+INFO: Registered blueprint namespace handler for http://cxf.apache.org/clustering
+Jul 25, 2016 7:36:06 PM org.pentaho.caching.impl.PentahoCacheManagerFactory$RegistrationHandler$1 onSuccess
+INFO: New Caching Service registered
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/home/marcosd94/ETL-portal/data-integration/launcher/../lib/slf4j-log4j12-1.7.7.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/home/marcosd94/ETL-portal/data-integration/plugins/pentaho-big-data-plugin/lib/slf4j-log4j12-1.7.3.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+19:36:07,449 ERROR [WebjarsURLConnection] Error Transforming zip
+java.io.IOException: Pipe closed
+	at java.io.PipedInputStream.checkStateForReceive(PipedInputStream.java:261)
+	at java.io.PipedInputStream.receive(PipedInputStream.java:227)
+	at java.io.PipedOutputStream.write(PipedOutputStream.java:149)
+	at java.util.zip.DeflaterOutputStream.deflate(DeflaterOutputStream.java:253)
+	at java.util.zip.ZipOutputStream.closeEntry(ZipOutputStream.java:238)
+	at org.pentaho.osgi.platform.webjars.WebjarsURLConnection.transform(WebjarsURLConnection.java:190)
+	at org.pentaho.osgi.platform.webjars.WebjarsURLConnection.access$000(WebjarsURLConnection.java:54)
+	at org.pentaho.osgi.platform.webjars.WebjarsURLConnection$2.call(WebjarsURLConnection.java:90)
+	at org.pentaho.osgi.platform.webjars.WebjarsURLConnection$2.call(WebjarsURLConnection.java:87)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Jul 25, 2016 7:36:07 PM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be /lineage
+Jul 25, 2016 7:36:08 PM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be /marketplace
+19:36:08,445 ERROR [WebjarsURLConnection] Error Transforming zip
+java.io.IOException: Pipe closed
+	at java.io.PipedInputStream.checkStateForReceive(PipedInputStream.java:261)
+	at java.io.PipedInputStream.receive(PipedInputStream.java:227)
+	at java.io.PipedOutputStream.write(PipedOutputStream.java:149)
+	at java.util.zip.DeflaterOutputStream.deflate(DeflaterOutputStream.java:253)
+	at java.util.zip.ZipOutputStream.closeEntry(ZipOutputStream.java:238)
+	at org.pentaho.osgi.platform.webjars.WebjarsURLConnection.transform(WebjarsURLConnection.java:190)
+	at org.pentaho.osgi.platform.webjars.WebjarsURLConnection.access$000(WebjarsURLConnection.java:54)
+	at org.pentaho.osgi.platform.webjars.WebjarsURLConnection$2.call(WebjarsURLConnection.java:90)
+	at org.pentaho.osgi.platform.webjars.WebjarsURLConnection$2.call(WebjarsURLConnection.java:87)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2016/07/25 19:36:08 - GENERAR_CSV_CONCURSOS - Start of job execution
+2016/07/25 19:36:08 - GENERAR_CSV_CONCURSOS - Starting entry [Transformation]
+2016/07/25 19:36:08 - Transformation - Loading transformation from XML file [/home/marcosd94/ETL-portal/pentaho/Transformaciones/T_CSV_CONCURSOS.ktr]
+2016/07/25 19:36:08 - T_CSV_CONCURSOS - Dispatching started for transformation [T_CSV_CONCURSOS]
+2016/07/25 19:36:08 - T_CSV_CONCURSOS - Nr of arguments detected:1 
+2016/07/25 19:36:08 - T_CSV_CONCURSOS - This is not a replay transformation
+2016/07/25 19:36:08 - T_CSV_CONCURSOS - I found 3 different steps to launch.
+2016/07/25 19:36:08 - T_CSV_CONCURSOS - Allocating rowsets...
+2016/07/25 19:36:08 - T_CSV_CONCURSOS -  Allocating rowsets for step 0 --> Get Variables
+2016/07/25 19:36:08 - T_CSV_CONCURSOS -   prevcopies = 1, nextcopies=1
+2016/07/25 19:36:08 - T_CSV_CONCURSOS - Transformation allocated new rowset [Get Variables.0 - EntradaConcursos.0]
+2016/07/25 19:36:08 - T_CSV_CONCURSOS -  Allocated 1 rowsets for step 0 --> Get Variables  
+2016/07/25 19:36:08 - T_CSV_CONCURSOS -  Allocating rowsets for step 1 --> EntradaConcursos
+2016/07/25 19:36:08 - T_CSV_CONCURSOS -   prevcopies = 1, nextcopies=1
+2016/07/25 19:36:08 - T_CSV_CONCURSOS - Transformation allocated new rowset [EntradaConcursos.0 - CSVConcursos.0]
+2016/07/25 19:36:08 - T_CSV_CONCURSOS -  Allocated 2 rowsets for step 1 --> EntradaConcursos  
+2016/07/25 19:36:08 - T_CSV_CONCURSOS -  Allocating rowsets for step 2 --> CSVConcursos
+2016/07/25 19:36:08 - T_CSV_CONCURSOS -  Allocated 2 rowsets for step 2 --> CSVConcursos  
+2016/07/25 19:36:08 - T_CSV_CONCURSOS - Allocating Steps & StepData...
+2016/07/25 19:36:08 - T_CSV_CONCURSOS -  Transformation is about to allocate step [Get Variables] of type [GetVariable]
+2016/07/25 19:36:08 - T_CSV_CONCURSOS -   Step has nrcopies=1
+2016/07/25 19:36:08 - Get Variables.0 - distribution activated
+2016/07/25 19:36:08 - Get Variables.0 - Starting allocation of buffers & new threads...
+2016/07/25 19:36:08 - Get Variables.0 - Step info: nrinput=0 nroutput=1
+2016/07/25 19:36:08 - Get Variables.0 - output rel. is  1:1
+2016/07/25 19:36:08 - Get Variables.0 - Found output rowset [Get Variables.0 - EntradaConcursos.0]
+2016/07/25 19:36:08 - Get Variables.0 - Finished dispatching
+2016/07/25 19:36:08 - T_CSV_CONCURSOS -  Transformation has allocated a new step: [Get Variables].0
+2016/07/25 19:36:08 - T_CSV_CONCURSOS -  Transformation is about to allocate step [EntradaConcursos] of type [TableInput]
+2016/07/25 19:36:08 - T_CSV_CONCURSOS -   Step has nrcopies=1
+2016/07/25 19:36:08 - EntradaConcursos.0 - distribution activated
+2016/07/25 19:36:08 - EntradaConcursos.0 - Starting allocation of buffers & new threads...
+2016/07/25 19:36:08 - EntradaConcursos.0 - Step info: nrinput=1 nroutput=1
+2016/07/25 19:36:08 - EntradaConcursos.0 - Got previous step from [EntradaConcursos] #0 --> Get Variables
+2016/07/25 19:36:08 - EntradaConcursos.0 - input rel is 1:1
+2016/07/25 19:36:08 - EntradaConcursos.0 - Found input rowset [Get Variables.0 - EntradaConcursos.0]
+2016/07/25 19:36:08 - EntradaConcursos.0 - output rel. is  1:1
+2016/07/25 19:36:08 - EntradaConcursos.0 - Found output rowset [EntradaConcursos.0 - CSVConcursos.0]
+2016/07/25 19:36:08 - EntradaConcursos.0 - Finished dispatching
+2016/07/25 19:36:08 - T_CSV_CONCURSOS -  Transformation has allocated a new step: [EntradaConcursos].0
+2016/07/25 19:36:08 - T_CSV_CONCURSOS -  Transformation is about to allocate step [CSVConcursos] of type [TextFileOutput]
+2016/07/25 19:36:08 - T_CSV_CONCURSOS -   Step has nrcopies=1
+2016/07/25 19:36:08 - CSVConcursos.0 - distribution activated
+2016/07/25 19:36:08 - CSVConcursos.0 - Starting allocation of buffers & new threads...
+2016/07/25 19:36:08 - CSVConcursos.0 - Step info: nrinput=1 nroutput=0
+2016/07/25 19:36:08 - CSVConcursos.0 - Got previous step from [CSVConcursos] #0 --> EntradaConcursos
+2016/07/25 19:36:08 - CSVConcursos.0 - input rel is 1:1
+2016/07/25 19:36:08 - CSVConcursos.0 - Found input rowset [EntradaConcursos.0 - CSVConcursos.0]
+2016/07/25 19:36:08 - CSVConcursos.0 - Finished dispatching
+2016/07/25 19:36:08 - T_CSV_CONCURSOS -  Transformation has allocated a new step: [CSVConcursos].0
+2016/07/25 19:36:08 - T_CSV_CONCURSOS - This transformation can be replayed with replay date: 2016/07/25 19:36:08
+2016/07/25 19:36:08 - T_CSV_CONCURSOS - Initialising 3 steps...
+2016/07/25 19:36:08 - Get Variables.0 - Released server socket on port 0
+2016/07/25 19:36:08 - CSVConcursos.0 - Released server socket on port 0
+2016/07/25 19:36:08 - EntradaConcursos.0 - Released server socket on port 0
+2016/07/25 19:36:08 - CSVConcursos.0 - Parent folder exists [file:///home/marcosd94/portal-sfp/client/dist/data]!
+2016/07/25 19:36:08 - CSVConcursos.0 - Opening output stream using provider: None
+2016/07/25 19:36:08 - CSVConcursos.0 - Opening output stream in default encoding
+2016/07/25 19:36:08 - CSVConcursos.0 - Opened new file with name [file:///home/marcosd94/portal-sfp/client/dist/data/concursos.csv]
+2016/07/25 19:36:08 - ceamso - New database connection defined
+2016/07/25 19:36:09 - EntradaConcursos.0 - ERROR (version 6.0.0.0-353, build 1 from 2015-10-07 13.27.43 by buildguy) : An error occurred, processing will be stopped: 
+2016/07/25 19:36:09 - EntradaConcursos.0 - Error occurred while trying to connect to the database
+2016/07/25 19:36:09 - EntradaConcursos.0 - 
+2016/07/25 19:36:09 - EntradaConcursos.0 - Error connecting to database: (using class org.postgresql.Driver)
+2016/07/25 19:36:09 - EntradaConcursos.0 - FATAL: database "pentaho" does not exist
+2016/07/25 19:36:09 - ceamso - Statement canceled!
+2016/07/25 19:36:09 - ceamso - Statement canceled!
+2016/07/25 19:36:09 - EntradaConcursos.0 - ERROR (version 6.0.0.0-353, build 1 from 2015-10-07 13.27.43 by buildguy) : Error initializing step [EntradaConcursos]
+2016/07/25 19:36:09 - T_CSV_CONCURSOS - Step [Get Variables.0] initialized flawlessly.
+2016/07/25 19:36:09 - T_CSV_CONCURSOS - ERROR (version 6.0.0.0-353, build 1 from 2015-10-07 13.27.43 by buildguy) : Step [EntradaConcursos.0] failed to initialize!
+2016/07/25 19:36:09 - T_CSV_CONCURSOS - Step [CSVConcursos.0] initialized flawlessly.
+2016/07/25 19:36:09 - EntradaConcursos.0 - Finished reading query, closing connection.
+2016/07/25 19:36:09 - CSVConcursos.0 - Closing normal file ...
+2016/07/25 19:36:09 - Transformation - ERROR (version 6.0.0.0-353, build 1 from 2015-10-07 13.27.43 by buildguy) : Unable to prepare for execution of the transformation
+2016/07/25 19:36:09 - Transformation - ERROR (version 6.0.0.0-353, build 1 from 2015-10-07 13.27.43 by buildguy) : org.pentaho.di.core.exception.KettleException: 
+2016/07/25 19:36:09 - Transformation - We failed to initialize at least one step.  Execution can not begin!
+2016/07/25 19:36:09 - Transformation - 
+2016/07/25 19:36:09 - Transformation - 
+2016/07/25 19:36:09 - Transformation - 	at org.pentaho.di.trans.Trans.prepareExecution(Trans.java:1155)
+2016/07/25 19:36:09 - Transformation - 	at org.pentaho.di.trans.Trans.execute(Trans.java:613)
+2016/07/25 19:36:09 - Transformation - 	at org.pentaho.di.job.entries.trans.JobEntryTrans.execute(JobEntryTrans.java:1068)
+2016/07/25 19:36:09 - Transformation - 	at org.pentaho.di.job.Job.execute(Job.java:730)
+2016/07/25 19:36:09 - Transformation - 	at org.pentaho.di.job.Job.execute(Job.java:873)
+2016/07/25 19:36:09 - Transformation - 	at org.pentaho.di.job.Job.execute(Job.java:546)
+2016/07/25 19:36:09 - Transformation - 	at org.pentaho.di.job.Job.run(Job.java:435)
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - Starting entry [Transformation 2]
+2016/07/25 19:36:09 - Transformation 2 - Loading transformation from XML file [/home/marcosd94/ETL-portal/pentaho/Transformaciones/UpdateFallido.ktr]
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - ERROR (version 6.0.0.0-353, build 1 from 2015-10-07 13.27.43 by buildguy) : org.pentaho.di.core.exception.KettleException: 
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - Unexpected error during transformation metadata load
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - Unable to read file [file:///home/marcosd94/ETL-portal/pentaho/Transformaciones/UpdateFallido.ktr]
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - Could not read from "file:///home/marcosd94/ETL-portal/pentaho/Transformaciones/UpdateFallido.ktr" because it is not a file.
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 	at org.pentaho.di.job.entries.trans.JobEntryTrans.getTransMeta(JobEntryTrans.java:1252)
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 	at org.pentaho.di.job.entries.trans.JobEntryTrans.execute(JobEntryTrans.java:651)
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 	at org.pentaho.di.job.Job.execute(Job.java:730)
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 	at org.pentaho.di.job.Job.execute(Job.java:873)
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 	at org.pentaho.di.job.Job.execute(Job.java:873)
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 	at org.pentaho.di.job.Job.execute(Job.java:546)
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 	at org.pentaho.di.job.Job.run(Job.java:435)
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - Caused by: org.pentaho.di.core.exception.KettleXMLException: 
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - Unable to read file [file:///home/marcosd94/ETL-portal/pentaho/Transformaciones/UpdateFallido.ktr]
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - Could not read from "file:///home/marcosd94/ETL-portal/pentaho/Transformaciones/UpdateFallido.ktr" because it is not a file.
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 	at org.pentaho.di.core.xml.XMLHandler.loadXMLFile(XMLHandler.java:560)
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 	at org.pentaho.di.core.xml.XMLHandler.loadXMLFile(XMLHandler.java:539)
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 	at org.pentaho.di.trans.TransMeta.<init>(TransMeta.java:2716)
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 	at org.pentaho.di.job.entries.trans.JobEntryTrans.getTransMeta(JobEntryTrans.java:1187)
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 	... 6 more
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - Caused by: org.apache.commons.vfs2.FileNotFoundException: Could not read from "file:///home/marcosd94/ETL-portal/pentaho/Transformaciones/UpdateFallido.ktr" because it is not a file.
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 	at org.apache.commons.vfs2.provider.AbstractFileObject.getInputStream(AbstractFileObject.java:1309)
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 	at org.apache.commons.vfs2.provider.DefaultFileContent.getInputStream(DefaultFileContent.java:411)
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 	at org.pentaho.di.core.vfs.KettleVFS.getInputStream(KettleVFS.java:261)
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 	at org.pentaho.di.core.xml.XMLHandler.loadXMLFile(XMLHandler.java:558)
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 	... 9 more
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - Caused by: java.io.FileNotFoundException: /home/marcosd94/ETL-portal/pentaho/Transformaciones/UpdateFallido.ktr (No such file or directory)
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 	at java.io.FileInputStream.open(Native Method)
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 	at java.io.FileInputStream.<init>(FileInputStream.java:146)
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 	at org.apache.commons.vfs2.provider.local.LocalFile.doGetInputStream(LocalFile.java:241)
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 	at org.apache.commons.vfs2.provider.AbstractFileObject.getInputStream(AbstractFileObject.java:1301)
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 	... 12 more
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - ERROR (version 6.0.0.0-353, build 1 from 2015-10-07 13.27.43 by buildguy) : org.pentaho.di.core.exception.KettleException: 
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - Unexpected error occurred while launching entry [Transformation 2.0]
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - Unexpected error during transformation metadata load
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - Unable to read file [file:///home/marcosd94/ETL-portal/pentaho/Transformaciones/UpdateFallido.ktr]
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - Could not read from "file:///home/marcosd94/ETL-portal/pentaho/Transformaciones/UpdateFallido.ktr" because it is not a file.
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 	at org.pentaho.di.job.Job.execute(Job.java:876)
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 	at org.pentaho.di.job.Job.execute(Job.java:873)
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 	at org.pentaho.di.job.Job.execute(Job.java:546)
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 	at org.pentaho.di.job.Job.run(Job.java:435)
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - Caused by: org.pentaho.di.core.exception.KettleException: 
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - Unexpected error during transformation metadata load
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - Unable to read file [file:///home/marcosd94/ETL-portal/pentaho/Transformaciones/UpdateFallido.ktr]
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - Could not read from "file:///home/marcosd94/ETL-portal/pentaho/Transformaciones/UpdateFallido.ktr" because it is not a file.
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 	at org.pentaho.di.job.entries.trans.JobEntryTrans.getTransMeta(JobEntryTrans.java:1252)
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 	at org.pentaho.di.job.entries.trans.JobEntryTrans.execute(JobEntryTrans.java:651)
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 	at org.pentaho.di.job.Job.execute(Job.java:730)
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 	at org.pentaho.di.job.Job.execute(Job.java:873)
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 	... 3 more
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - Caused by: org.pentaho.di.core.exception.KettleXMLException: 
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - Unable to read file [file:///home/marcosd94/ETL-portal/pentaho/Transformaciones/UpdateFallido.ktr]
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - Could not read from "file:///home/marcosd94/ETL-portal/pentaho/Transformaciones/UpdateFallido.ktr" because it is not a file.
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 	at org.pentaho.di.core.xml.XMLHandler.loadXMLFile(XMLHandler.java:560)
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 	at org.pentaho.di.core.xml.XMLHandler.loadXMLFile(XMLHandler.java:539)
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 	at org.pentaho.di.trans.TransMeta.<init>(TransMeta.java:2716)
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 	at org.pentaho.di.job.entries.trans.JobEntryTrans.getTransMeta(JobEntryTrans.java:1187)
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 	... 6 more
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - Caused by: org.apache.commons.vfs2.FileNotFoundException: Could not read from "file:///home/marcosd94/ETL-portal/pentaho/Transformaciones/UpdateFallido.ktr" because it is not a file.
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 	at org.apache.commons.vfs2.provider.AbstractFileObject.getInputStream(AbstractFileObject.java:1309)
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 	at org.apache.commons.vfs2.provider.DefaultFileContent.getInputStream(DefaultFileContent.java:411)
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 	at org.pentaho.di.core.vfs.KettleVFS.getInputStream(KettleVFS.java:261)
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 	at org.pentaho.di.core.xml.XMLHandler.loadXMLFile(XMLHandler.java:558)
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 	... 9 more
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - Caused by: java.io.FileNotFoundException: /home/marcosd94/ETL-portal/pentaho/Transformaciones/UpdateFallido.ktr (No such file or directory)
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 	at java.io.FileInputStream.open(Native Method)
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 	at java.io.FileInputStream.<init>(FileInputStream.java:146)
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 	at org.apache.commons.vfs2.provider.local.LocalFile.doGetInputStream(LocalFile.java:241)
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 	at org.apache.commons.vfs2.provider.AbstractFileObject.getInputStream(AbstractFileObject.java:1301)
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 	... 12 more
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - ERROR (version 6.0.0.0-353, build 1 from 2015-10-07 13.27.43 by buildguy) : A serious error occurred during job execution: 
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - Unexpected error occurred while launching entry [Transformation.0]
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - Unexpected error occurred while launching entry [Transformation 2.0]
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - Unexpected error during transformation metadata load
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - Unable to read file [file:///home/marcosd94/ETL-portal/pentaho/Transformaciones/UpdateFallido.ktr]
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - Could not read from "file:///home/marcosd94/ETL-portal/pentaho/Transformaciones/UpdateFallido.ktr" because it is not a file.
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - ERROR (version 6.0.0.0-353, build 1 from 2015-10-07 13.27.43 by buildguy) : org.pentaho.di.core.exception.KettleException: 
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - Unexpected error occurred while launching entry [Transformation.0]
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - Unexpected error occurred while launching entry [Transformation 2.0]
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - Unexpected error during transformation metadata load
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - Unable to read file [file:///home/marcosd94/ETL-portal/pentaho/Transformaciones/UpdateFallido.ktr]
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - Could not read from "file:///home/marcosd94/ETL-portal/pentaho/Transformaciones/UpdateFallido.ktr" because it is not a file.
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 	at org.pentaho.di.job.Job.execute(Job.java:876)
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 	at org.pentaho.di.job.Job.execute(Job.java:546)
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 	at org.pentaho.di.job.Job.run(Job.java:435)
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - Caused by: org.pentaho.di.core.exception.KettleException: 
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - Unexpected error occurred while launching entry [Transformation 2.0]
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - Unexpected error during transformation metadata load
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - Unable to read file [file:///home/marcosd94/ETL-portal/pentaho/Transformaciones/UpdateFallido.ktr]
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - Could not read from "file:///home/marcosd94/ETL-portal/pentaho/Transformaciones/UpdateFallido.ktr" because it is not a file.
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 	at org.pentaho.di.job.Job.execute(Job.java:876)
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 	at org.pentaho.di.job.Job.execute(Job.java:873)
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 	... 2 more
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - Caused by: org.pentaho.di.core.exception.KettleException: 
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - Unexpected error during transformation metadata load
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - Unable to read file [file:///home/marcosd94/ETL-portal/pentaho/Transformaciones/UpdateFallido.ktr]
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - Could not read from "file:///home/marcosd94/ETL-portal/pentaho/Transformaciones/UpdateFallido.ktr" because it is not a file.
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 	at org.pentaho.di.job.entries.trans.JobEntryTrans.getTransMeta(JobEntryTrans.java:1252)
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 	at org.pentaho.di.job.entries.trans.JobEntryTrans.execute(JobEntryTrans.java:651)
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 	at org.pentaho.di.job.Job.execute(Job.java:730)
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 	at org.pentaho.di.job.Job.execute(Job.java:873)
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 	... 3 more
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - Caused by: org.pentaho.di.core.exception.KettleXMLException: 
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - Unable to read file [file:///home/marcosd94/ETL-portal/pentaho/Transformaciones/UpdateFallido.ktr]
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - Could not read from "file:///home/marcosd94/ETL-portal/pentaho/Transformaciones/UpdateFallido.ktr" because it is not a file.
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 	at org.pentaho.di.core.xml.XMLHandler.loadXMLFile(XMLHandler.java:560)
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 	at org.pentaho.di.core.xml.XMLHandler.loadXMLFile(XMLHandler.java:539)
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 	at org.pentaho.di.trans.TransMeta.<init>(TransMeta.java:2716)
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 	at org.pentaho.di.job.entries.trans.JobEntryTrans.getTransMeta(JobEntryTrans.java:1187)
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 	... 6 more
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - Caused by: org.apache.commons.vfs2.FileNotFoundException: Could not read from "file:///home/marcosd94/ETL-portal/pentaho/Transformaciones/UpdateFallido.ktr" because it is not a file.
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 	at org.apache.commons.vfs2.provider.AbstractFileObject.getInputStream(AbstractFileObject.java:1309)
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 	at org.apache.commons.vfs2.provider.DefaultFileContent.getInputStream(DefaultFileContent.java:411)
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 	at org.pentaho.di.core.vfs.KettleVFS.getInputStream(KettleVFS.java:261)
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 	at org.pentaho.di.core.xml.XMLHandler.loadXMLFile(XMLHandler.java:558)
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 	... 9 more
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - Caused by: java.io.FileNotFoundException: /home/marcosd94/ETL-portal/pentaho/Transformaciones/UpdateFallido.ktr (No such file or directory)
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 	at java.io.FileInputStream.open(Native Method)
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 	at java.io.FileInputStream.<init>(FileInputStream.java:146)
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 	at org.apache.commons.vfs2.provider.local.LocalFile.doGetInputStream(LocalFile.java:241)
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 	at org.apache.commons.vfs2.provider.AbstractFileObject.getInputStream(AbstractFileObject.java:1301)
+2016/07/25 19:36:09 - GENERAR_CSV_CONCURSOS - 	... 12 more
+2016/07/25 19:36:09 - Kitchen - Finished!
+2016/07/25 19:36:09 - Kitchen - ERROR (version 6.0.0.0-353, build 1 from 2015-10-07 13.27.43 by buildguy) : Finished with errors
+2016/07/25 19:36:09 - Kitchen - Start=2016/07/25 19:36:03.640, Stop=2016/07/25 19:36:09.560
+2016/07/25 19:36:09 - Kitchen - Processing ended after 5 seconds.
